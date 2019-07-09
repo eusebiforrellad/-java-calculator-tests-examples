@@ -1,0 +1,114 @@
+
+>>===>  funcio  <===<<
+(gra(atan((Δ0*Δ1^2+Δ0+-Δ2)^0,5/Δ2^0,5))+-gra(atan(((Δ0+-Δ2)^0,5)/Δ2^0,5)))*100/α 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  93  94  93  
+Paràmetres	1	2
+símbols:	α	r
+1 valor:	60	6371
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  71  71  70  
+Variables (símbol)	límit Inferior	límit Superior
+h	0	20
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  52  39  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mgha6
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  90  41  57  44  162  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0	h		0	h*(h+2*r)
+Δ1				tan(rad(α))
+Δ2	h		0	(h+r+-(r^2)/(r+h))^2
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	
++	-	*	/	^	(	)	=	<	>	.	
+x	y	z	a	b	c		_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(		m		i		 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	1056	723
+548	1052	665
+508	1048	546
+220	532	542
+112	1048	109
+218	634	101
+530	218	538
+299	304	538
+382	506	542
+286	928	105
+2	502	380
+2	408	97
+3429	576
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+obrir arxiu adjunt 
+apreciar la esfericitat de la terra comparant la linia de l'horitzo amb una linia recta, a diferents altures sobre el nivell de mar
+imaginem una linia recta horitzontal que sigui tangent a l'horitzo
+a nivell del mar horitzo i linia coincidiran en tots el punts
+a mesura que augmenti la altura "h" nomes un punt sera tangent  (primer punt)
+a partir d'aquest  punt  separat un angle horitzontal "α" seleccionem un segont punt
+en aquest segon punt mesurem l'angle "θ" en la direccio al centre de la terra que formen l'horitzo i la linia
+
+representem el grafic: θ*100/α  vs. h
+radi de la terra: 6371 km
+angle horizontal= 60º
+altura h; limits: 0 _ 20 km
+definim les funcions parcials:
+Δ0=d^2=(r+h)^2-(r^2)=r^2+h^2+2*r*h-r^2=h^2+2*r*h = h(h+2*r)
+Δ1=tag(rad(α));
+Δ2=x2^2=(x0-x1)^2=(h+r-(r^2)/(r+h))^2
+
+R=radi del cercle que es troba a l'horitzo: R^2=d^2-x2^2=Δ0-Δ2; R=(Δ0-Δ2)^0,5
+α  es l'angle menor d'un triangle equilater per tan u/d=tag(α); u=d*tan(α )
+v=(u^2+R^2)^0,5=((Δ0^0,5*Δ1)^2+Δ0-Δ2)^0,5=(Δ0*Δ1^2+Δ0-Δ2)^0,5
+Ψ1=gra(atan(v/x2))=gra(atan(  (Δ0*Δ1^2+Δ0-Δ2)^0,5    /Δ2^0,5  ))
+Ψ0=gra(atan(R/x2))=gra(atan(  ((Δ0-Δ2)^0,5)  /  Δ2^0,5  ))
+θ*100/φ=(Ψ1-Ψ0)*100/α =
+(gra(atan((Δ0*Δ1^2+Δ0+-Δ2)^0,5/Δ2^0,5))+-gra(atan(((Δ0+-Δ2)^0,5)/Δ2^0,5)))*100/α 
+
+fer enter
+
+el grafic mostra  per diferents altures (abcissa) els graus de desviacio vertical entre recte i horitzo de un punt separat 60 graus del punt tangent(recta horitzo).
+amb l'ajut de una linea linia recta  preparala amb un fil un regle o un laser mantenint la vista fixa i considerant que una des viacio de la recta de 0,6 graus es perceptible
+el grafic ens indica que una haltura aproximada de 500  metres es suficient (tibidabo)
+
+a 20Km d'altura en un globus la desviacio seria de 3,78 graus
+
+
+cOlOr: n
+
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

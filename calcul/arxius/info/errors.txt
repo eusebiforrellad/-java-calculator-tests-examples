@@ -1,0 +1,97 @@
+
+>>===>  funcio  <===<<
+    
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  75  75  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  75  75  75  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mghb0b1b2b3b4b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  75  75  75  75  75  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	946	440
+374	942	382
+930	938	372
+17	0	368
+157	938	0
+226	0	0
+337	0	0
+356	0	0
+195	928	368
+139	0	0
+2	924	193
+203	0	0
+0	219
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+
+errors probables
+*/+)2+3(-*^+/	els operadors inicials io finals s'anulen
+2*+3 	tipus de error: operadors diferents correlatius
+2-*4 	tipus error: signe menys previ a operador
+--2*--3 	tipus error: els signes menys correlatius es redueixen a 1
+loglog(10)  	tipus error: les funcions ha de incorporar al final de la cadena el parentesi (,  i quan no es troben a l'inici de la funcio un operador io parentesi ( al inici
+2*(3+2)*3)	tipus error:  els parentesi inicial i finals han de coincidir en nombre i han de relacionarse en parelles ()
+
+
+variables i parametres
+el primer caracter de les variables no pot esser un valor numeric
+no poden contenir els simbols de operadors +-*/^ ni parentesi () ni  = < >
+tambe resulta conevenient ,sobretot quant s'utitlitza la taulaF, no utilitzar els simbols  & |  !
+els simbols '['  i ' ]' conve reservar-los per definir les dimensions i els valors individuals d'arrais ,(matrius) a taulaF (taula amb sequencia de operacions)
+
+els simbols dels parametres de capçalera de una fila i els simbols definits com a dimensio de array a columna 9 no poden esser el desti de una copia (columna 3) o el resultat d'una operacio (columna1).
+
+
+
+
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

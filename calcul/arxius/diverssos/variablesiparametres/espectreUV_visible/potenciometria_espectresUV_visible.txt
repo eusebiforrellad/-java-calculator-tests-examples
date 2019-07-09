@@ -1,0 +1,102 @@
+
+>>===>  funcio  <===<<
+(BiT+-BI+-2*X*BI^2*Cl^2+-3*Y*BI^3*Cl^4+-4*Z*BI^4*Cl^6)^2+(CT+-Cl+-2*X*BI^2*Cl^2+-4*Y*BI^3*Cl^4+-6*Z*BI^4*Cl^6)^2
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+Paràmetres	1	2	3	4
+símbols:	BiT	CT	Cl	BI
+1 valor:	8,98E-04	0,38E-3	2,10E-008	Bi4
+2	8,99E-04	0,53E-3	3,53E-008	Bi5
+3	9,01E-04	0,69E-3	6,24E-008	Bi6
+4	9,02E-04	0,80E-3	1,02E-007	Bi7
+5	9,03E-04	0,88E-3	1,46E-007	Bi8
+6	9,04E-04	0,96E-3	2,17E-007	Bi9
+7	9,05E-04	1,04E-3	3,44E-007	Bi10
+8	9,06E-04	1,12E-3	6,10E-007	Bi11
+9	9,06E-04	1,19E-3	1,24E-006	Bi12
+10	9,07E-04	1,26E-3	3,36E-006	Bi13
+11	9,08E-04	1,32E-3	9,71E-006	Bi14
+12	9,09E-04	1,37E-3	2,61E-005	Bi15
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+Variables (símbol)	límit Inferior	límit Superior
+X	1E10	1E20
+Y	1E30	1E40
+Z	1E50	1E55
+Bi4	1E-20	4,95E-4
+Bi5	1E-20	5,02E-4
+Bi6	1E-20	5,01E-4
+Bi7	1E-20	5E-4
+Bi8	1E-20	4,98E-4
+Bi9	1E-20	4,96E-4
+Bi10	1E-20	5,03E-4
+Bi11	1E-20	5,01E-4
+Bi12	1E-20	4,99E-4
+Bi13	1E-20	4,97E-4
+Bi14	1E-20	5,02E-4
+Bi15	1E-20	5E-4
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  125  158  
+Descripció	paràmetre
+dígits vàlids:	5
+cero(log):	imvgha2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	log(Cl)
+regressió ord.exp.:	(CT+-Cl)/BiT
+regressió ord.calc.:	(2*X*BI^2*Cl^2+4*Y*BI^3*Cl^4+6*Z*BI^4*Cl^6)/BiT
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,
++	-	*	/	^	(	)	=	<	>	log(
+BiT	AgT	CT	Cl	BI	Bi	X	Y	Z	V	W
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	1060	557
+328	1056	499
+345	1052	326
+387	699	322
+304	1052	163
+275	283	155
+182	385	318
+310	304	318
+210	343	322
+449	740	159
+208	339	208
+63	0	151
+105	590
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+1.- obrir arxiu adjunt
+senzill estudi potenciometric en el que s'han pres els espectres uv_visible
+inicialment  hi ha una solucio de BiCl3
+en la que s'hi afageix Cl-
+suposem 3 equilibris simultanis constants de formacio X,Y,Z;
+A Parametres introduim les concentracions de Bi i Cl i les concentracions lliures de clor
+al fer enter a minim:
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

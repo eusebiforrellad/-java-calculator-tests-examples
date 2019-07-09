@@ -1,0 +1,152 @@
+
+>>===>  funcio  <===<<
+∑0       
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  47  48  47  
+Paràmetres	1	2
+símbols:	pi	pix2
+1 valor:	3.141592653589793	6.283185307179586
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  29  29  29  
+Variables (símbol)	límit Inferior	límit Superior
+D	0	8
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  41  41  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mgha3
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+R^2*sin(Φ)*r^2*sin(α)*(D+-R*sin(Φ)*sin(θ)+r*sin(α)*sin(β))/(0,1>abs((D^2+R^2+r^2+2*D*(r*sin(α)*sin(β)+-R*sin(Φ)*sin(θ))+-2*R*r*(sin(Φ)*sin(α)*(cos(θ)*cos(β)+sin(θ)*sin(β))+cos(Φ)*cos(α))))^1,5)
+-------------------------------------------------------------------------
+ampladaColumnes:  427  428  427  
+var.  interv.	límit Inferior	límit Superior
+R 3	0	1
+Φ 4	0	pi
+θ 8	0	pix2
+r 3	0	1
+α  4	0	pi
+β 8	0	pix2
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	
++	-	*	/	^	(	)	=	<	>	.	
+x	y	z	a	b	c		_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	π
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(						
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	1680	929
+666	1676	871
+783	1672	664
+345	881	660
+88	1672	197
+93	1420	189
+605	343	656
+648	528	656
+452	781	660
+148	1576	193
+2	777	450
+1288	1319	185
+0	466
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info:
+comprobar  sumatori de ordre 6
+
+obrir arxiu adjunt: click a mouse boto dreta  sobre text superior; click a mouse boto esquerra sobre 'obrir arxiu adjunt'
+
+dues esferes de radi 1
+densitat  = 1
+M1 i  M2 = masa de les esferas de volum V1 i V2; si densitat=1; aleshores  M=V
+D: distancia entre el centre de les esferes en la direccio del eix y
+la força de atracció F = (M1*M2)/D^2=V1*V2/D^2=((4/3*pi)^2/D2
+per D=8;	 F=((4/3)*pi)^2/64 = 0.2741556778080377
+per D=2; 	F=((4/3)*pi)^2/4 = 4.386490844928603
+
+
+comprobar sumatori:
+R, r: radis del centre de les cel.les (volumns parcials) de V1 i V2;
+Φ, θ, , angles del centre de les cel.les V1;  α , β, angles del centre de les cel.les V2
+si d: distancia entre el centre de dos volums parcials de les esferes (cel.les)
+dx, dy, dz, components x,y,z de d
+
+es compleix:
+d^2=(D-y1+y2)^2+(x1-x2)^2+(z1-z2)^2 =D^2+y2^2+y1^2-2*y1*y2-2D(y1-y2)+x1^2+x2^2-2*x1*x2+z1^2+z2^2-2*z1*z2
+si
+R^2 =x1^2+y1^2+z1^2, 
+r^2=x2^2+y2^2+z2^2;
+substituint:
+d^2=D^2+R^2+r^2+2*D*(y2-y1)-2(x1*x2+y1*y2+z1*z2);
+si 
+y1=R*sin(Φ)*sin(θ), 
+x1=R*sin(Φ)*cos(θ), 
+z1=R*cos(Φ), 
+y2=r*sin(α)*sin(β), 
+x2=r*sin(α)*cos(β), 
+z2=r*cos(α),
+substituint:
+d^2=D^2+R^2+r^2+2*D*(r*sin(α)*sin(β)-R*sin(Φ)*sin(θ))-2*R*r*(sin(Φ)*cos(θ)*sin(α)*cos(β)+sin(Φ)*sin(θ)*sin(α)*sin(β)+cos(Φ)*cos(α))=
+=D^2+R^2+r^2+2D(r*sin(α)*sin(β)-R*sin(Φ)*sin(θ))-2*R*r*(sin(Φ)*sin(α)*(cos(θ)*cos(β)+sin(θ)*sin(β))+cos(Φ)*cos(α))
+d=(D^2+R^2+r^2+2D(r*sin(α)*sin(β)-R*sin(Φ)*sin(θ))-2*R*r*(sin(Φ)*sin(α)*(cos(θ)*cos(β)+sin(θ)*sin(β))+cos(Φ)*cos(α)))0,5
+la component  y de la distancia d: dy=D+-R*sin(Φ)*sin(θ)+r*sin(α )*sin(β)
+el volum de les cel.les:
+v1=R^2*sin(Φ)*ΔΦ*Δθ*ΔR; 
+v2=r^2*sin(α) *Δα *Δβ*Δr;  on el simbol: Δ, representa increment 
+el producte de les dues masses de densitat 1, sera =R^2*r^2*sinA*sina*ΔΦ*Δθ*ΔR*Δα *Δβ*Δr
+en la direcció y, la component y de la força serà: Fy=F*dy/d=v1*v2*dy/d^3
+
+Fy=R^2*sin(Φ)*r^2*sin(α)*ΔΦ*Δθ*ΔR*Δα*Δβ*Δr*dy/d^3
+
+la força entre les dues esferes o dues capes esferiques serà:
+Fy=ΣR^2*sin(Φ)*r^2*sin(α)*(D-R*sin(Φ)*sin(θ)+r*sin(α)*sin(β))/abs((D^2+R^2+r^2+2*D*(r*sin(α)*sin(β)-R*sin(Φ)*sin(θ))-2*R*r*(sin(Φ)*sin(α)*(cos(θ)*cos(β)+sin(θ)*sin(β))+cos(Φ)*cos(α))))^1,5*ΔΦ*Δθ*ΔR*Δα*Δβ*Δr;
+
+límits dels sumatoris:
+R i r (0,radi de la esfera)
+Φ i α ( 0,180 graus) o (rad(0), rad(180)) o (0, π)
+β (0, 360 graus) o (rad(0), rad(360)) o (0, 2*π)
+
+per una capa de la esfera:
+R i r (radi inferior,radi superior)
+Φ i α ( 0,180 graus) o (rad(0), rad(180)) o (0, π);
+θ i β (0, 360 graus) o (rad(0), rad(360)) o (0, 2*π)
+
+es tracta de un sumatori d'ordre 6 (un nombre important de calculs) per tant es selecionen intervals grans
+3 intervals pels radis R i r, 4 pels angles A de 180 graus i 8 pels angles B i b de 360 graus
+
+per evitar que el denominador de la funcio sumatori (distancie entre punts)  sigui cero o molt petit
+s'introdueix l'operador  0,1>denominador (com a minim sera 0,1);
+resultat:
+Fy=ΣR^2*sin(Φ)*r^2*sin(α)*(D-R*sin(Φ)*sin(θ)+r*sin(α)*sin(β))/(0,1>abs((D^2+R^2+r^2+2*D*(r*sin(α)*sin(β)-R*sin(Φ)*sin(θ))-2*R*r*(sin(Φ)*sin(α)*(cos(θ)*cos(β)+sin(θ)*sin(β))+cos(Φ)*cos(α))))^1,5)*ΔΦ*Δθ*ΔR*Δα*Δβ*Δr;
+
+intervals 3, 4, 8; resultat  a distancia 8:  0.27266489757415685
+intervals 5, 6, 12; resultat  a distancia 8: 0.2748327798101036
+
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

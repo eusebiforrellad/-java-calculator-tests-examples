@@ -1,0 +1,192 @@
+
+>>===>  funcio  <===<<
+                                              
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  213  68  253  198  69  24  70  62  83  83  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+Bix	x		(1)(vel)			48 24	y	Color: █	arr[12]
+Biy	y								arr[12]
+Biz	z								arr[12]
+Bix1	x								
+Biy1	y								
+Biz1	z		34(Bix Clx 0 0)(Bi Cl p i)(x0)						
+	x0		34(Bix1 Clx 1 0)(Bi Cl p i)(x1)			32 16	y1	Color: █	arr[24]
+	x1		34(Biy Cly 0 0)(Bi Cl p i)(y0)			32 16	y2	Color: █	arr[24]
+	y0		34(Biy1 Cly 1 0)(Bi Cl p i)(y1)						arr[24]
+	y1		34(Biz Clz 0 0)(Bi Cl p i)(z0)						arr[24]
+	z0		34(Biz1 Clz 1 0)(Bi Cl p i)(z1)						arr[24]
+	z1								arr[24]
+0	cont		(0)(c)						
+0	i								
+(y[i]^2+z[i]^2)^,5	r	z[i]>=0	16						
+atan(y[i]/(z[i]»1E-16))+cont+π	φ		18						
+atan(y[i]/(z[i]»1E-16))+cont	φ	y[i]>=0	18						
+φ+2*π	φ								
+r*cos(φ)	y_						x		arr[12]
+r*sin(φ)	z_						z		arr[12]
+i+1	i	i<12	14						
+			42(y0 z0 0)(ys zs i)(ys2 zs2)						
+	ys2						x1		arr[24]
+	zs2		42(y1 z1 0)(ys zs i)(ys1 zs1)				z1		arr[24]
+	ys1						x2		arr[24]
+	zs1			graf			z2		arr[24]
+c+1	c	c=35000	(0)(c)						
+c	c	c>8000&c<=12000|c>16000&c<=20000	30						
+c	c	c>12000&c<=16000|c>20000&c<24000	31						
+cont+0.00010*vel	cont		13						
+cont+-0,00015*vel	cont		13						
+cont+0,00015*vel	cont		13						
+	Bi								arr[6]
+	Cl								arr[4]
+		p>0	36						
+Bi+Cl[i]	X		37						arr[24]
+Bi+-Cl[i]	X								
+i+1	i	i<4	34						
+			(X)						
+	ys								arr[24]
+	zs								arr[24]
+(ys[i]^2+zs[i]^2)^,5	r	zs[i]>=0	43						
+atan(ys[i]/(zs[i]»1E-16))+cont+π	φ		45						
+atan(ys[i]/(zs[i]»1E-16))+cont	φ	ys[i]>=0	45						
+φ+2*π	φ								
+r*cos(φ)	ys[i]								
+r*sin(φ)	zs[i]								
+i+1	i	i<24	41						
+			(ys zs)						
+-------------------------------------------------------------------------
+255	0	51
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+51	51	255
+0	153	153
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  102  102  102  102  102  102  102  102  102  103  103  
+Paràmetres	1	2	3	4	5	6	7	8	9	10
+símbols:	Bix	Biy	Biz	Bix1	Biy1	Biz1	π	Clx	Cly	Clz
+1 valor:	-1,5	2,86	-1,4	1,5	2,86	-2,35	3.141592653589793	0,9	0	-1,4
+2	2	0	-2,5	-2	0	-1,3		-1,1	1,1	-0,6
+3	-1,5	-2,86	-1,4	1,5	-2,86	-2,35		-1,1	-1,1	-0,6
+4	-1,5	2,86	2,4	1,5	2,86	1,45		-1,2	0	1,3
+5	2	0	1,3	-2	0	2,5				
+6	-1,5	-2,86	2,4	1,5	-2,86	1,45				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  75  75  75  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mb0b1b2b3b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  75  75  75  75  75  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+256	1146	911
+491	1142	647
+546	1138	489
+316	576	336
+157	1076	173
+26	0	144
+171	250	332
+337	316	332
+273	544	485
+1130	1138	148
+2	540	271
+42	0	0
+922	323
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+representacio grafica de la cel.la elemental del cristall BiCl4H (la fondaria es visualitza millor observant la cel.la amb un sol ull)
+a la imatge no hi ha representats els atoms de hidrogen (no definits en l'estudi del cristall) nomes hi son els de Bi en vemell i els de Cl en colors ver i blau 
+els dos colors del Cl permeten distingir les dues disposicions de la molecula BiCl4
+la taula de parametres conte les possicions de les coordenades x y z dels atoms de Bi, referides al centre de la cel.la elemental
+a fila 0 columna then: "vel"= variable que defineix la velocitat del moviment inicialment=1;
+les 11 primeres fileres de la taula superior permeten definir en coordenades cartesianes les possicions dels atoms deBi i Cl
+els valors de les cordenades s'enmagetzemen en diferents arrays
+les cordendes del bismut en tres array  (coordenades x y z) de 12 elements cada una
+les coordenades del clor en dos parelles (per distingir el dos tipus de molecula BiCl4)  de tres arrays de 24 elements cada una
+les fileres 5-10, 21 i 23  criden (call) el procediments situat a les files 34 i 42 que finalitzen a les files 38 i 48
+aques prcediment transforma les cordenades y i z  de cada element de le la matriu en coordenades polars i els hi afageig un moviment de rotacio (cont)
+a contincio dels call es transformen les cordenades polar en cartesianes i s'enmagetzemen en arrays de 12 o 24 elements 
+
+click al boto esquerra del mouse, al grafic atura el moviment
+amb la imatje fixa fent click al boto dreta del mouse es selecciona primer el punt central de la nova imatge i a continuacio els atoms que es volen visualitzar
+si es vol que el primer punt seleccionat del grafic no sigui el centre de la imatge posar una 'f' darrera de 'graf'
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

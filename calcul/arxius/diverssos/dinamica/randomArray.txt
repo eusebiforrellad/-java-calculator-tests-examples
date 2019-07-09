@@ -1,0 +1,143 @@
+
+>>===>  funcio  <===<<
+  
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  150  115  172  224  82  97  78  63  72  94  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+0	i								
+rand(0)	posx								arr[idx=1000]
+rand(-100)	posy								arr[idx]
+rand(0)	posz								arr[idx]
+(rand(0)+-0,5)/1000	velx								arr[idx]
+(rand(0)+-0,5)/1000	vely								arr[idx]
+(rand(0)+-0,5)/1000	velz								arr[idx]
+i+1	i	i<idx	1						
+posx+velx	posx		12(posx velx)(pos vel)(velx posx)			20 10	x	rand(0)	
+posy+vely	posy		12(posy vely)(pos vel)(vely posy)				y		
+posz+velz	posz		12(posz velz)(pos vel)(velz posz)	graff			z		
+			8	pausa(1)					
+0	i								
+		pos[i]<1	16						
+-vel[i]	vel[i]								
+1+vel[i]	pos[i]								
+		pos[i]>0	19						
+-vel[i]	vel[i]								
+vel[i]	pos[i]								
+i+1	i	i<idx	13						
+			(vel pos)						
+	vel								arr[idx]
+	pos								arr[idx]
+				nfi					
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  15  15  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  15  15  15  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mb0b1b2b3b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	«
++	-	*	/	^	(	)	=	<	>	.	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+456	1309	902
+430	1305	438
+958	1301	428
+463	0	93
+54	244	2
+306	0	0
+615	0	0
+394	0	0
+271	956	424
+192	1301	0
+2	952	269
+567	0	0
+404	428
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+moviment de particules amb velocitats i direccions aleatories
+al contactar ell limit de la caixa modifican la direccio.
+
+info: funcio 'rand(double)'
+quat es troba en la funcio de la columna 1; genera un primer valor (double) compres entre 0 i 1; en funcio del valor de la llevor (sencer)
+a continuacio guarda la funcio random en una matriu
+En el calcul posterior cada cop que es troba la funcio rand(double) recupera de la matriu de randoms  el random corresponent al sencer
+i assigna a la funcio un nou valor compres entre 0 i 1.
+
+veure:
+ Calc>splitPan> public static boolean random(ArrayList<Double[]> arrdVO)
+Calc>splitPan>private static Double calculFun(String s,Double d)
+Calc>Cal>public static double caseOpFun(int i,double d1,double d2){
+
+la funcio tambe es pot utilitzar a la columna 8 'color' per definir un color aleatori als elements d'un array de valors
+en el cas particular que el sencer del random  '(int)(double)'; sigui(>0&&<10) els colors tenen una tendencia als colors primaris(>=1&&<=6) o intensitat(7 - 9)
+ per modificar els colors dels arrays veure el procediment:
+Calc>taulaF>static Color[] rand(double d,int fil){
+
+per modificar el nombre de punts: columna9 de condicions; fila 1; modificar idx=1000 (1000 punts)
+per modificar la grandaria modificar columna 6 de tamany punt, fila 6: modificar 20 10 (tamany maxim minim)
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

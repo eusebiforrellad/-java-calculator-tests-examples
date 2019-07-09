@@ -1,0 +1,102 @@
+
+>>===>  funcio  <===<<
+rand(-1)                                 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  172  75  105  136  53  61  53  65  15  67  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+0	i								
+rand(1)	posx			n					arr[idx=3]
+rand(1)	posy			n					arr[idx]
+rand(1)	posz			n					arr[idx]
+i+1	i	i<idx	1						
+0	i		(0)(j)						
+posx[i]+-posx[j]	dx								arr[9]
+posy[i]+-posy[j]	dy								arr[9]
+posz[i]+-posz[j]	dz								arr[9]
+(dx^2+dy^2+dz^2)^,5	d			n					arr[9]
+j+1	j	j<idx	6						
+0	j								
+i+1	i	i<idx	6						
+				nfi					
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  93  93  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  100  100  100  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mb0b1b2b3b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  187  187  187  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	«
++	-	*	/	^	(	)	=	<	>	.	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+309	824	659
+336	820	342
+808	816	332
+463	0	349
+54	939	125
+306	0	0
+615	0	0
+394	0	0
+154	806	328
+192	816	0
+2	802	152
+567	0	0
+244	219
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+Exemple de com s'emplenent les matrius mitjançant  bucles
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

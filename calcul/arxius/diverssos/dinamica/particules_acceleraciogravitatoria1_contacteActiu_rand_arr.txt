@@ -1,0 +1,206 @@
+
+>>===>  funcio  <===<<
+rand(-1)                                                                                          
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  255  88  130  282  73  32  64  56  48  84  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+0	i		(0,1 1 10 0,5 -0,5)(t dcontacte dmin vmax vmin)						
+rand(1)*100	posx					60 20	x	rand(0)	mat[idx=8]
+rand(1)*100	posy					60 20	y		arr[idx]
+rand(1)*100	posz					60 20	z		arr[idx]
+(rand(1)+-0,5)/1E3	velx								arr[idx]
+(rand(1)+-0,5)/1E3	vely								arr[idx]
+(rand(1)+-0,5)/1E3	velz								arr[idx]
+i+1	i	i<idx	1						
+t*idx	t								
+	posx			n					
+	posy			n					
+	posz			n					
+	velx			n					
+	vely			n					
+	velz			n					
+velx	sumax		(vely velz)(sumay sumaz)						
+sumay	suy								
+sumaz	suz								
+velx+-sumax/idx	velx								
+vely+-sumay/idx	vely								
+velz+-sumaz/idx	velz								
+posx	px								arr[idx]
+posy	py								arr[idx]
+posz	pz								arr[idx]
+0	i		(0)(cont)						
+0	j								
+		i=j	43						
+posx[j]+-posx[i]	dx								mat[idx0=56]
+posy[j]+-posy[i]	dy								arr[idx0]
+posz[j]+-posz[i]	dz								arr[idx0]
+(dx[cont]^2+dy[cont]^2+dz[cont]^2)^0,5	d								arr[idx0]
+		d[cont]>dcontacte	38						
+(posx[i]+posx[j])/2	posx[j]		(posx[j])(posx[i])						
+(posy[i]+posy[j])/2	posy[j]		(posy[j])(posy[i])						
+(posz[i]+posz[j])/2	posz[j]		(posz[j])(posz[i])						
+(velx[i]+velx[j])/2	velx[j]		(velx[j])(velx[i])						
+(vely[i]+vely[j])/2	vely[j]		(vely[j])(vely[i])						
+(velz[i]+velz[j])/2	velz[j]		(velz[j])(velz[i])42						
+		d[cont]<dmin	42						
+posx[i]+dx[cont]*t^2/(2*d[cont]^3)	posx[i]								
+posy[i]+dy[cont]*t^2/(2*d[cont]^3)	posy[i]								
+posz[i]+dz[cont]*t^2/(2*d[cont]^3)	posz[i]								
+cont+1	cont								
+j+1	j	j<idx	26						
+posx[i]+velx[i]*t	posx[i]								
+posy[i]+vely[i]*t	posy[i]								
+posz[i]+velz[i]*t	posz[i]								
+i+1	i	i<idx	25						
+0	i								
+(posx+-px)/t	velx								
+(posy+-py)/t	vely								
+(posz+-pz)/t	velz								
+		velx[i]>vmax	(vmax)(velx[i])54						
+		velx[i]<vmin	(vmin)(velx[i])						
+		vely[i]>vmax	(vmax)(vely[i])56						
+		vely[i]<vmin	(vmin)(vely[i])						
+		velz[i]>vmax	(vmax)(velz[i])58						
+		velx[i]<vmin	(vmin)(velz[i])	graff					
+i+1	i	i<idx	52						
+			15	pausa(3)					
+				nfi					
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  15  15  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  15  15  15  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mb0b1b2b3b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	«
++	-	*	/	^	(	)	=	<	>	.	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+452	1284	848
+380	1280	388
+1003	1276	378
+463	619	349
+54	939	125
+141	0	0
+615	389	345
+394	220	345
+224	1001	374
+1119	1276	0
+2	997	222
+461	0	0
+500	666
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info:
+semblant al exemple de particules_acciogravitatoria_rand_arr.txt
+nombre particulesparticules idx=8; per tant interaccions idx0=8*7=56;
+totes les particules tenen la mateixa masa
+en aquest cas quant la distancia entre particules es inferior  'adcontacte' les particules mantenent la mateixa possicio i velocitat,
+amb una velocitat igual a la mitja de les dues particules (files 32-37)
+en aquest cas tambe es fixa que el moviment global dels punts sigui cero files(15,20) , 
+es fixa inicialment la condicio de dcontacte=1; (columna then; fila 0)
+es limiten les velocitats maximes i minimes dels punts: vmax=0,5=-vmin
+a partir distancia minima la accio gravitatoria ja no interve es fixa: dmin=30
+a fila 59 es ralentiza el moviment fixant 2 milisegons de pausa: pausa(3)
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

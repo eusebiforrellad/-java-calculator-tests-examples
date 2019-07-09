@@ -1,0 +1,111 @@
+
+>>===>  funcio  <===<<
+(BiT+-BI+-2*X*BI^2*Cl^2+-3*Y*BI^3*Cl^4+-4*Z*BI^4*Cl^6)^2+(CT+-Cl+-AgT+10^-12,49/Cl+-(10^13,06)*10^-12,49*Cl+-2*X*BI^2*Cl^2+-4*Y*BI^3*Cl^4+-6*Z*BI^4*Cl^6)^2                                                          
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  262  106  90  238  71  75  60  74  52  52  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+0	id								
+id+1	id								
+id	arra	id<=2	1	n					arr[6]
+	arra			n					
+id*10	arra			n					
+id+1	id	id<=4	4	n					
+par	arra			n					
+	arra[[5]]								
+arra	arra			n					
+3	i			n					
+arra[0]+arra[i]	arr_Idx			n					
+arra[i]+arra[4]	arra[5]		(arra[0] arra[i])(j k)	n					
+j+k	arra(0)+arra(i):		(j k)(arra[i] arra[2])	n					
+8	arra			n					
+par3	arrb		(arrb)(arra)	n					arr
+	arra			n					
+	arrc		18(arrb arrb[1])(arrc arrc)(arra)	n					arr[3]
+1	arra			nfi					
+	arrc			n					
+arrc/10	arrd		(arrd)	n					arr[3]
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  119  119  119  
+Paràmetres	1	2
+símbols:	par	par3
+1 valor:	100	-100
+2	200	-200
+3		-300
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  189  190  189  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mb0b1b2b3b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+396	1083	875
+365	1079	471
+1067	1075	363
+745	619	349
+527	939	125
+574	0	94
+182	389	345
+376	220	345
+212	1065	359
+1067	1075	98
+2	1061	210
+40	122	90
+17	247
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

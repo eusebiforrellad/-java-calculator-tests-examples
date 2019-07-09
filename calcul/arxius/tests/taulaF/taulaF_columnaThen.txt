@@ -1,0 +1,165 @@
+
+>>===>  funció  <===<<
+     
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  120  420  75  292  75  15  15  15  15  15  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+0	copiaDeArguments		(1 2 3)(un dos tres)						
+un	resutat de la copia un =			;					
+dos	resutat de la copia dos =			n					
+tres	tres no es presenta perque if=false	(tres<dos)		n					
+tres+dos+un	suma de la copia un+dos+tres =			nn					
+dos	call tipus1 arguments situats al inici de la subrutina fila13 resultat =		13(dos tres)(argC0 argC1)	n					
+argC0	argC0 valor retornat per la subrutina de la fila13 resultat =			;					
+argC1	argC1 valor retornat per la subrutina de la fila13 resultat =			nn					
+0	call tipus2, arguments situats al inici de la subrutina de la fila17		17(argC0 argC1)(argS1 argS2)(argC0 argC1)	n					
+argC0	argC0 valor retornat per la subrutina de la fila17			;					
+argC1	argC1 valor retornat per la subrutina de la fila17			nn					
+0	call tipus2 despres de executar la subrutina 17 salta a la filera 21		17(argC0 argC1)(argS1 argS2)(argC0 argC1)21	n					
+0	Aquets filera no s'executa i no es presenta encara que la opcio es n			n					
+argS1	subrutina tipus1 els argumens es troben aqui argS1 =		(argS1 argS2)	n					
+argS1*2	quatre			;					
+argS2*2	sis			n					
+quatre+sis	return subrutina tipus 1		(quatre sis)	n					
+0	subrutina tipus 2 els argument es troben en el call			n					
+argS1+10	catorze_o_vintiquatre			;					
+argS2+10	setze_o_vintisis			n					
+catorze_o_vintiquatre+setze_o_vintisis	return subrutina tipus 2		(catorze_o_vintiquatre setze_o_vintisis)	n					
+argC0	fila 21 resultat argC0 =			;					
+argC1	fila 22 presenta el resulta de la fila i finalitza: resultat argC1 =			nnfi					
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  75  75  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  15  15  15  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mghb1b4b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+382	1021	995
+597	1017	605
+1005	1013	595
+12	0	591
+157	1013	0
+226	0	0
+171	389	345
+579	0	0
+437	1003	591
+139	1013	0
+2	999	435
+203	0	0
+0	212
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info columna then ithen pres:
+quan la columna if es buida o el resultat es true, s'executen les opcions de les columnes then i then pres.
+
+columna then contingut valid:
+
+1.-un sol valor numeric (o un valor numeric al final de una cadena) el programa salta a la filera del sencer
+es un goto condicional (columna if=true) o incondicional (columna if buida).
+
+2.- dues series de valors numerics o símbols entre parentesi separats per un blanc o el punticoma';' ex: (1;2;x)(a;b c) el programa fa a=1; b=2; c=x)
+els símbols  han de esser simbols de les columnes 1 o columna 2 (definits previament en aquesta mateixa columna);
+el segon grup de parentesi no poden esser valors numerics o parametres
+
+3.- un sencer seguit de la opcio 2.- es un call; executa la subrutina situada a la filera del sencer i trasllada els valors del primer grup de parentesi
+al grup de simbols de la filera de la subrutina el segon grup de simbols del call  rep els resultats que retorna la subrutina; 
+
+4._ si s'utilitza la opcio call 3.- cal a la filera del inici de la subsutina un grup de simbols tancats per un parentesi
+(el mateic nombre de simbols que el primer parentesi del call 3.-) en aquest cas la copia  s'executa abans que el calcul de la funcio.
+
+5.- el mateix comportament que la parella de opcions (call 3.- subrutina 4.-):un sencer seguit de tres grups de simbols entre parentesi
+el segon grup son els simbols de la subrutina; el primer i tercer grup identics als grups 1 i 2 del call 3.- en aquest cas la filera del inici de subrutina pot esser buida o amb algun altre contingut
+
+6.- sempre que hi ha un call cal un return al finalitzar la subrutina: una sola serie de simbols entre parentesi el nombre de simbols ha de coincidir amb el nombre del darrer grup de simbols del call
+
+
+columna then pres: indica el tipus de presentacio del resultat de la filera
+simbols:
+"; o pc"  "n"  "nn" : indica un espai de separacio  o un salt de fila o dos salts de fila despres de presentar el simbol de variable i el resultat;
+"-" presenta el resultat pero no la variable.
+"fi" "stop" "end": finalita la execucio despres del calcul de la filera 
+"graf" "graf1" executa el grafic si el grafic es de tres coordenade graf: presenta la fondaria dels punts en el pla horitzontal; graf1: no
+un sencer ex: 10 presenta el resultat cada 10 segons
+"=" conserva la la frequencia de  presentacio de la filera precedent
+
+
+al procediment: errorThen taulaF hi ha el tractament d'errors.
+static void errorThen(String strue,int fil){
+        Func.append(1,"error: ");
+        Func.append(0,"a taula de funcions superior columna '"+matriu[0][idxThen]+"', cadena: "+strue+", filera: "+fil + splitPan.FIL);
+        Func.append(0,"format de goto un unic sencer o un sencer al final de la cadena de una copia o un call; el sencer != filera actual; >=0 i <= nombre de fileres de taula"+ splitPan.FIL);
+        Func.append(0,"format de copia: '(simbol1;simbol2;.....)(s1;s2;..)'  que fa s1=simbol1; s2=simbol2..." + splitPan.FIL);
+        Func.append(0,"format de call tipus1 a subrutina: 'fila0(simbol1;simbol2;.....)(sim1;sim2;.....)fila1'" + splitPan.FIL);
+        Func.append(0,"format de subrutina tipus1 al inici: (s1;s2;..);" + splitPan.FIL);
+        Func.append(0,"format de call tipus2: 'fila0(simbol1;simbol2;.....)(s1 s2 s3)(sim1;sim2;.....)fila1'<br>en aquest cas la columna Then de la filera de l'inici de la subrutina pot no tenir contingut " + splitPan.FIL);
+        Func.append(0,"format del retorn: (si1;si2;..)" + splitPan.FIL);
+    }
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

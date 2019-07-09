@@ -1,0 +1,178 @@
+
+>>===>  funcio  <===<<
+     
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  499  67  72  305  38  33  50  32  46  45  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+0	vx1		(0 0 0 0 0 0 0 0)(vx2 vx3 vy1 vy2 vy3 vz1 vz2 vz3)						
+x1+-x2	x12								
+y1+-y2	y12								
+z1+-z2	z12								
+x1+-x3	x13								
+y1+-y3	y13								
+z1+-z3	z13								
+x2+-x3	x23								
+y2+-y3	y23								
+z2+-z3	z23								
+1	cero12		(1 1)(cero13 cero23)						
+(x12^2+y12^2+z12^2)^0,5	d12	d12<lim	(0 1)(cero12 d12)						
+(x13^2+y13^2+z13^2)^0,5	d13	d13<lim	(0 1)(cero13 d13)						
+(x23^2+y23^2+z23^2)^0,5	d23	d23<lim	(0 1)(cero23 d23)						
+x1+-cero12*t^2*m2*x12/(2*d12^3)+-cero13*t^2*m3*x13/(2*d13^3)+t*vx1	x1_								
+x2+cero12*t^2*m1*x12/(2*d12^3)+-cero23*t^2*m3*x23/(2*d23^3)+t*vx2	x2_								
+x3+cero13*t^2*m1*x13/(2*d13^3)+cero23*t^2*m2*x23/(2*d23^3)+t*vx3	x3_								
+y1+-cero12*t^2*m2*y12/(2*d12^3)+-cero13*t^2*m3*y13/(2*d13^3)+t*vy1	y1_								
+y2+cero12*t^2*m1*y12/(2*d12^3)+-cero23*t^2*m3*y23/(2*d23^3)+t*vy2	y2_								
+y3+cero13*t^2*m1*y13/(2*d13^3)+cero23*t^2*m2*y23/(2*d23^3)+t*vy3	y3_								
+z1+-cero12*t^2*m2*z12/(2*d12^3)+-cero13*t^2*m3*z13/(2*d13^3)+t*vz1	z1_								
+z2+cero12*t^2*m1*z12/(2*d12^3)+-cero23*t^2*m3*z23/(2*d23^3)+t*vz2	z2_								
+z3+cero13*t^2*m1*z13/(2*d13^3)+cero23*t^2*m2*z23/(2*d23^3)+t*vz3	z3_								
+(x1_+-x1)/t	vx1	vx1>limv	(limv)(vx1)						
+x1_	x1					100 20	x1	Color: █	500
+(x2_+-x2)/t	vx2	vx2>limv	(limv)(vx2)						
+x2_	x2					100 20	x2	Color: █	0
+(x3_+-x3)/t	vx3	vx3>limv	(limv)(vx3)						
+x3_	x3					100 20	x3	Color: █	0
+(y1_+-y1)/t	vy1	vy1>limv	(limv)(vy1)						
+y1_	y1						y1		0
+(y2_+-y2)/t	vy2	vy2>limv	(limv)(vy2)						
+y2_	y2						y2		500
+(y3_+-y3)/t	vy3	vy3>limv	(limv)(vy3)						
+y3_	y3						y3		0
+(z1_+-z1)/t	vz1	vz1>limv	(limv)(vz1)						
+z1_	z1						z1		0
+(z2_+-z2)/t	vz2	vz2>limv	(limv)(vz2)						
+z2_	z2						z2		0
+(z3_+-z3)/t	vz3	vz3>limv	(limv)(vz3)						
+z3_	z3		1	graf			z3		500
+			fi						
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+204	0	0
+0	0	0
+51	102	255
+0	0	0
+0	153	51
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  170  170  169  170  169  170  170  
+Paràmetres	1	2	3	4	5	6
+símbols:	m1	m2	m3	lim	limv	t
+1 valor:	3	3	3	100	1,2	0,5
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  15  15  15  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	ufghb0a2(arial 0 10)
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  60  60  59  60  59  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+550	1210	992
+330	1206	434
+476	1202	328
+417	0	93
+2	267	2
+25	0	92
+147	0	0
+157	0	0
+224	474	324
+1194	1202	96
+2	470	222
+46	356	93
+125	173
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+ls'han introduit dos limts
+1.- quan la distancia entre punts es inferior a 'lim' la força gravitatoria s'ignora: cero13=0
+
+2.- quant la velocitat de la coordenada d'una particula supera 'limv' la velocitat de la cordenada de la particula es mante.
+
+cordenades possicio punt 1: x1;  x2; x3;
+coordenades punt2: y1;  y;  y3
+punt 3 z1;  z2;  z3;
+
+copia de les coordenades x1_; x2_; ...etc
+ distancies entre punts coordenades: x12=xdistancia entre punt 1 i 2 coordenada x
+
+temps: t 
+
+velocitats de les coordenades dels punt: vx1; vx2; ... etc
+
+els tamanys dels punts es fixen en 100 maxim i 20 minim
+
+les masses m1 m2 i m3 es fan inicialment = 3
+
+es prescindeic de constant gravitatoria
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

@@ -1,0 +1,131 @@
+
+>>===>  funcio  <===<<
+   
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  62  62  62  62  62  63  61  33  49  102  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+Δ0	d0			n					
+Δ1	d1			n					
+Δ2	d2			n					
+Δ3	d3			n					
+Δ4	d4			n					
+Δ5	d5			n					
+Δ6	d6			n					
+Δ7	d7			n					
+v2*5	r1			n					def
+Δ8	r2			nfi					def
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  75  75  
+Paràmetres	1
+símbols:	p
+1 valor:	20
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  47  38  75  
+Variables (símbol)	límit Inferior	límit Superior
+v0	1	1.2
+v1	2	2.5
+v2	3	4
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mghb0b1b2b3b4b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  55  48  15  21  186  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				2*3+4/2+-2^2+-p/2
+Δ1				Δ0*2
+Δ2				-d0^2+Δ1
+Δ3				v0^3+v1^4
+Δ4	v0		1	v0^3+v1^4
+Δ5	v1		2	Δ3+v0^3+v1^4/(4*3)
+Δ6	v2		3	d4*v1^4+v2^5/(5*4*3)
+Δ7				Δ0+Δ1+Δ2+v2^3+-d5
+Δ8				v2+v1+v0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+208	626	945
+507	622	729
+610	618	505
+13	0	501
+125	618	214
+134	471	210
+171	0	0
+480	0	0
+320	608	501
+139	618	214
+2	604	318
+2	329	206
+625	266
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info:
+el calcul les funcions parcial en el cas d'utilitzar la taula de funcions (taulaF)  es poc practic, des que les funcions parcials es poden definir  en les fileres de la taula superior, d'altra banda la opcio de obtenir el resultat de la derivada graficament es poc precissa molt mes a mesura que augmenta l'ordre de la derivada.
+No obstant per mantenir la compatibilitat amb la opcio de funcio unica he incorporat la taulaD
+les tres primeres fileres son constants en que s'incorporen funcions parcials previes io resultats de fileres superiors de la taulaF
+les quatre seguent incorporen variable generals; es tracta de la cerca del minim de les funcions;les fileres 4-5 amb ordre de derivada 1, 2, 3. 
+les dues darreres fileres contenent variables generals directa o indirectement per no son cerca de minim sino que les variables prenent el valor dels darrers minims calculats ('def' a Columna condicions)
+fer click a enter
+
+els resultats que s'esperen son:
+d0=2	2*3+4/2+-2^2+-p/2=6+2+(-2*-2)-20/2=2
+d1=4
+d2=8	-d0^2+d1=8
+d3=17	v0^3+v1^4=1^3+2^4=17; les variables v0 i v1, prenent el valor en el minim (cerca minim)
+d4=3	δ(v0^3+v1^4)/δ(v0)=3*v0^2=3*1=3 (la variable v1 actua com a contant i la derivada = 0
+d5=52	δ^2(Δ3+v0^3+v1^4/(4*3))/δv1^2  =δ(( v0 ^ 3.0 + v1 ^ 4.0 ) + v0 ^ 3.0 + v1 ^ 4.0 / 12.0)/δv1^2= 
+	= 4*3*v1^2+4*3*v1^2/12=48+48/12=52
+d6=9	δ^3(d4*v1^4+v2^5/(5*4*3))/δv2=5*4*3*3^2/60=9
+d7=-11	Δ0+Δ1+Δ2+v2^3+-d5=2+4+8+27-52=41-52=-11
+r1=5*3	"def" a columna condicions cadena "def" v2=minim de la darrera cerca
+r2=6,7	"def" a columna condicions
+	quant  a columna condicions hi ha la cadena "def" les variables prenent el valor de la 		darrera cerca de minim.
+	en el cas de variables que han actuat com a constants en el calcul de derivades els
+	seu valor es indeterminat encara que s'ls assigna valor
+	v2+v1+v0+v3=3+2,5+1,2+0=6,7 (els valors de v0 i v1 no responen a valors calculats)
+	en les darreres operacions actuaven com a constants i per tant qualsevol valor era valid
+
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

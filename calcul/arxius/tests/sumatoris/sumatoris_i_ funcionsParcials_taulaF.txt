@@ -1,0 +1,113 @@
+
+>>===>  funció  <===<<
+                        
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  88  88  88  88  88  88  87  87  87  87  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+∑0	s0			n					
+∑0	s0			nn					def
+∑1	s1			n					
+∑1	s1			nn					def
+∑2	s2			n					
+∑0	s0			nn					def
+∑1	s1			nn					
+∑2	s2			n					
+s1	s			n					
+Δ2	d2			nfi					
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  44  45  44  
+Paràmetres	1	2
+símbols:	p1	p2
+1 valor:	-1	-2
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  44  45  44  
+Variables (símbol)	límit Inferior	límit Superior
+v0	1	2
+v1	2	4
+v2	5	10
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mghb4a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0	funció: ∑1	funció: ∑2
+v2*Δ2	s0+Δ2	Δ0*s0
+-------------------------------------------------------------------------
+ampladaColumnes:  52  52  52  41  40  41  64  65  64  
+var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior
+i -p2	-p1	6+-v0+p2	i 10	s0	2*s0	i 10	Δ1+s1	Δ2*2+s1
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  19  16  15  16  27  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				p1*3
+Δ1	v2		1	v2^2*2
+Δ2	v1		1	v1^2
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+202	884	831
+517	880	621
+858	876	515
+307	649	593
+120	1313	136
+139	729	92
+171	317	589
+598	322	589
+334	856	511
+139	876	96
+2	852	332
+477	582	88
+291	212
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info:
+els sumatoris poden incorporar en la funcio i en els limits: parametres fixos de un sol valor, simbols de funcions parcial, variables generals i variables de la taulaF
+la precissio depend del nombre de intervals; si ames incorpora funcions parcials derivades, la imprecisio augmenta molt
+l'interval pot eser una funcio pero que nomes pot contenir parametres fixos
+els resultats s'han de ajustar als seguents valors:
+fila 0: s0: cerca de minim (minim V2=5)*(minim Δ2=4) *(minim interval =6- (maxim v0=2)-(p2=-2)-(p2=-1)=1) = 20
+fila 2: funcio = (sumatorifilera 0=20 + funcio parcial 2=4) * interva= 20*2-20=20;  resultat=24*20 = 480
+
+files 1 i 3 els resutats coincideixen amb les de les files precedents les variables generals son els valors resultants dels minims precedents 
+fila 4 el limit inferior es mes gran que el superior no obstant el calcul del sumatori es fa des del limit mes baix al mes alt, resultat= -60*(40-8)=1920
+fila 5 repeteix el calcul de la primera filera pero en aquest cal el valors de la variable general v2 ha canviat v2=10 v0=2 resultat 10*4*1=40
+fila 6 i 7 aqui tambe ha canviat la variable s0=40  resultat s1= (40+4)*(80-40)=1760; resultat s2= (-3*40)*(40-8)=-3840
+les fileres 8 i 9 mostren els resutats del darrer calcul del sumatori1 i el calcul de la derivada de la fila 2 de funcions parcials
+fer click a enter:
+
+cOlOr: n
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

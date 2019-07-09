@@ -1,0 +1,171 @@
+
+>>===>  funcio  <===<<
+((4*Z^3*!(n+-l+-1)/(n^4*a^3*(!(n+l))^3))^0,5*(2*Z*r/(n*a))^l*∑0*e^-(Z*r/(n*a)))^2*(((2*l+1)*!(l+-m)/(4*π*!(l+m)))^0,5*(sin(m*φ)+cos(m*φ))*(l=0*m=0+l=1*m=0*cos(θ)+l=1*m=1*-sin(θ)+l=2*m=0*(0,5*(3*cos(θ))^2+-1)+l=2*m=1*-3*cos(θ)*sin(θ)+l=2*m=2*3*sin(θ)^2+l=3*m=0*0,5*(5*cos(θ)^3+-3*cos(θ))+l=3*m=1*-1,5*(5*cos(θ)^2+-1)*sin(θ)+l=3*m=2*15*cos(θ)*sin(θ)^2+l=3*m=3*-15*sin(θ)^3+l=4*m=0*(1/8)*(35*cos(θ)^4+-30*cos(θ)^2+3)+l=4*m=1*-2,5*(7*cos(θ)^3+-3*cos(θ))*sin(θ)+l=4*m=2*7,5*(7*cos(θ)^2+-1)*sin(θ)^2+l=4*m=3*-105*cos(θ)*sin(θ)^3+l=4*m=4*105*sin(θ)^4))^2*r^2 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  56  56  55  56  56  55  46  45  
+Paràmetres	1	2	3	4	5	6	7
+símbols:	Z	n	l	m	a	e	π
+1 valor:	1	4	3	1	0,529	2.718281828459045	3.141592653589793
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  106  105  105  
+Variables (símbol)	límit Inferior	límit Superior
+r	0	40
+φ	0	6,2832
+θ	0	6,2832
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  46  46  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mpgha6
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+(2*Z*r/(n*a))^k*-1^k*!(n+l)/(!(n+-l+-1+-k)*!(k+2*l+1)*!(k))
+-------------------------------------------------------------------------
+ampladaColumnes:  148  148  148  
+var.  interv.	límit Inferior	límit Superior
+k n+-l+1	-0,5	n+-l+0,5
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	
++	-	*	/	^	(	)	=	<	>	.	
+x	y	z	a	b	c		_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	 
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(		m		i		 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	1356	662
+500	1352	604
+513	1348	498
+515	827	494
+113	1348	96
+322	788	88
+482	513	490
+275	304	490
+290	511	494
+431	1227	92
+2	507	288
+1000	458	84
+479	703
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+orbitals atomics, dades preses de internet.
+atencio hi ha simplificacions  en les funcions, els grafics son probablement ficticis
+
+e	 euler	e =2.718281828459045
+π	 pi	π = 3.141592653589793
+a   	 bohr	a=0,529
+Z   	 nombre atomic
+n    	nombre quantic primer nivell
+l      	nombre quantic  azimutal
+m      	nombre quantic  magnetic
+φ   	angle azimut
+θ   	angle
+r 	radi
+∑0	polinomi laguerre
+
+e^(i*m*φ)=sin(m*φ)+i*cos(m*φ)
+prenem:	sin(m*φ)+cos(m*φ)
+
+funcions de legendre: (limitats a 4 i nomes pels valors positius del segon parametre)
+P0,0:	1
+P1,0:	x
+P1,1:	-(1-x^2)^0,5
+P2,0:	0,5*(3*x^2-1)
+P2,1:	-3*x*(1-x^2)^0,5
+P2,2:	3*(1-x^2)
+P3,0:	0,5*(5*x^3-3*x)
+P3,1:	-1,5*(5*x^2-1)*(1-x^2)^0,5
+P3,2:	15*x*(1-x^2)
+P3,3;	-15*(1-x^2)^1,5
+P4,0:	(1/8)*(35*x^4-30*x^2+3)
+P4,1:	-2,5*(7*x^3-3*x)*(1-x^2)^0,5
+P4,2:	7,5*(7*x^2-1)*(1-x^2)
+P4,3:	-105*x*(1-x^2)^1,5
+P4,4:	105*(1-x^2)^2
+
+funcions d'ona angulars:
+Y(m,l)(θ,φ)=(-1)^m*(((2*l+1)*!(l+-m)/(4*π*!(l+m)))^0,5*P(m,l)(cos(θ))*e^(m*φ)
+on (p(m,l)(cos(θ)) son alguns dels polinomis de legendre
+
+P0,0:	1
+P1,0:	cos(θ)
+P1,1:	-sin(θ)
+P2,0:	0,5*(3*cos(θ))^2-1)
+P2,1:	-3*cos(θ)*sin(θ)
+P2,2:	3*sin(θ)^2
+P3,0:	0,5*(5*cos(θ)^3-3*cos(θ))
+P3,1:	-1,5*(5*cos(θ)^2-1)*sin(θ)
+P3,2:	15*(cos(θ)*sin(θ)^2
+P3,3:	-15*sin(θ)^3
+P4,0:	(1/8)*(35*cos(θ)^4-30*cos(θ)^2+3)
+P4,1:	-2,5*(7*cos(θ)^3-3*cos(θ))*sin(θ)
+P4,2:	7,5*(7*cos(θ)^2-1)*sin(θ)^2
+P4,3:	-105*cos(θ)*sin(θ)^3
+P4,4:	105*sin(θ)^4
+
+funcio Shrodinger general:
+copiar i ajuntar el seguent al text superior:
+
+((4*Z^3*!(n+-l+-1)/(n^4*a^3*(!(n+l))^3))^0,5*(2*Z*r/(n*a))^l*∑0*e^-(Z*r/(n*a)))^2
+*(
+((2*l+1)*!(l+-m)/(4*π*!(l+m)))^0,5*(sin(m*φ)+cos(m*φ))
+*(
+l=0*m=0
++l=1*m=0	*cos(θ)
++l=1*m=1	*-sin(θ)
++l=2*m=0	*(0,5*(3*cos(θ))^2+-1)
++l=2*m=1	*-3*cos(θ)*sin(θ)
++l=2*m=2	*3*sin(θ)^2
++l=3*m=0	*0,5*(5*cos(θ)^3+-3*cos(θ))
++l=3*m=1	*-1,5*(5*cos(θ)^2+-1)*sin(θ)
++l=3*m=2	*15*cos(θ)*sin(θ)^2
++l=3*m=3	*-15*sin(θ)^3
++l=4*m=0	*(1/8)*(35*cos(θ)^4+-30*cos(θ)^2+3)
++l=4*m=1	*-2,5*(7*cos(θ)^3+-3*cos(θ))*sin(θ)
++l=4*m=2	*7,5*(7*cos(θ)^2+-1)*sin(θ)^2
++l=4*m=3	*-105*cos(θ)*sin(θ)^3
++l=4*m=4	*105*sin(θ)^4
+))^2
+
+*r^2
+
+la part radial:
+((4*Z^3*!(n+-l+-1)/(n^4*a^3*(!(n+l))^3))^0,5*(2*Z*r/(n*a))^l*∑0*e_^(Z*r/(n*a)))^2
+conte els polinomis de laguerre 
+resumits en la funcio sumatori ∑0
+a var. interv. hi ha definit el parametre n (nombre quantic principal) que es un sencer
+com que el sumatori multiplica un interval pel valor de la funcio en el punt mitg del interval
+cal definir uns limits de manera que l'interval sigui 1 i k prengui els valors sencers: 0, 1, 2 ,3 fins n-l-1
+per tant prenem els limits -0,5>< n-l-0,5
+
+si multipliquem la funcio radial pel radi al quadrat(r^2*l'anterior funcio) 
+obtenim la probabilitat de la capa diferencial al voltant del nucli.
+
+els limits dels angles es prenen per un cercle 0- 2π
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

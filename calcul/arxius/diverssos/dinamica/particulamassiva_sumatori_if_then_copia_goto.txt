@@ -1,0 +1,170 @@
+
+>>===>  funcio  <===<<
+6,67E-11*(15E3*∑0+∑1+5,6E3*∑2+3,65E3*∑3+2,5E3*∑4)   
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  386  87  206  228  50  17  57  44  61  18  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+-6.6E6	limitInferior					2	x	Color: █	
+6.6E6	limitSuperior					2	x1	Color: █	
+0	contador		(0 0)(contadorFi velocitatMax)			930	x2	Color: █	
+-6,378E6	P					20	x3	Color: █	
+5	t		(0)(v)						
+6,67E-11*(15E3*∑0+∑1+5,6E3*∑2+3,65E3*∑3+2,5E3*∑4)	g								
+contador+t	contador	(g>0)	8	graft					
+v+g*t	v								
+P+-(g/2)*t^2+-v*t	Ps	(P>=0&Ps<=0)|(P<=0&Ps>=0)	11						
+Ps	P	(g<=0)	5						
+v+g*t	v		5						
+contadorFi+contador	contadorFi								
+int(contador/60)	min			;					
+contador+-min*60	seg			n					
+velocitatMax>abs(v)	velocitatMax			n					
+0	contador	contadorFi>20000		fi					
+-P	P		5						
+-------------------------------------------------------------------------
+255	255	255
+255	255	255
+167	215	216
+255	0	51
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  93  93  
+Paràmetres	1
+símbols:	π
+1 valor:	3.141592653589793
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  47  47  46  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mwgha2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0	funció: ∑1	funció: ∑2	funció: ∑3	funció: ∑4
+r^2*sin(φ)*(P+-r*sin(φ)*cos(θ))/(1E4>(P^2+r^2+-2*P*r*sin(φ)*cos(θ))^1,5)	r^2*sin(φ)*(12E3+-2E3*(r+-1,278E6)/2,2E6)*(P+-r*sin(φ)*cos(θ))/(1E4>(P^2+r^2+-2*P*r*sin(φ)*cos(θ))^1,5)	r^2*sin(φ)*(P+-r*sin(φ)*cos(θ))/(1E4>(P^2+r^2+-2*P*r*sin(φ)*cos(θ))^1,5)	r^2*sin(φ)*(P+-r*sin(φ)*cos(θ))/(1E4>(P^2+r^2+-2*P*r*sin(φ)*cos(θ))^1,5)	r^2*sin(φ)*(P+-r*sin(φ)*cos(θ))/(1E4>(P^2+r^2+-2*P*r*sin(φ)*cos(θ))^1,5)
+-------------------------------------------------------------------------
+ampladaColumnes:  46  46  46  52  52  52  48  47  48  54  54  55  54  55  54  
+var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior
+r 4	0	1,278E6	r 4	1,278E6	3,478E6	r 4	3,478E6	5,708E6	r 4	5,708E6	6,328E6	r 1	6,328E6	6,378E6
+φ 9	0	π	φ 9	0	π	φ 9	0	π	φ 9	0	π	φ 9	0	π
+θ 18	0	2*π	θ 18	0	2*π	θ 18	0	2*π	θ 18	0	2*π	θ 18	0	2*π
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	«
++	-	*	/	^	(	)	=	<	>	.	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+325	1177	956
+501	1173	623
+668	1169	499
+279	587	593
+2	1484	136
+146	969	110
+483	273	589
+413	304	589
+340	666	495
+192	1169	114
+2	662	338
+784	815	106
+1000	295
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info:
+moviment d'una particula massiva sota l'efecte de la gravetat suposant que no hi ha friccio
+
+fileres 0-1
+es seleccionen dos punt grafics blancs per limitar la amplada del grafic simbols limitInferior i limitSuperior; en el grafic variables x i x1;
+una esfera que identifiqui la terra x2; el tamany del punt es defineix de manera que la esfera estigui dins dels limits anteriors
+un punt que identifiqui la particula massiva x3
+cal que la altura del grafic sigui igual o superior a la amplada, d'atra manera la esfera es reduira en funcio de l'altura i la particula no e trobara inicialment a la superficie
+
+filera 2 
+es defineix un contador  inicialment=cero,a la columna then es defineixen dos contadors (contadorFi velocitatMax) mes inicialment=0 
+
+lileres 3-4 variable P indica posicio inicial de la particula massiva situada sobre la superficie de la terra
+t es el marge de tems en que es va calculant la possicio de la particula inicialment es prent el valor de 1-10 segons 
+a columna then es defineix la variable velocitat i es fa inicialment igual a 0,
+
+filera 5
+es calcula la gravetat a que esta sotmesa la particula situada en la possicio P
+es fa servir la mateixa funcio que la utilitzada en els exemples de sumatoris el resultat s'assigna a la variable g.
+en aquest cas es redueix el nombre de intervals per un calcul mes rapid encara que la precisio  de g disminueix
+
+filera 6
+increment del contador de temps
+a columna if ;si g es negatiu la velocitat es calcula prenent com a força gravitatoria la inicial del segment
+si g es positiu salta una filera i la velocitat es calculara en funcio de la gravetat que tenia al inici del segment anterior fila10
+aixo permet aminorar la diferencia que es produeix de considerar la gravetat constant en l'interval de temps definit a t, 
+quan la particula s'apropa al centre de la terra la gravetat es la del inici del segment anterior i quant es separa la gravetat es la del inici del segment actual 
+
+filera 7
+calcul de la velocitat
+
+filera 8
+calcul de la posicio final de la particula 'Ps' despres d'un temps t
+a columna if: quan la possicio de la particula supera el centre de la terra executa  columna then que es un goto incondicional a filera 11
+
+filera 9
+actualitza la possicio de la particula  fa P=Ps
+a columna if si la gravetat g<=0 salta a la filera 5 
+
+filera 10 
+calcul de la velocitat quant g>0
+salta a la filera 5
+
+fileres 11-15
+actualitza contadors i presenta el temps trascurregul  des que l'ultim pas dela particula pel centre, en minuts i segonts 
+filera then pres= ';'    ' n'   (;=presentar resultat; n=presenta resultat i nova linia)
+presenta la velocitat en la proximitat de centre de la terra  en metres/segon filera then pres.= 'n'
+si el contador supera el valor 20000 el programa finalitza columna then pres.='fi'
+
+filera 16 
+quan la possicio de la particula canvia de signe la nova possicio P es fa igual  a -P per intentar que el moviment de la particula sigui mes simetrica a les dues bandes del centre
+es pot prescindir d'aquesta aproximacio posant a la columna de funcio Ps per comptes de -P
+
+Per veure el grafic de la gravetat en funcio de la distancia al centre de la terra:
+Seleccionar: 'funcio Unica'
+a taula de variables generals incorporar les tres  cel.les seguents
+P	0	12,756E6
+fer clic a enter
+
+la variable P a taula de funcions es una variable general mentre que a taulaF (taulaDeFuncions) es una variable de la taula
+a taulaF la variable general P donara error cal treura-la: reiniciar taulaV.
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

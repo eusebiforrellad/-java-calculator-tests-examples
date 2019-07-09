@@ -1,0 +1,101 @@
+
+>>===>  funcio  <===<<
+  
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  137  138  197  
+Paràmetres	1	2
+símbols:	parFix	parVar
+1 valor:	1	par1
+2	2	par2
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  176  176  176  
+Variables (símbol)	límit Inferior	límit Superior
+varGen	-1	1
+par1	0	1
+par2	-1	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  109  109  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	imgha2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	E
++	-	*	/	^	(	)	=	<	>	.	 
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+37	1283	544
+391	1279	499
+651	1275	389
+304	616	385
+239	1275	100
+534	542	92
+373	302	381
+214	304	381
+277	649	385
+478	1028	96
+2	645	275
+63	0	88
+148	219
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+per definir variables o parametres (taulaP):
+excloure les cadenes que contenen simbols de operadors o parentesi com: *+-^/()=<>
+exclore els simbols  [  ]  utilitzats pel programa a taulaF (taula de funcions)
+el simbol de sumatori ∑ es limitat al us dels sumatoris no utilizar-lo per definir variables o parametres
+el simbol Δ es limita a els resultats de funcions parcials
+el primer  simbol no pot esser un valor numeric: exemple erroni:  0x; exemples valids: _0x 
+
+els parametres poden contenir variables (parametresVariables)
+els parametres variables es situen tots en la mateixa columna encapçalada pel parametre de capçalera
+han d'estar tambe presens a la taula de variables junt amb les variables Generals
+per totes les variables (generals i de parametres)  cal introduir un limit inferior i superior
+
+quant a la taula parametres hi ha una sola filera de valors  els parametres han d'esser  numerics, es consideren
+parametres fixos d'una filera i tenet un tractament  especific.
+
+exemple de cerca de minim copiar el seguent ((parFix+parVar)*varGen)^2+(parFix*parVar)^2
+ajuntar al text superior i fer click a minim
+si la opcio 'ampliar informes' que es troba al popUp del text superior es activa es mostra la funcio que es minimitza:
+
+tambe resulta conevenient ,sobretot quant s'utitlitza la taulaF, no utilitzar els simbols  & |  ! 
+
+cOlOr: n
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

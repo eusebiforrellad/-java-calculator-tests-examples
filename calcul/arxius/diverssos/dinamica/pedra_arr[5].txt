@@ -1,0 +1,135 @@
+
+>>===>  funcio  <===<<
+                
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  237  185  66  104  93  63  49  54  40  40  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+-20	limxi		(0 0)(TA terra)				x	Color: █	
+750	limxs		(5E-5)(t)				x1	Color: █	
+-700	limyi						y	Color: █	
+200	limys						y1	Color: █	
+	xT								arr[5]
+	yT								arr[5]
+(sin(rad(α))+(sin(rad(α))^2)^,5)*cos(rad(α))*v^2/G	distancia contacte amb terra:  =	xT=0		n					arr
+60*cos(rad(α))	vx								arr[5]
+60*sin(rad(α))	vy								arr[5]
+t+TA	TA								
+vy*t+-(G*t^2)/2	y								arr[5]
+vx*t	x								arr[5]
+2*y/t+-vy	vy								
+x+xT	xT				2 200	20	xT	rand(7)	
+y+yT	yT			graf		20	yT		
+terra+700	terra				1		xterra	Color: █	
+0	terray	terra>700	(0)(terra)				yterra		
+		yT[4]<-40	(5E-6)(t)						
+		yT[4]>-60	9						
+xT	distancia final coordenada x			n pausa(1E4)fi					
+-------------------------------------------------------------------------
+255	255	255
+255	255	255
+255	255	255
+255	255	255
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+51	51	255
+0	0	0
+153	0	51
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  211  210  211  210  
+Paràmetres	1	2	3
+símbols:	G	α	v
+1 valor:	9,8	15	60
+2		30	
+3		45	
+4		60	
+5		75	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  62  62  61  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mb0b1b2b3b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  75  75  75  75  75  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+321	954	750
+298	950	421
+471	946	296
+596	619	349
+2	939	125
+25	187	111
+147	389	345
+396	220	345
+141	469	292
+751	946	115
+2	465	139
+40	154	107
+125	219
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+exemple similar al de 'info>pedra"
+s'utilitzen matrius per representar el moviment de 5 objectes, nomes afectats per la gravetat.
+amb velocitat v i angles inicials definits per els parametres de α  definits a (taulaP)
+
+files 0-3 es defineixen els limits de le grafica (columnes(7-9)  i s'assignen els valos inicials a linia de terra (terra=0) i a les variiables del temps (t=0) i (TA=0)
+files 4-5 es defineixen les matrius de les coordenades XT i YT dels 5 objectes (dimensio=5)
+fila 6 calcula i presenta les distancies en que els objectes contacten el terra
+files 7-14 calculs y presentacio de les possicions dels 5 objectes
+es dibuixa una linia de terra files 15 i 16
+files 17 ralentitza el moviment
+fila18 condicio si la coordenada y del darrer  punt es inferior a -60 salta a la
+fila 9.
+la fila 19
+a columna then pres: 
+presenta les coordenades d'abcissa finals: (n);
+segueix presentant el grafic durant 10 segons: (wait(1E4)) 
+i finalitza: (fi)
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

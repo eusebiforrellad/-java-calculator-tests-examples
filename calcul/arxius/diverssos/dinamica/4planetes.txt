@@ -1,0 +1,230 @@
+
+>>===>  funcio  <===<<
+    
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  177  78  267  390  39  37  44  35  32  21  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+-4,6E10*cos(rad(α+7,00487))	ym		(0 0 0 0)(xm xv xt xM)						
+-4,6E10*sin(rad(α+7,00487))	zm		(0 0 0 0)(vym vyv vyt vyM)						
+-1,0748E11*cos(rad(α+3,39471))	yv		(0 0 0 0)(vzm vzv vzt vzM)						
+-1,0748E11*sin(rad(α+3,39471))	zv		(58980 35260 30288,1 26500)(vxm vxv vxt vxM)						
+-1,47098291E11*cos(rad(α))	yt		(0 0 0 0)(augm augv augt augM)						
+-1,47098291E11*sin(rad(α))	zt		(0 0 0 0)(adms advs adts adMs)						
+-2,0662E11*cos(rad(α+1,85))	yM		(2,5E11)(lim)						
+-2,0662E11*sin(rad(α+1,85))	zM		(50 1 1 1)(T Tv Tt TM)						
+T*Tv	Tv		(0 0 0 0)(cm cv ct cM)						
+T*Tt	Tt		(vm vv vt vM)(avm avv avt avM)						
+T*TM	TM								
+-2,29E11	xlimI						xlimI	Color: █	
+-lim*cos(rad(α+1,85))	ylimI						ylimI		
+-lim*sin(rad(α+1,85))	zlimI						zlimI		
+lim	xlimS						xlimS	Color: █	
+lim*cos(rad(α+1,85))	ylimS						ylimS		
+lim*sin(rad(α+1,85))	zlimS						zlimS		
+G*MS	K								
+(xm^2+ym^2+zm^2)^0,5	dms		45(vxm xm dms T)(vxm xm)						
+xm	xm		45(vym ym dms T)(vym ym)		20 400	20 2	xm	Color: █	
+ym	ym		45(vzm zm dms T)(vzm zm)				ym		
+zm	zm	(dms>=adms&augm=1)|(dms<=adms&augm=0)	23				zm		
+	mercuri	cm<4&adms>0	49(augm adms avm cm)(aug ad av c)(augm cm)	;					
+(vxm^2+vym^2+vzm^2)^0,5	vm								
+(xv^2+yv^2+zv^2)^0,5	dvs		45(vxv xv dvs Tv)(vxv xv)						
+xv	xv		=(vyv yv dvs Tv)(vyv yv)		30	30 3	xv	Color: █	
+yv	yv		=(vzv zv dvs Tv)(vzv zv)				yv		
+zv	zv	(dvs>=advs&augv=1)|(dvs<=advs&augv=0)	29				zv		
+	venus	cv<4&advs>0	49(augv advs avv cv)(aug ad av c)(augv cv)	;					
+(vxv^2+vyv^2+vzv^2)^0,5	vv								
+(xt^2+yt^2+zt^2)^0,5	dts		45(vxt xt dts Tt)(vxt xt)						
+xt	xt		=(vyt yt dts Tt)(vyt yt)		40	50 5	xt	Color: █	
+yt	yt		=(vzt zt dts Tt)(vzt zt)				yt		
+zt	zt	(dts>=adts&augt=1)|(dts<=adts&augt=0)	35				zt		
+	terra	ct<4&adts>0	49(augt adts avt ct)(aug ad av c)(augt ct)	;					
+(vxt^2+vyt^2+vzt^2)^0,5	vt								
+(xM^2+yM^2+zM^2)^0,5	dMs		45(vxM xM dMs TM)(vxM xM)						
+xM	xM		=(vyM yM dMs TM)(vyM yM)		80	50 5	xM	Color: █	
+yM	yM		=(vzM zM dMs TM)(vzM zM)				yM		
+zM	zM	(dMs>=adMs&augM=1)|(dMs<=adMs&augM=0)	41				zM		
+	mart	cM<4&adMs>0	49(augM adMs avM cM)(aug ad av c)(augM cM)	;					
+(vxM^2+vyM^2+vzM^2)^0,5	vM		(dms dvs dts dMs vm vv vt vM)(adms advs adts adMs avm avv avt avM)						
+0	xS					200 20	xS	Color: █	
+0	yS			grafr			yS		
+0	zS		18				zS		
+v	vant		(v p d t)						
+v+-K*t*p/d^3	v								
+t*v+0*t*(vant+v)/2+-0*K*t^2*p/(2*d^3)*0	i								
+i+p	p		(v p)						
+c+1	c	c>1	52						
+ad	dist.inicial:			;					
+av	vel.inicial:		57	n					
+		aug=1	55						
+ad	dist.min:			;					
+av	vel.max:		57	n					
+ad	dist.max:			;					
+av	vel.min:			n					
+(aug=1)*0+aug=0	aug		(aug c)						
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+255	255	255
+0	0	0
+0	0	0
+255	255	255
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+51	51	255
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+255	0	102
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	51	255
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+255	51	51
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+255	204	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  94  94  94  94  
+Paràmetres	1	2	3
+símbols:	MS	G	α
+1 valor:	1,989E30	6,673E-11	45
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  75  75  75  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mghb0b1b2b3b4a2(arial 0 11)
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  75  75  75  75  75  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+158	1143	580
+310	1139	414
+469	1135	308
+894	0	267
+2	529	0
+25	0	92
+147	0	0
+467	0	0
+164	467	304
+1127	1135	96
+2	463	162
+40	71	88
+0	212
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+
+info:
+orbites de mercuri venus terra i mart al voltant del sol simbols: m; v; t; M; S;
+simbols de possicions    mercuri: xm; ym; zm;   venus; xv; yv; zv;    terra xt; yt; zt;    mart: xM; yM; zM;
+simbols de velocitats;   mercuri: vxm vym vzm; etc.
+simbols de distancias planeta_sol: dms dvs dts dMs; 
+simbols de les darreres distancies calculades: adms advs adts adMs
+simbols que indiquen que la distancia augmenta o disminueix: augm augv augt augM; si augmenta el valor es 1 si disminueix es cero
+a subrutina fila 45 simbols t: temps; p; possicio; v:velocitat; d: cdistancia al sol; i: interval de la coordenada en direccio al sol recorregut en un interval de temps t.
+a subrutina fila 49 simbols aug; indicador de augmen_disminucio de la velocitat; p possicio.
+fileres 1_7:  es defineixen les possicions i velocitats mitjanas dels planetes; es situen inicialment sobre l'eix x
+es parteix de les velocitats en el periheli: per la terra velocitat entre(30280-30290) m/seg distancia: 1,47098291E11 m
+a fileres 4  columna then es fixan els valors inicials de les variables que indiquen que la distancia del planeta al sol augmenta '1' o disminueix '0'
+a filera 5 columna then es fixan inicialment lea anteriors distancies al sol  = 0
+a filera 6 columna then es fixa un valor per el limit grafic
+a la filera 7 a columna then s'assigna el valor del inteval de temps (T) i correccions del temps (Tv Tt TM) dels diferents planetes; en que es calculen la velocitat i possicions; en aquest cast es fixa el mateix pels 4 planetes (fileres 8-10)
+a filera 8 columna then es defineixen 4 contadors cm cv ct cm inicialment igulas a cero
+a filera 9 columna then es defineixen els valors de les velocitats previes = velocitats recents
+fileres 8_10:  s'assignen intervals de temps identics per tors els planetes
+fileres  11_16: es defineixen els limits del grafic amb punts blancs
+filera 17 es calcula la contant: gravitacio universal*masa del sol/2
+fleres 18; 24; 30; 36;: es calcula la distancia del planeta al sol i es crida la subrutina fila 45;
+envia les variables de velocitat pocicio distancia al sol i el contador del planeta, temps; la subrutina retorna els valors velocitat i posicio de les coordenades
+
+fileres: 23; 29; 35; 41; calcula la velocitat global del planeta a partir de les velocitats en les direccions de les coordenades
+fileres 21 27 33 i 39 comparan la velocitat del planeta i quant aquesta deixa de augmentar o disminuir de forma continuada, executa la subrutina de presentacio de distancia i velocitat, subrutina de la fila seguent sino salta una filera
+fileres 22 28 34 42 quant el contador de presentacions es inferior a 4 i s'ha executat un primer calcul la distancia previa>0 (dms>0 etc..), executa la subrutina 49 de presentacio de velocitat i distancia
+resta de fileres 18 41 crida la subrutina de la fila 45 i retorna velocittat i posicio de les coordenades la informacio de les columnes funcio i simbol var. es irrelevant
+
+fileres 42_44  situa el sol en el centre del grafic
+
+fileres 45_48 subrutina calcula la nova possicio i velocitat de la coordenada (i: distancia recorreguta en el temps t; v: nova velocitat; p: nova possicio; c: contador
+
+fileres 49-57 subrutina de presentacio de resultats
+
+notes:
+un temps elevat permet visualitzar rapidament les orbites no obstant el calcul es mes imprecis i possiblement les orbites s'ayunyen del sol
+un temps mol petit guanya en precisio pero els moviments son molt lents i augmenta el nombre de calculs que defineixen una orbita
+per cada coordenada, la distancia recorreguda pels planetes en la direccio del sol = velocitat final en l'interval de temps*temps es una aproximacio;
+pero si considero linterval= velocitat mitjana*temps el resultat mes aviat empitjora(i=t*(vant+v)/2)
+petites modificacions en la velocitat minima inicial dels planetes modifiquen sensiblement els resultats i no he trobat valors prou significatius per aquests valors
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

@@ -1,0 +1,148 @@
+
+>>===>  funcio  <===<<
+     
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  15  15  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  15  15  15  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  344  343  
+Descripció	paràmetre
+precissió round:	-5
+cero(log):	mtufgha2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 4
+0	1	2	3	4	5	6	7	8	9	,
++	-	*	/	^	(	)	int(	fra(	abs(	rod(
+sin(	cos(	tan(	asin(	acos(	atan(	rad(	gra(	log(	ln(	!(
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+37	724	754
+601	720	709
+708	716	599
+16	0	595
+708	716	100
+167	0	0
+437	0	0
+521	0	0
+490	706	595
+96	0	96
+2	702	488
+1000	0	0
+0	219
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+escriure al texts superior la operació i fer enter o click a enter 
+les operacions mes frequents  es mostren en el teclat inferior 
+les funcions inclouen en aquest cas el parèntesi inicial '(' el parèntesi final es sempre necessari, exemple: int(sin(rad(45)))
+el punt i la coma en els nombres tenen el mateix significat: marquen els decimals.
+
+a la taula inferior a Descripcio  a precissio round
+Si hi ha un sencer possitiu (n) el resultat mostrara n digits significatius
+si es negatiu no arrodoneix el resultat.
+
+al text superior fen click dreta al mouse apareix un popoup on hi ha entre altres
+1.- al inici carregar arxiu: al executar el programa carrega el darrer arxiu guardat
+2.- enter > nova funcio: si es actiu al fer enter ames de presentar el calcul, neteja el text superior
+3.- ampliar informes: hi ha informacio que nomes es presenta si la opcio es activa
+4.- captura manual grafic quant actiu  en la cerca de minim es mostren els grafics de resultats cada cert temps
+5.- anular totltiptext info, si actiu limita els tooltiptexts que es mostren al passar el ratoli per sobre dels diferents camps
+6.- invertir sentit  < > grafic canvia el sentit en que els simbols  > <  mouen el grafic esquerra i dreta
+7.- traça linies entre punts grafics: uneix els punts del grafic superior
+8.- linia regr.exp.pink: traça linieas entre punts  del calcul regr.exp del grafic inferior
+9.- linia regr.calc.cyan: traça linieas entre punts  del calcul regr.calc del grafic inferior
+10.- inici: reinicia el programa i buida tota la informacio
+11.- reset: similar a inici però en aquest cas conserva tota la informació
+12.- taula de funcions: intercanvia el text superior de una sola funcio amb la taula de funcions
+13.- font: defineix el tipus i tamany del text
+14.- adjuntar arxiu: permet associar un document a l'arxiu
+15.- obrir arxiu adjunt: si hi ha associat un arxiu l'obre
+
+en el teclat inferior
+els simbols (color blau) es poden canviar depenent del tipus de calcul 
+fen click boto dreta al panel del teclat o als  buttons alternatius tambe permet alternar entre teclat de simbols i grup de buttons
+fen click boto dreta al panel del teclat  tambe permet entre altres:
+1: ajuntar a cel.la:  copia la informacio del portapapers al JLabel
+2: modificar el nombre de fileres i columnes
+3: modificar la longitud del text que es mostra als JLabels
+4: reiniciar teclat: carrega un conjunt de teclas que mostra una varietat de simbols i cadenes
+en el cas actual s'han escollit les cadenes per utilitzar el programa com una calculadora
+5.- scrollTaula modifica el tipus d'ajust de les columnes de la taula inferior
+
+fen clic dreta en aquest text apareix un poppup que entre altres permet:
+1.- clear pan: buidar la finestra
+1.- wrap: introdueix sals de de filera a les fileres mes llargues que l'amplada de la finestra
+
+a moltes de les finestres apareixen les opcions tipiques:
+copiar ;cut; ajuntar; carregar arxiu; guardar; guardarcom
+a les taules els popup presenten tambe les opcions:
+incrementar o reduir fileres i en alguns cassos incrementar o reduir columnes
+
+
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco1  <===<<
+
+(round) variables: x = 5,5
+min. funció: 1.7976931348623157E308
+
+(round) variables: x = 5,5
+min. funció: 1.7976931348623157E308
+
+(round) variables: x = 5
+min. funció: 1.7976931348623157E308
+
+(round) variables: x = 0
+min. funció: 0.0
+
+punt: 0,   pos.: 1 de (2)
+abcisa principal: x
+funció: NaN;   (min.: 0.0; abs.: 0.0)
+variables:  x: 0.0, 
+
+
+
+
+
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

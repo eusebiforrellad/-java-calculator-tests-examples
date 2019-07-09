@@ -1,0 +1,124 @@
+
+>>===>  funcio  <===<<
+∑1+∑3 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  15  15  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  15  15  15  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  38  38  
+Descripció	paràmetre
+precissió round:	6
+cero(log):	mgha2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0	funció: ∑1	funció: ∑2	funció: ∑3
+r^2*sin(φ)	r^2*sin(φ)*5,52E3	r^2*sin(φ)	r^2*sin(φ)*3,34E3
+-------------------------------------------------------------------------
+ampladaColumnes:  44  44  44  44  44  44  45  44  45  44  45  44  
+var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior
+r 10	0	6,378E6	r	0	6,378E6	r	0	1.737E6	r	0	1.737E6
+φ	0	rad(180)	φ	0	3.141592653589793	φ	0	3.141592653589793	φ	0	3.141592653589793
+θ	0	rad(360)	θ	0	6.283185307179586	θ	0	6.283185307179586	θ	0	6.283185307179586
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	E
++	-	*	/	^	(	)	=	<	>	.	 
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	678	694
+495	674	636
+662	670	493
+2	0	489
+97	670	133
+2	555	125
+477	0	0
+477	0	0
+308	660	489
+2	565	129
+2	656	306
+537	545	121
+4371	1993
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+
+cOlOr: n
+coordenades polars
+radi de la terra=6,378E6 m
+densitat de la terra = 5,520 kg/dm3=5520 kg/m3
+radi de la lluna = 1.737 E6 m
+densitat de la lluna 3,34 kg/dm3= 3,34E3kg/m3
+
+valors obtinguts de internet:
+1._volum de la terra 1,08321E21 m3
+2._masa de la terra  5,9736E24  kg
+3._Volum de la lluna = 2,1958E19 m3
+4._masa de la lluna 7,349E22 kg
+
+Volum terra considerant que es una esfera de radi 6,378E6  m:
+4/3*3.141592653589793*6,378E6^3 = 1.0867812925428892E21; 
+masa de la terra:
+4/3*3.141592653589793*6,378E6^3*5,52E3 = 5.999032734836749E24; 
+Volum lluna considerant que es una esfera de radi 1,737E6  m:
+4/3*3.141592653589793*1,737E6^3 = 2.195270617503E19;  
+masa de la lluna:
+4/3*3.141592653589793*1,737E6^3*3,34E3 = 7.33220386246002E22; 
+
+mateix calcul mitxançant sumatoris  seleccionats 45 intervals pel radi r y els angles φ i θ;
+∑0 i ∑1 : volum i masa de la terra
+∑2 i ∑3 : volum i masa de la lluna
+a la funcio superior: sume de les masses
+fer enter:
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco1  <===<<
+
+(round) variables: x = 5,5
+min. funció: 1.7976931348623157E308
+
+(round) variables: x = 5,5
+min. funció: 1.7976931348623157E308
+
+(round) variables: x = 5
+min. funció: 1.7976931348623157E308
+
+(round) variables: x = 0
+min. funció: 0.0
+
+punt: 0,   pos.: 1 de (2)
+abcisa principal: x
+funció: NaN;   (min.: 0.0; abs.: 0.0)
+variables:  x: 0.0, 
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

@@ -1,0 +1,110 @@
+
+>>===>  funcio  <===<<
+(A+-C0*6605,7*e^-((n+-319,24)^2/(2*15,087^2))+-(1E-4+-C0)*a1*e^-((n+-b1)^2/(2*c1^2)))^2
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+Paràmetres	1	2	3	4
+símbols:	n	A	C0	e
+1 valor:	298,6	0,230	x1	2.718281828459045
+2	298,6	0,186	x2	
+3	298,6	0,150	x3	
+4	298,6	0,118	x4	
+5	317,0	0,627	x1	
+6	317,0	0,582	x2	
+7	317,0	0,544	x3	
+8	317,0	0,512	x4	
+9	324,0	0,621	x1	
+10	324,0	0,621	x2	
+11	324,0	0,621	x3	
+12	324,0	0,621	x4	
+13	333,5	0,502	x1	
+14	333,5	0,584	x2	
+15	333,5	0,646	x3	
+16	333,5	0,688	x4	
+17	344,0	0,256	x1	
+18	344,0	0,346	x2	
+19	344,0	0,394	x3	
+20	344,0	0,499	x4	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+Variables (símbol)	límit Inferior	límit Superior
+a1	0	1E4
+b1	315	340
+c1	10	50
+x1	0	1E-4
+x2	0	1E-4
+x3	0	1E-4
+x4	0	1E-4
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  137  158  
+Descripció	paràmetre
+dígits vàlids:	8
+cero(log):	mgha2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	n
+regressió ord.exp.:	A
+regressió ord.calc.:	C0*6605,7*e^-((n+-319,24)^2/(2*15,087^2))+(1E-4+-C0)*a1*e^-((n+-b1)^2/(2*c1^2))
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	
++	-	*	/	^	(	)	=	<	>	.	
+x	y	z	a	b	c		_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	 
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(		m		i		 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	1158	689
+487	1154	631
+460	1150	485
+372	682	481
+316	1150	136
+280	288	128
+184	370	477
+469	302	477
+291	458	481
+530	826	132
+0	454	289
+40	0	124
+824	326
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+contnuacio del exemple campanesGauss_Ajust espectreUV_dosEspMononuclears_1
+en aquest cas les concentracions de les especies absorbents es prenen com a parametres variables.
+ajustar espetres UV_visibles a dues campanes de Gauss UV_visible
+solucio de BiCl3 en medi acetonitril
+font de clorurs: NEt4Cl
+hi ha un punt isosbestic a 298,6 nm 
+seleccionem les corbes 1_9 (veure grafic)
+i suposem per tant dues especies mononuclears: C0=BiCl3 i C2=BiCl4 en equilibri 
+tractar de ajustar els espetres a dues campanes de Gauss
+fer enter a minim:
+
+cOlOr: n
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

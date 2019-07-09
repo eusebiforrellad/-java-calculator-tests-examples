@@ -1,0 +1,112 @@
+
+>>===>  funcio  <===<<
+   
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  300  91  90  255  63  63  63  64  63  63  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+1	arr0		(2 3 4)(arr0[1] arr0[2] arr0[3])	n					arr[4]
+-1	arr1		(-2 -3 -4)(arr1[1] arr1[2] arr1[3])	n					arr[4]
+arr1+2*arr0+arr1[0]	res0			n					arr
+	res0[[3]]								
+res0	arr0			n					
+par	parametres			n					arr
+res0+parametres	res1			n					arr
+res0*parametres	res2			n					arr
+res2[2]+res1[2]	res2			n					
+res2[2]+res1[2]	res2[3]			n					
+	res2			n					
+				fi					
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  179  178  
+Paràmetres	1
+símbols:	par
+1 valor:	10
+2	20
+3	30
+4	40
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  67  67  66  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mb0b1b2b3b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  98  99  98  99  98  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,
++	-	*	/	^	(	)	=	<	>	log(
+BiT	AgT	CT	Cl	BI	Bi	X	Y	Z	V	W
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+184	902	751
+440	898	559
+886	894	438
+364	619	349
+527	939	125
+206	0	107
+182	389	345
+376	220	345
+321	884	434
+886	894	111
+2	880	319
+41	545	129
+0	219
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+quant a "then press." columna 4 hi ha opcio de presentar resultats
+i a columna 'Simbol var' un array
+es presenta entre parentesi els resultat de tots els elements i ha continuacio
+el resultat de la suma de elements
+
+ATENCIO
+quant a Simbol var(columna1) hi ha una matriu sense index els resultats s'introdueixen en funcio 
+de un contador cada array porte associat un contador)
+aquest contador val unicialment cero y s'incrementa cada cop que introduim un valor
+quant aquest contador es igual a la dimensio de la matriu pren el valor inicial cero
+en l'exemple a la matriu arr0 s'introdueix el valor 1 en la possicio 0; la resta de valors
+s'introdueixen indexats (columna then)
+a la fila 3 es modifica el contador de la matriu res 0; com que no s'introdueix cap valor, la possicio del primer valor que es carregui ho fara en la possicio 3,
+aquest contador nomes es aplicable al desti duna copia la matriu origen sempre inicia la copia en la possicio cero
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

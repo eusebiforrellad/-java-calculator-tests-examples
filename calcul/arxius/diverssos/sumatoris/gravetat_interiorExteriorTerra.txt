@@ -1,0 +1,102 @@
+
+>>===>  funcio  <===<<
+6,67E-11*(15E3*∑0+∑1+5,6E3*∑2+3,65E3*∑3+2,5E3*∑4)  
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  48  47  
+Paràmetres	1
+símbols:	π
+1 valor:	3.141592653589793
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  38  38  37  
+Variables (símbol)	límit Inferior	límit Superior
+P	0	12,756E6
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  21  21  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mgha4
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0	funció: ∑1	funció: ∑2	funció: ∑3	funció: ∑4
+r^2*sin(φ)*(P+-r*sin(φ)*cos(θ))/(1E4>(P^2+r^2+-2*P*r*sin(φ)*cos(θ))^1,5)	r^2*sin(φ)*(12E3+-2E3*(r+-1,278E6)/2,2E6)*(P+-r*sin(φ)*cos(θ))/(1E4>(P^2+r^2+-2*P*r*sin(φ)*cos(θ))^1,5)	r^2*sin(φ)*(P+-r*sin(φ)*cos(θ))/(1E4>(P^2+r^2+-2*P*r*sin(φ)*cos(θ))^1,5)	r^2*sin(φ)*(P+-r*sin(φ)*cos(θ))/(1E4>(P^2+r^2+-2*P*r*sin(φ)*cos(θ))^1,5)	r^2*sin(φ)*(P+-r*sin(φ)*cos(θ))/(1E4>(P^2+r^2+-2*P*r*sin(φ)*cos(θ))^1,5)
+-------------------------------------------------------------------------
+ampladaColumnes:  49  49  49  49  48  49  48  49  48  49  48  49  48  49  48  
+var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior
+r 18	0	1,278E6	r	1,278E6	3,478E6	r	3,478E6	5,708E6	r	5,708E6	6,328E6	r 3	6,328E6	6,378E6
+φ	0	π	φ	0	π	φ	0	π	φ	0	π	φ 18	0	π
+θ	0	2*π	θ	0	2*π	θ	0	2*π	θ	0	2*π	θ	0	2*π
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	
++	-	*	/	^	(	)	=	<	>	.	
+x	y	z	a	b	c		_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	π
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(						
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	1058	654
+450	1054	596
+502	1050	448
+228	540	444
+63	1050	138
+119	870	130
+432	226	440
+250	304	440
+254	500	444
+101	979	134
+2	496	252
+735	743	126
+0	219
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+estimacions:
+π=rad(180), 2*π=rad(360)
+gravitacio universal = 6,67E-11
+distancia al centre (m*E6)	densitat (kg/dm3)
+0            1,278	15
+1,278    3,478	12-10(funcio linial, estat liquid)
+3,478    5,708	5,6
+5,708    6,328	3,65
+6,328    6,378	2,5
+
+es prenen:
+3 intervals per la variable interna radi 'r' de la capa mes exterior
+18 intevals per la resta es selecciona un nombre parell per les varibles angulars i evitar que l'eix 
+sobre el que es mesura la gravetat  no es superposi a cap punt en que es calcula la masa
+parcial i evitar la situacio: denominador=0; /0=infinit.
+en qualsevol cas tambe s'inclou en el denominador la condicio >1E4 metres
+els intervals de cada segment es fan = segment/nombre de intervals.
+i el valor de la massa s'assigna al centre de la cela que definixen els intervals.
+variable P varia del centre a una distancia igual al diametre de la terra
+el mini es presenta com un punt vermell
+
+la funcio dels sumatoris 0, 2, 3 i 4, es:
+r^2*sin(φ)*(P+-r*sin(φ)*cos(θ))/(1E4>(P^2+r^2+-2*P*r*sin(φ)*cos(Θ))^1,5)
+pel sumatori 1 es considera que la densitat varia linialment amb la profunditat
+r^2*sin(φ)*(11,5E3+-2,5E3*(r+-1,278E6)/2,2E6)*(P+-r*sin(φ)*cos(θ))/(1E4>(P^2+r^2+-2*P*r*sin(φ)*cos(θ))^1,5)
+el minim es troba al centre de la terra ie seu valores es pot considerar cero
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

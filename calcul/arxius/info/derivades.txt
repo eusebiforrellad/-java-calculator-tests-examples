@@ -1,0 +1,151 @@
+
+>>===>  funcio  <===<<
+Δ0+Δ1+Δ2    
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  292  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+Δ0	r:			n					dv(12)
+Δ1	r:			n					
+Δ2	r:			n					
+Δ3	r:			n					
+Δ4	r:			n					
+Δ5	res			n					
+z	z0			n					def
+((cos(z))^2/sin(z)+-sin(z)*ln(sin(z)))*sin(z)^cos(z)	res			n					
+z	z1			n					def
+z0+-z1	dif:			nfi					
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  75  75  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  75  75  75  
+Variables (símbol)	límit Inferior	límit Superior
+x	1	2
+z	0	3.141592653589793
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mb0b1b2b3b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  75  75  75  75  188  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0	x		1	x^4
+Δ1	x		2	x^4
+Δ2	x		3	x^4
+Δ3	x		4	x^4
+Δ4	x		5	x^4
+Δ5	z		1	sin(z)^cos(z)
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+172	1255	926
+581	1251	746
+782	1247	579
+145	457	575
+138	1247	190
+304	1237	153
+563	143	571
+360	304	571
+431	780	575
+2	1247	157
+2	776	429
+2	925	149
+559	238
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info funcions parcials
+la taula de funcions parcials permet calcular funcions que poden despres esser introduides com a variables o constants en les fileres inferiors de la mateixa taula, io  a qualsevol altre taula que admeti funcions, ex(Funcio principal, taulaF, taula Sumatoris)
+les funcions poden contenir parametres fixos de una sola filerade la taulaP , variables generals de la taulaV; variables de la taulaF; 
+la funcio es posa en la columna de l'esquerra i no cal emplenar cap altre columna, la variable solucio de la funcio es trobara a la filera de l'esquerra.
+les funcions parcials que inclouen una funcio parcial previa s'han de situar en una fila inferior
+a taula funcions parcials una opcio es  la estimacio grafica de la derivada de la funcio;
+en aques cas tenir en compte que una funcio parcial derivable (ordre derivada>0) no pot contenir un altre funcio parcial de la que es calcula la derivada, pero si una funcio parcial que no es deriva (en aquest cas es fan copies de les funcions implicades en la funcio desti)
+per calcular derivades fer el seguent
+columna 0: simbol de la funcio derivada (el programa genera el simbol: Δ )
+columna 1; variable general present a la funcio (columna 3) sobre la que es calcula la derivada (si la funcio conte una sola variable general no cal introduir-la el programa la inclou i mostra una advertencia)
+columna 2: 	la funcio es calcula a intervals definits per el valor d'aquesta variable, hi ha dues opcions
+	1._ si la cel.la es buida el programa estima un increment
+	2._ si es un sencer positiu(5<x<58) el increment es aproximadament el interval de la variable dividit per 2^x	
+pel calcul de la primera derivada en un punt x es calcula la funcio en dos punts de la variable lliure, separats un interval centrat en el punt  x, es calcula la diferencia entre funcions i es divideix per l'interval de la variable x.
+per les derivades de major ordre la diferencia es fa entre les derivades d'ordre inferior i es divideix pel mateix interval
+a mesura que augmenta el grau de la derivada i depenent del tipus de funcio probablement disminuira significativament el nombre de digits significatius valids per calcular-la, 
+cada cop que augmenta un grau la derivada cal calcular una nova diferencia de una diferencia anterior si les variacions son petites  el resultat pot esser erroni.
+d'altre banda un increment masse gran no es compatible amb el concepte de derivada.
+
+ATENCIO 
+el calcul grafic de derivades presente moltes limitacions, per exemple: 
+amb les derivades parcials, si la funcio que es deriva conte constants io variables generals que no son la variable respecte a la que es deriva la funcio, aquestes  actuen com constants,  ex: 
+Δ( x^2+y^2)/Δx,  limits de x: 1E-3_1E3; limits de y  1E20 _1E30; si es deriva respecte x si ames el valor de y es molt superior al de x
+la suma pot resultar que es = a y^2 que es comporta com una constant  i la funcio que es deriva =  Δ( y^2)/Δx
+el valor de la derivada parcial en tots el punt sera la relacio de una diferencia  = 0  dividit per un increment
+Tenir en compte que la primera derivada en els limits superiors i inferiors no es calcula i presenta o be el valor NaN (en la presentacio grafica de la funcio principal); o be depenent del tipus de calcul (cerca del minim) el valor del punt mes proper en que tots els valors de les variables es troben dins dels limits superior i inferior.  
+
+
+exemples
+compara els valors calculats amb els obtinguts perl programa
+xariable general: x
+limits de x: 0;  2;
+
+funcio x^4
+/ 	ƒ'(n=1)	ƒ''(n=2)	ƒ'''(n=3)	ƒ''''(n=4)	ƒ'''''(n=5)	
+x^4	4x^3	12x^2	24x	24	0
+x=1;	4	12	24	24	0
+x=1,5	13,5	27	36	24	0
+
+
+per comprobar la precissio escriure a lafuncio general la derivada calculada menys la teorica
+exemples:
+funcio  ordre 1 limits 0_π		derivada-derivada
+sin(x)^cos(x)			((cos(x))^2/sin(x)+-sin(x)*ln(sin(x)))*sin(x)^cos(x)
+fer enter 
+els limits superiors i inferios del grafic a han d'esser propers a cero
+
+altres calculs:
+derivada-derivada	funcio
+Δ0+-12*x^2		x^4		ordre 2	limits 0_1
+Δ0+-2/(1+-(x^2))	ln((1+x)/(1+-x))	ordre 1	limits 0_1
+Δ0+-log(e)*1/(1+-(x^2))	log(((1+x)/(1+-x))^0,5)	ordre 1	limits 0_1
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

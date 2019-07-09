@@ -1,0 +1,141 @@
+
+>>===>  funcio  <===<<
+∑0+-∑1+-∑2    
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  15  15  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  32  32  32  
+Variables (símbol)	límit Inferior	límit Superior
+D	0	22
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  38  38  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mgha4
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0	funció: ∑1	funció: ∑2
+R^2*sin(Φ)*r^2*sin(α)*(D+-R*sin(Φ)*sin(θ)+r*sin(α)*sin(β))/(0,1>abs((D^2+R^2+r^2+2*D*(r*sin(α)*sin(β)+-R*sin(Φ)*sin(θ))+-2*R*r*(sin(Φ)*sin(α)*(cos(θ)*cos(β)+sin(θ)*sin(β))+cos(Φ)*cos(α))))^1,5)	0,05*R^2*sin(Φ)*r^2*sin(α)*(D+-R*sin(Φ)*sin(θ)+r*sin(α)*sin(β))/(0,1>abs((D^2+R^2+r^2+2*D*(r*sin(α)*sin(β)+-R*sin(Φ)*sin(θ))+-2*R*r*(sin(Φ)*sin(α)*(cos(θ)*cos(β)+sin(θ)*sin(β))+cos(Φ)*cos(α))))^1,5)	0,05*R^2*sin(Φ)*r^2*sin(α)*(D+-R*sin(Φ)*sin(θ)+r*sin(α)*sin(β))/(0,1>abs((D^2+R^2+r^2+2*D*(r*sin(α)*sin(β)+-R*sin(Φ)*sin(θ))+-2*R*r*(sin(Φ)*sin(α)*(cos(θ)*cos(β)+sin(θ)*sin(β))+cos(Φ)*cos(α))))^1,5)
+-------------------------------------------------------------------------
+ampladaColumnes:  118  118  118  90  90  90  90  90  90  
+var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior
+R 2	0	2	R 2	9	10	R 2	0	2
+Φ 5	0	3.141592653589793	Φ 5	0	3.141592653589793	Φ 5	0	3.141592653589793
+θ 10	0	6.283185307179586	θ 10	0	6.283185307179586	θ 10	0	6.283185307179586
+r 2	0	2	r 2	0	1	r 2	9	10
+α  5	0	3.141592653589793	α  5	0	3.141592653589793	α  5	0	3.141592653589793
+β 10	0	6.283185307179586	β 10	0	6.283185307179586	β 10	0	6.283185307179586
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	
++	-	*	/	^	(	)	=	<	>	.	
+x	y	z	a	b	c		_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	π
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(						
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	1126	706
+442	1122	648
+411	1118	440
+360	699	436
+82	1118	198
+102	1018	190
+424	358	432
+246	331	432
+257	409	436
+2	1028	194
+2	405	255
+900	908	186
+2000	3625
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info:
+comprobar  sumatori de ordre 6
+
+obrir arxiu adjunt: click a mouse boto dreta  sobre text superior; click a mouse boto esquerra sobre 'obrir arxiu adjunt'
+
+dues esferes de radi 2 i dues capes de gruix 1
+força atractica entre esferes i força repulsiva entre esferes i capes 
+
+R, r: radis del centre de les cel.les (volumns parcials) de V1 i V2;
+Φ, θ, , angles del centre de les cel.les V1;  α , β, angles del centre de les cel.les V2
+si d: distancia entre el centre de dos volums parcials de les esferes (cel.les)
+dx, dy, dz, components x,y,z de d
+
+es compleix:
+d^2=(D-y1+y2)^2+(x1-x2)^2+(z1-z2)^2 =D^2+y2^2+y1^2-2*y1*y2-2D(y1-y2)+x1^2+x2^2-2*x1*x2+z1^2+z2^2-2*z1*z2
+si
+R^2 =x1^2+y1^2+z1^2, 
+r^2=x2^2+y2^2+z2^2;
+substituint:
+d^2=D^2+R^2+r^2+2*D*(y2-y1)-2(x1*x2+y1*y2+z1*z2);
+si 
+y1=R*sin(Φ)*sin(θ), 
+x1=R*sin(Φ)*cos(θ), 
+z1=R*cos(Φ), 
+y2=r*sin(α)*sin(β), 
+x2=r*sin(α)*cos(β), 
+z2=r*cos(α),
+substituint:
+d^2=D^2+R^2+r^2+2*D*(r*sin(α)*sin(β)-R*sin(Φ)*sin(θ))-2*R*r*(sin(Φ)*cos(θ)*sin(α)*cos(β)+sin(Φ)*sin(θ)*sin(α)*sin(β)+cos(Φ)*cos(α))=
+=D^2+R^2+r^2+2D(r*sin(α)*sin(β)-R*sin(Φ)*sin(θ))-2*R*r*(sin(Φ)*sin(α)*(cos(θ)*cos(β)+sin(θ)*sin(β))+cos(Φ)*cos(α))
+d=(D^2+R^2+r^2+2D(r*sin(α)*sin(β)-R*sin(Φ)*sin(θ))-2*R*r*(sin(Φ)*sin(α)*(cos(θ)*cos(β)+sin(θ)*sin(β))+cos(Φ)*cos(α)))0,5
+la component  y de la distancia d: dy=D+-R*sin(Φ)*sin(θ)+r*sin(α )*sin(β)
+el volum de les cel.les:
+v1=R^2*sin(Φ)*ΔΦ*Δθ*ΔR; 
+v2=r^2*sin(α) *Δα *Δβ*Δr;  on el simbol: Δ, representa increment 
+el producte de les dues masses de densitat 1, sera =R^2*r^2*sinA*sina*ΔΦ*Δθ*ΔR*Δα *Δβ*Δr
+en la direcció y, la component y de la força serà: Fy=F*dy/d=v1*v2*dy/d^3
+
+Fy=R^2*sin(Φ)*r^2*sin(α)*ΔΦ*Δθ*ΔR*Δα*Δβ*Δr*dy/d^3
+
+la força entre les dues esferes o dues capes esferiques serà:
+Fy=ΣR^2*sin(Φ)*r^2*sin(α)*(D-R*sin(Φ)*sin(θ)+r*sin(α)*sin(β))/abs((D^2+R^2+r^2+2*D*(r*sin(α)*sin(β)-R*sin(Φ)*sin(θ))-2*R*r*(sin(Φ)*sin(α)*(cos(θ)*cos(β)+sin(θ)*sin(β))+cos(Φ)*cos(α))))^1,5*ΔΦ*Δθ*ΔR*Δα*Δβ*Δr;
+
+límits dels sumatoris:
+R i r (0,radi de la esfera)
+Φ i α ( 0,180 graus) o (rad(0), rad(180)) o (0, π)
+β (0, 360 graus) o (rad(0), rad(360)) o (0, 2*π)
+
+per una capa de la esfera:
+R i r (radi inferior,radi superior)
+Φ i α ( 0,180 graus) o (rad(0), rad(180)) o (0, π);
+θ i β (0, 360 graus) o (rad(0), rad(360)) o (0, 2*π)
+
+es tracta de un sumatori d'ordre 6 (un nombre important de calculs) per tant es selecionen intervals grans
+3 intervals pels radis R i r, 4 pels angles A de 180 graus i 8 pels angles B i b de 360 graus
+
+per evitar que el denominador de la funcio sumatori (distancie entre punts)  sigui cero o molt petit
+s'introdueix l'operador  0,1>denominador (com a minim sera 0,1);
+resultat:
+Fy=ΣR^2*sin(Φ)*r^2*sin(α)*(D-R*sin(Φ)*sin(θ)+r*sin(α)*sin(β))/(0,1>abs((D^2+R^2+r^2+2*D*(r*sin(α)*sin(β)-R*sin(Φ)*sin(θ))-2*R*r*(sin(Φ)*sin(α)*(cos(θ)*cos(β)+sin(θ)*sin(β))+cos(Φ)*cos(α))))^1,5)*ΔΦ*Δθ*ΔR*Δα*Δβ*Δr;
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

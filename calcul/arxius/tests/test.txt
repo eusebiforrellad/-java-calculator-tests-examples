@@ -1,0 +1,126 @@
+
+>>===>  funcio  <===<<
+rand(-1)                               
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  150  115  172  224  82  97  78  95  67  67  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+0	i								
+rand(1)	posx								arr[10]
+rand(1)	posy								arr[10]
+rand(1)	posz								arr[10]
+(rand(1)+-0,5)/1000	velx								arr[10]
+(rand(1)+-0,5)/1000	vely								arr[10]
+(rand(1)+-0,5)/1000	velz								arr[10]
+i+1	i	i<10	1						
+-1	i								
+i+1	i								
+posx[i]-posx[j]	dx								arr[362880]
+posy[i]-posy[j]	dy								arr[362880]
+posz[i]-posz[j]	dz								arr[362880]
+(dx^2+dy^2+dz^2)^,5	d								arr[362880]
+j+1	j	j<10	10						
+		i<10	9						
+				nfi					
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  93  93  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  100  100  100  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mvgha2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  187  187  187  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	«
++	-	*	/	^	(	)	=	<	>	.	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+445	1155	974
+417	1151	521
+694	1147	415
+463	619	349
+54	939	125
+306	947	92
+615	389	345
+394	220	345
+242	692	411
+192	1147	96
+232	688	240
+567	633	88
+250	180
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info: funcio 'rand(double)'
+quat es troba en la funcio de la columna 1; genera un primer valor (double) compres entre 0 i 1; en funcio del valor de la llevor (sencer)
+a continuacio guarda la funcio random en una matriu
+En el calcul posterior cada cop que es troba la funcio rand(double) recupera de la matriu de randoms  el random corresponet al sencer i assigna a la funcio un nou valor compres entre 0 i 1.
+
+veure:
+ Calc>splitPan> public static boolean random(ArrayList<Double[]> arrdVO)
+Calc>splitPan>private static Double calculFun(String s,Double d)
+Calc>Cal>public static double caseOpFun(int i,double d1,double d2){
+
+la funcio tambe es pot utilitzar a la columna 8 'color' per definir un color aleatori als elements d'un array de valors
+en el cas particular que el sencer del random  '(int)(double)'; sigui(>0&&<10) els colors tenen una tendencia als colors primaris(>=1&&<=6) o intensitat(7 - 9)
+ per modificar els colors dels arrays veure el procediment:
+Calc>taulaF>static Color[] rand(double d,int fil){
+
+
+
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

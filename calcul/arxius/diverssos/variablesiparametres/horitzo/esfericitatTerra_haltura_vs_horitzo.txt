@@ -1,0 +1,103 @@
+
+>>===>  funcio  <===<<
+1000*(Δ0+-r+(r^2+-(Δ0^2))/Δ0) 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  93  94  93  
+Paràmetres	1	2
+símbols:	π	r
+1 valor:	3.141592653589793	6371
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  90  90  89  
+Variables (símbol)	límit Inferior	límit Superior
+a	0	250
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  123  61  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mcgha3
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  82  44  46  71  166  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				r*cos(rad(a*180/(π*r)))
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	
++	-	*	/	^	(	)	=	<	>	.	
+x	y	z	a	b	c		_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	 
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(		m		i		 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	1221	629
+442	1217	571
+660	1213	440
+233	545	436
+205	1213	121
+275	706	113
+424	231	432
+246	304	432
+271	658	436
+286	1000	117
+2	654	269
+2	423	109
+300	208
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+obrir arxiu adjunt
+a quina altura minima ens hem de trobar per visualitzar en una superficie sense desnivells una distancia maxima 'a'
+la distancia no es considera linial sino la longitud del arc compres entre origen i desti de la observacio
+o be una observacio a nivell de mar calcular per un arc de la circunferncia variable =   a en km , la altura = h en metres per sobre la qual hi ha una visual
+la altura en definitiva es la altura del observador mes la del objecte que es mira
+
+
+cOlOr: n
+radi mitja de la terra: 6371
+definim a com el arc que hi ha entre l'observador i el punt sobre la superficie de la terra que es pot observar
+
+quant hi ha un conjunt de operacions que es repeteix es pot utilitzar la taula de funcions parcials fent ordre de derivades=0 
+introduir la funcio
+r*cos(rad(a*180/(π*r))) a taula funcions parcials
+ordre de derivades=0 
+a la funcio principal introduir:
+1000*(Δ0+-r+(r^2+-(Δ0^2))/Δ0)
+introduir els paramtres fixos: π i r=radi terra;
+introduir els limits de la variable ex:  0  _  250 km
+al fer enter tenim 
+representacio grafica de la haltura minima 'h' en metres  per visualitzar una distancia minima 'a' en kilometres
+
+aixi  a la platja a 4,8 metres d'altura podem observar un objecte sense haltura situat a 7,8 km
+o la part superior d'un baixell de mes de 23 m(19.16+4,79)  metres d'haltura situat aproximadament a 15 km
+o desd'una altura de 1,5  km   la part superior d'una illa amb una altura de mes de 140  metres d'haltura  situada a 140 km 
+a una hatura aproximada de 4,9  km tenim 250 km se superficie visible
+
+
+cOlOr: b
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

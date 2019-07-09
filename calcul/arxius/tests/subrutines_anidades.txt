@@ -1,0 +1,173 @@
+
+>>===>  funcio  <===<<
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  75  273  15  240  75  15  15  15  15  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+2	CALL2		14(1 2 3)(un dos tres)(a b c)31	n					
+0	sub0			;					
+-i	menysset			;					
+-j	menysvuit			;					
+-k	menysnou		(menysset menysvuit menysnou)	n					
+1	sub1			;					
+x+3	set			;					
+y+3	vuit			;					
+z+3	nou			n					
+0	call0_anidat		1(set vuit nou)(i j k)(l m n)	n					
+-l/10	ceroset			;					
+-m/10	cerovuit			;					
+-n/10	ceronou			n					
+1	returnsubrutina1_anidada		(ceroset cerovuit ceronou)	n					
+2	sub2			;					
+un+3	quatre			;					
+dos+3	cinc			;					
+tres+tres	sis			n					
+1	call1_anidat		5(quatre cinc sis)(x y z)(d e f)	n					
+d*100	setanta			;					
+e*100	vuitanta			;					
+f*100	noranta			n					
+1	call3		27(setanta vuitanta noranta)(o p q)(r s t)	n					
+r+1	un			;					
+s+2	dos			;					
+t+3	tres			n					
+2	returnsubrutina2		(setanta vuitanta noranta)	n					
+0	sub3			;					
+-o+o	cero			;					
+-p+p	cero			;					
+-q+q	cero		(cero cero cero)	n					
+a/2	treintacinc			;					
+b/2	quaranta			;					
+c/2	quarantacinc			n					
+0	fi			fi					
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  75  75  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  15  15  15  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mghb0b1b2b3b4b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  66  66  65  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+346	761	956
+594	757	602
+745	753	592
+13	0	501
+157	618	214
+226	606	137
+171	0	0
+547	0	0
+425	743	588
+139	753	0
+2	739	423
+203	372	133
+0	219
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info test de subrutines anidades: en l'exemple hi ha calls dins de una subrutines 
+ATENCIO  utilitzar  un sol retorn per subrutina
+el format del call a una subrutina te dos formats:
+format a:
+call:
+1.- un nombre que indica la filera on s'inicia la subrutina
+2.- entre parentesi els valors  que es traslladen a la subrutina
+3.- entre parentesi les  variables de la subrutina que reben els valor del punt 2.-
+4.- entre parentesi les cadenes de les variables que reben els valors que retorna la subrutina punt 3.-
+5.- si no es tracta de la filera seguent  al call, un nombre de filera on salta el procediment despres del retorn de la subrutina
+
+subrutina:
+en la filera de inici no cal cap informacio a la columna then
+a la darrera filera de la subrutina introduir a la columna then entre parentesi les cadenes que contenent els valors que es retornen
+
+format b:
+call: (manca el punt 3 anterior)
+1.- un nombre que indica la filera on s'inicia la subrutina
+2.- entre parentesi els valors  que es traslladen a la subrutina
+4.- entre parentesi les cadenes de les variables del call que reben els valors que retorna la subrutina
+5.- si no es tracta de la filera seguent  al call, un nomre de filera on salta el procediment despres del retorn de la subrutina
+
+subrutina:
+en la filera de inici columna then entre parentesi les variables que reben els valors del call
+a la darrera filera de la subrutina introduir a la columna then: entre parentesi les cadenes que contenent els valors que es retornen
+
+en l'exemple hi ha subsutines anidades i dos calls dins una subrutina
+nomes hi pot haver un sol return per subrutina
+les fileres que contenent el simbol de 'sub 0 1 2 3'  no son necessaries pero permeten fer el seguiment dels calculs
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

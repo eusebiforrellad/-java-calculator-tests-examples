@@ -1,0 +1,232 @@
+
+>>===>  funcio  <===<<
+((x1^3+-x0^3)/3)*(y1+-y0)*(z1+-z0)*(r1+-r0)*(s1+-s0)*(t1+-t0)+((y1^3+-y0^3)/3)*(x1+-x0)*(z1+-z0)*(r1+-r0)*(s1+-s0)*(t1+-t0)+((z1^3+-z0^3)/3)*(x1+-x0)*(y1+-y0)*(r1+-r0)*(s1+-s0)*(t1+-t0)+((r1^3+-r0^3)/3)*(y1+-y0)*(z1+-z0)*(x1+-x0)*(s1+-s0)*(t1+-t0)+((s1^3+-s0^3)/3)*(x1+-x0)*(z1+-z0)*(r1+-r0)*(y1+-y0)*(t1+-t0)+((t1^3+-t0^3)/3)*(x1+-x0)*(y1+-y0)*(r1+-r0)*(s1+-s0)*(z1+-z0) 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  51  51  51  52  51  52  51  52  51  52  51  52  51  
+Paràmetres	1	2	3	4	5	6	7	8	9	10	11	12
+símbols:	x0	x1	y0	y1	z0	z1	r0	r1	s0	s1	t0	t1
+1 valor:	-1	1	-2	2	1	2	1	3	1	4	1	5
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  101  102  102  
+Variables (símbol)	límit Inferior	límit Superior
+var	0	8
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  35  35  
+Descripció	paràmetre
+precissió round:	3
+cero(log):	mwgha1
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0	funció: ∑1
+x^2+y^2+z^2+r^2+s^2+t^2	x^2+y^2+z^2
+-------------------------------------------------------------------------
+ampladaColumnes:  69  68  69  68  69  68  
+var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior
+x 10	x0	x1	x 50	0	1
+y	y0	y1	y	-1	1
+z	z0	z1	z	0	5
+r	r0	r1			
+s	s0	s1			
+t	1	t1			
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	E
++	-	*	/	^	(	)	=	<	>	.	 
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	1518	897
+599	1514	839
+905	1510	597
+285	597	593
+76	1510	232
+311	744	224
+581	283	589
+324	304	589
+412	903	593
+674	1426	228
+2	899	410
+417	425	220
+250	219
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info a taulaI hi ha els sumatoris  de les funcions i a continuacio les integrals
+comprobar la precissio (els intervals son reduits en el cas del sumatori d'ordre 6)
+
+integrals de x^2+y^2+z^2;  i  x^2+y^2+z^2+r^2+s^2+t^2 ;
+
+((x1^3+-x0^3)/3)*(y1+-y0)*(z1+-z0)+((y1^3+-y0^3)/3)*(x1+-x0)*(z1+-z0)+((z1^3+-z0^3)/3)*(x1+-x0)*(y1+-y0)
+
+((x1^3+-x0^3)/3)*(y1+-y0)*(z1+-z0)*(r1+-r0)*(s1+-s0)*(t1+-t0)+((y1^3+-y0^3)/3)*(x1+-x0)*(z1+-z0)*(r1+-r0)*(s1+-s0)*(t1+-t0)+((z1^3+-z0^3)/3)*(x1+-x0)*(y1+-y0)*(r1+-r0)*(s1+-s0)*(t1+-t0)+((r1^3+-r0^3)/3)*(y1+-y0)*(z1+-z0)*(x1+-x0)*(s1+-s0)*(t1+-t0)+((s1^3+-s0^3)/3)*(x1+-x0)*(z1+-z0)*(r1+-r0)*(y1+-y0)*(t1+-t0)+((t1^3+-t0^3)/3)*(x1+-x0)*(y1+-y0)*(r1+-r0)*(s1+-s0)*(z1+-z0)
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco1  <===<<
+
+punt: 1, de (17)
+funció: 5439.016845703136;   (min.graf.: 5439.016845703136; min.abs.: 1.7976931348623157E308)
+variables:  var: 0.3125, 
+
+punt: 4, de (17)
+funció: 4721.54062499942;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 1.25, 
+
+punt: 5, de (17)
+funció: 4462.665087890574;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 1.5625, 
+
+punt: 6, de (17)
+funció: 4189.06054687479;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 1.875, 
+
+punt: 7, de (17)
+funció: 3897.8046386718215;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 2.1875, 
+
+punt: 2, de (17)
+funció: 5206.79414062496;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 0.625, 
+
+punt: 3, de (17)
+funció: 4968.609521484446;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 0.9375, 
+
+punt: 1, de (17)
+funció: 5439.016845703136;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 0.0, 
+
+punt: 2, de (17)
+funció: 5206.79414062496;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 0.0, 
+
+punt: 3, de (17)
+funció: 4968.609521484446;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 0.0, 
+
+punt: 4, de (17)
+funció: 4721.54062499942;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 0.0, 
+
+punt: 6, de (17)
+funció: 4189.06054687479;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 0.0, 
+
+punt: 13, de (17)
+funció: 1615.9381347655974;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 1.5625, 
+
+punt: 11, de (17)
+funció: 2497.820068359264;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 0.9375, 
+
+punt: 9, de (17)
+funció: 3250.6492675780596;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 0.3125, 
+
+punt: 16, de (17)
+funció: 0.0;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 2.5, 
+
+punt: 15, de (17)
+funció: 581.6245605468966;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 2.1875, 
+
+punt: 15, de (17)
+funció: 581.6245605468966;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 2.1875, 
+
+punt: 16, de (17)
+funció: 0.0;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 2.5, 
+
+punt: 2, de (17)
+funció: 5206.79414062496;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 0.0, 
+
+punt: 12, de (17)
+funció: 2074.471875000179;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 1.25, 
+
+punt: 16, de (17)
+funció: 0.0;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 2.5, 
+
+punt: 1, de (17)
+funció: 5407.532226562507;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 0.3125, 
+
+punt: 16, de (17)
+funció: 0.0;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 5.0, 
+
+punt: 3, de (17)
+funció: 4943.988867187469;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 0.9375, 
+
+punt: 0, de (9)
+funció: 5632.800000000025;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 0.0, 
+
+punt: 1, de (9)
+funció: 4896.000000000014;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 1.0, 
+
+punt: 2, de (9)
+funció: 4059.3600000000165;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 2.0, 
+
+punt: 3, de (9)
+funció: 3027.8400000000197;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 3.0, 
+
+punt: 4, de (9)
+funció: 1706.3999999999976;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 4.0, 
+
+punt: 5, de (9)
+funció: 0.0;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 5.0, 
+
+punt: 8, de (9)
+funció: 8379.360000000017;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 8.0, 
+
+punt: 6, de (9)
+funció: 2186.3999999999955;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 6.0, 
+
+punt: 2, de (9)
+funció: 4059.3600000000165;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 2.0, 
+
+punt: 2, de (9)
+funció: 4059.3600000000165;   (min.graf.: 0.0; min.abs.: 0.0)
+variables:  var: 2.0, 
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

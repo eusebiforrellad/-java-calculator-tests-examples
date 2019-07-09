@@ -1,0 +1,95 @@
+
+>>===>  funcio  <===<<
+gra(asin((r+Δ0+-(r^2)/(r+Δ0))/((r+Δ0)^2+-(r^2))^0,5))   
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  106  107  106  
+Paràmetres	1	2
+símbols:	α	r
+1 valor:	25	6371
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  100  100  100  
+Variables (símbol)	límit Inferior	límit Superior
+h	0	2000
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  56  43  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mgha5
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  58  30  39  32  100  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0	h		0	h/1000
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	
++	-	*	/	^	(	)	=	<	>	.	
+x	y	z	a	b	c		_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(		m		i		 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	1056	533
+367	1052	475
+473	1048	365
+218	567	361
+120	1048	100
+306	587	92
+349	216	357
+208	341	357
+200	471	361
+325	920	96
+2	467	198
+2	273	88
+0	201
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+
+cOlOr: n
+obrir arxiu adjunt
+esfericitat de la terra
+representacio grafica de l'angle, que forma la horizontal respecte la linia que separa cel i  mar (horitzo), respecte l'altura sobre el nivell del mar, en que es fa la observacio.
+radi de la terra en km r
+haltura sobre el nivell del mar en metres h
+es pren la funcio parcial Δ0=h/1000 que es la haltura en km
+h es fa variable i es seleccionen el limits 0 - 2000 m
+
+x2=x0-r^2/x0=r+h-(r^2)/(r+h)
+d=((r+h)^2-(r^2))^0,5
+β=gra(acos(x2/d))=gra(asin((r+h-(r^2)/(r+h))/((r+h)^2-(r^2))^0,5))
+
+amb un nivell  a la altura de la esclesia del tibidabo 518 m l'angle seria aproximadament de 0,73 graus amb un nivell podria observarse l'angle
+
+
+
+cOlOr: b
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

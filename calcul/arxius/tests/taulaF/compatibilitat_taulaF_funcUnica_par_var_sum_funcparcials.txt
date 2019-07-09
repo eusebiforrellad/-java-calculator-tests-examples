@@ -1,0 +1,110 @@
+
+>>===>  funcio  <===<<
+(R+-P*∑0+-Z*z+-Δ0)^2   
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+(R+-P*p+-Z*z+-x)^2	min			n					
+(R+-P*p+-Z*z+-Δ0)^2	min			n					
+(R+-P*∑0+-Z*z+-Δ0)^2	min1			nfi					
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  63  62  63  63  
+Paràmetres	1	2	3
+símbols:	R	P	Z
+1 valor:	71	388	2414
+2	53	258	10693
+3	55	292	11682
+4	48	205	12560
+5	69	449	2464
+6	84	331	2607
+7	21	114	16205
+8	68	580	2005
+9	68	622	1825
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  63  64  63  
+Variables (símbol)	límit Inferior	límit Superior
+x	-1E1000	1E10
+p	-1E10	1E10
+z	-1E10	1E10
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  103  102  
+Descripció	paràmetre
+precissió round:	12
+cero(log):	mlha5
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	R
+regressió ord.exp.:	R
+regressió ord.calc.:	P*p+Z*z+Δ0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+p
+-------------------------------------------------------------------------
+ampladaColumnes:  54  54  53  
+var.  interv.	límit Inferior	límit Superior
+q 1	0	1
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  40  40  40  41  40  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				x
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	
++	-	*	/	^	(	)	=	<	>	.	
+x	y	z	a	b	c		_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	 
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(		m		i		 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+87	1106	737
+499	1102	642
+368	1098	497
+371	722	493
+226	1098	135
+196	584	127
+190	369	489
+282	343	489
+316	366	493
+272	864	131
+0	362	314
+167	380	123
+187	291
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+resultat sense funcio parcial:
+mínim: funció: 4,00701498585E2
+(round) variables:
+x: 1,01088386783E2;   p: -4,03421046271E-2;   z: -3,87682980528E-3; 
+
+resultat amb funcio parcial: 
+mínim: funció: 4,00701498585E2
+(round) variables:
+x: 1,01088386783E2;   p: -4,03421046271E-2;   z: -3,87682980528E-3;   
+
+els resultats per una precisio de digits valits=12 es la mateixa que prescindint de la funcio parcial Δ0=x
+
+veure els calculs mitjançant taula de funciona (taulaF)
+
+
+
+
+cOlOr: n
+
+  
+
+cOlOr: b
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

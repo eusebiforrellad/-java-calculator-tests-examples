@@ -1,0 +1,230 @@
+
+>>===>  funcio  <===<<
+rand(-1)                                                                                  
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  278  111  129  311  96  56  88  79  72  126  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+0	i		(0,05 30 2 -2)(t dmin vmax vmin)						
+rand(1)*100	posx					60 20	x	rand(0)	mat[idx=6]
+rand(1)*100	posy					60 20	y		arr[idx]
+rand(1)*100	posz					60 20	z		arr[idx]
+(rand(1)+-0,5)/1E5	velx								arr[idx]
+(rand(1)+-0,5)/1E5	vely								arr[idx]
+(rand(1)+-0,5)/1E5	velz								arr[idx]
+rand(1)*0,1+0,5	GxM								arr[idx]
+i+1	i	i<idx	1						
+t*idx	t								
+	posx			n					
+	posy			n					
+	posz			n					
+	velx			n					
+	vely			n					
+	velz			n					
+	GxM			n					
+posx	px								arr[idx]
+posy	py								arr[idx]
+posz	pz								arr[idx]
+0	i		(0)(cont)						
+0	j								
+		i=j	32						
+posx[j]+-posx[i]	dx								mat[idx0=30]
+posy[j]+-posy[i]	dy								arr[idx0]
+posz[j]+-posz[i]	dz								arr[idx0]
+(dx[cont]^2+dy[cont]^2+dz[cont]^2)^0,5	d								arr[idx0]
+		d[cont]<dmin	31						
+posx[i]+GxM[j]*dx[cont]*t^2/(2*d[cont]^3)	posx[i]								
+posy[i]+GxM[j]*dy[cont]*t^2/(2*d[cont]^3)	posy[i]								
+posz[i]+GxM[j]*dz[cont]*t^2/(2*d[cont]^3)	posz[i]								
+cont+1	cont								
+j+1	j	j<idx	22						
+posx[i]+velx[i]*t	posx[i]								
+posy[i]+vely[i]*t	posy[i]								
+posz[i]+velz[i]*t	posz[i]								
+i+1	i	i<idx	21						
+0	i								
+(posx+-px)/t	velx								
+(posy+-py)/t	vely								
+(posz+-pz)/t	velz								
+		velx[i]>vmax	(vmax)(velx[i])43						
+		velx[i]<vmin	(vmin)(velx[i])44						
+		vely[i]>vmax	(vmax)(vely[i])45						
+		vely[i]<vmin	(vmin)(vely[i])46						
+		velz[i]>vmax	(vmax)(velz[i])47						
+		velx[i]<vmin	(vmin)(velz[i])	graf					
+i+1	i	i<idx	41						
+			17						
+				nfi					
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  15  15  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  15  15  15  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mb0b1b2b3b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	«
++	-	*	/	^	(	)	=	<	>	.	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+318	1369	847
+513	1365	521
+1007	1361	511
+463	616	385
+54	1275	100
+306	0	0
+615	302	381
+394	304	381
+340	1005	507
+1119	1361	0
+2	1001	338
+461	0	0
+0	219
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+execucio per seleccionar el nombre de punts modificar les variables  idx i idx0 a columna 9
+idx i idx0 estan relacionades udx:indica el nombre de particules i idx0 el nombre de interaccions entre particules
+introduir els valors a columna 9
+exemples: 		
+		idx=3; idx0=3*2=6;
+		idx=6; idx0=36*5=30;
+	           	idx=12; idx0=112*11=132
+
+info: funcio 'rand(double)'
+quat es troba en la funcio de la columna 1; genera un primer valor (double) compres entre 0 i 1; en funcio del valor de la llevor (long)
+a continuacio guarda la funcio random en una matriu
+En el calcul posterior cada cop que es troba la funcio rand(double) recupera de la matriu de randoms  el random corresponet al sencer i assigna a la funcio un nou valor compres entre 0 i 1.
+
+veure:
+Calc>splitPan> public static boolean random(ArrayList<Double[]> arrdVO)
+Calc>splitPan>private static Double calculFun(String s,Double d)
+Calc>Cal>public static double caseOpFun(int i,double d1,double d2){
+
+la funcio tambe es pot utilitzar a la columna 8 'color' per definir un color aleatori als elements d'un array de valors
+en el cas particular que el sencer del random  '(int)(double)'; sigui(>0&&<10) els colors tenen una tendencia als colors primaris(>=1&&<=6) o a la intensitat(7 - 9)
+per modificar els colors dels arrays veure el procediment:
+Calc>taulaF>static Color[] rand(double d,int fil){
+
+info: 'arr' io 'mat' io 'arr[sencer]' o 'mat[sencer]' a columna Condicions:
+per definir la dimensio de la matriu hi ha les opcions seguents:
+1.- un valor numeric (2 3 etc;) ex: mat[3]
+2._ el sencer pot esser un simbol de capçalera de la taula Parametres amb un sol valor numeric, ex: arr[dimensio] on dimensio s'ha definit com a parametre fix de una fila i valor numeric
+3._ un simbol (en l'exemple 'idx0 o 'idx1' seguit del simbol '=' i seguit de un sencer) el simbol aixi definit te un comportament similar al de un parametre de capçalera numeric de una fila en aquest cas el simbol de la variable pren el valor del sencer; 
+4.- la cadena 'arr'  io 'mat' es pot utilitzar sense cap altre informacio; en aquest cas la dimensio de la matriu be definida
+pel contingut de la funció (si contè qualsevol tipus de matriu com matrius ja definides en un altre fila, parámetres de capçalera  amb diversos valors numerics etc.).;
+veure Calc>taulaF>columnaDreta() i Calc>taulaP>hihaidxArr()
+
+descripcio de files de la taulaF:
+fila 0 : 
+valors inicial de temps (t);
+distanci minima (dmin) a partir de la qual dues particules no s'atrauen (aixo evita velocitats  que allunyen masa les particules)
+velocitat minima i maxima, (vmax vmin) limiten les velocitats de les particulescom en el cas anterior
+a partir de la qual la velocitat no augmenta i la distancia minima a partir de la qual la força atractiva entre dues particules  s'ignora
+aixo permet evitar velocitats excessive i la possibilitat enel calcul de dividir per cero,
+files 1-7
+valors inicials de les possicions dels punts ( matrius: posx posy posz)
+valors inicials de velocitats (matrius: velx vely velz)
+valors inicial de les mases*gravitacio universal (MxG)
+fila 8:
+els  valors es van guardan en les matrius mitjançant el bucle determinat per el simbol i i la condicio i<idx
+files 10 16 presenten els resultats dels valors inicials ; (simbol 'n' a columna then pres.)
+files 17-19 copia les matrius de possicions
+files 20-37 els bucles calculen les noves possicions de les particules despres d'un temps t, sota l'efecte de la atraccio de la resta de particules i de la velocitat al inici de l'interval
+les files 23-26 calculen les distancies entre particules; per un conjunt de 6 particules caldra considerar (5+4+3+2+1)*2 distancies
+fila27  es considera que per una distancia inferior a dmin, no hi ha atraccio
+files 28-30 s'ha considerat que la forza atractiva a que esta sotmesa una particua m1 per la presencia una segona particula m2 prescindint de la constand de gravitacio es:
+m1*dv/dt=m1*m2/d^2dt; si es considera la distancia d =constant per un increment petit de dt aleshores 
+dv=m2/d^2*dt;	Δv=m2d^2*Δt; 	de=m2/d^2*Δt*dt; 	Δe=(m2/d^2)*(Δt^2)/2
+l'espai recorregut en un interval de temps 'Δt'  per la coordenada x = dx/d*(m2/d^2)*(t^2)/2 (el mateix per les coordenades y i z)
+files 33-35: es sumen distancies recorregudes degut a  les velocitats al nici de l'interval.
+files 38-40 es calculen les velocitats al final del'interval
+files 42-46 es limiten les velocitats a uns valors maxims
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

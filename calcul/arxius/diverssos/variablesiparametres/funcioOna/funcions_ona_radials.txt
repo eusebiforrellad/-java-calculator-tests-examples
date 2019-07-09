@@ -1,0 +1,110 @@
+
+>>===>  funcio  <===<<
+((4*Z^3*!(n+-l+-1)/(n^4*a^3*(!(n+l))^3))^0,5*(2*Z*r/(n*a))^l*∑0*e^-(Z*r/(n*a)))^2*4*π*r^2  
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  47  47  47  47  47  46  39  
+Paràmetres	1	2	3	4	5	6
+símbols:	Z	n	l	a	e	π
+1 valor:	1	4	0	0,529	2,7182818284	3,14159265358979323846
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  54  54  53  
+Variables (símbol)	límit Inferior	límit Superior
+r	0	25
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  46  46  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	gha7
+param. graf.:	log(∧)
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+(2*Z*r/(n*a))^k*-1^k*!(n+l)/(!(n+-l+-1+-k)*!(k+2*l+1)*!(k))
+-------------------------------------------------------------------------
+ampladaColumnes:  167  167  166  
+var.  interv.	límit Inferior	límit Superior
+k n+-l	-0,5	n+-l+-0,5
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	
++	-	*	/	^	(	)	=	<	>	.	
+x	y	z	a	b	c		_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(		m		i		 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	1152	659
+486	1148	601
+574	1144	484
+250	562	480
+113	1144	107
+167	689	99
+468	248	476
+268	304	476
+385	572	480
+326	1023	103
+2	568	383
+1000	514	95
+3753	430
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+limits inferior i superior, admet funcions : aquestes  funcions poden incloure:
+1._variable internes (les definides a var. interv., cel.la esquerra de sumatori) i han de estar definides en les fileres superiors per tant la primera filera de limits no pot contenir aquestes variables
+2._variables generals que son les definides a la taula variables
+3._ parametres de capçalera  de la taula parametres (nomes seran substituits per  de la primera filera de valors)
+
+var. interval
+si hi ha una funcio cal que la cel.la contingui el simbol de la variable un espai i la funcio del interval
+la funcio nomes pot contenir parametres de capçalera i aquest nomes poden pendre el valor de la primera filera de valors numerics
+
+la funcio principal del sumatori pot conenir tot tipus de variables i el mateix tipus de parametres que en els casos anteriors
+
+exemple
+funcio d'ona radial
+e 	 euler
+a   	 bohr 0,529 ams.
+Z   	 nombre atomic
+n    	nombre quantic primer nivell
+l      	nombre quantic  subnivell
+r 	radi
+∑0	polinomi laguerre
+
+per determinar la probabilitat relativa de la presencia del electrons en funcio nomes  del radi, cal mutiplir el cuadrat de la funcio de Shrodinger  radial per 4*π*r^2
+copiar i ajuntar el seguent al text superior:
+
+((4*Z^3*!(n+-l+-1)/(n^4*a^3*(!(n+l))^3))^0,5*(2*Z*r/(n*a))^l*∑0*e^-(Z*r/(n*a)))^2
+*4*π*r^2
+
+la part radial:  Ψ=(4*Z^3*!(n+-l+-1)/(n^4*a^3*(!(n+l))^3))^0,5*(2*Z*r/(n*a))^l*∑0*e_^-(Z*r/(n*a))
+conte els polinomis de laguerre resumits en la funcio sumatori ∑0
+a var. interv. hi ha definit el parametre n (nombre quantic principal) que es un sencer
+com que el sumatori multiplica un interval pel valor de la funcio en el punt mitg del interval
+cal definir uns limits de manera que l'interval sigui 1 i k prengui els valors sencers: 0, 1, 2 ,3 fins n-l-1
+per tant prenem els limits -0,5>< n-l-0,5_
+escala Lineal
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

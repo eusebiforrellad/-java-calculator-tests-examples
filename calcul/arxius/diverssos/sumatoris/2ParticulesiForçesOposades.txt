@@ -1,0 +1,131 @@
+
+>>===>  funcio  <===<<
+-6,67E-11*5,52E3*3,34E3*(∑0+-∑1) 
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  47  47  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  49  50  49  
+Variables (símbol)	límit Inferior	límit Superior
+P	2	10
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  41  41  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	gha2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0	funció: ∑1
+r^2*sin(a)*r_^2*sin(a_)*(P+-r*sin(a)*cos(b)+r_*sin(a_)*cos(b_))/(0,2>abs((P^2+r^2+r_^2+2*P*(r_*sin(a_)*cos(b_)+-r*sin(a)*cos(b))+-2*r*r_*(sin(a)*sin(a_)*(cos(b)*cos(b_)+sin(b)*sin(b_))+cos(a)*cos(a_))))^1,5)	r^2*sin(a)*r_^2*sin(a_)*(P+-r*sin(a)*cos(b)+r_*sin(a_)*cos(b_))/(0,2>abs((P^2+r^2+r_^2+2*P*(r_*sin(a_)*cos(b_)+-r*sin(a)*cos(b))+-2*r*r_*(sin(a)*sin(a_)*(cos(b)*cos(b_)+sin(b)*sin(b_))+cos(a)*cos(a_))))^1,5)
+-------------------------------------------------------------------------
+ampladaColumnes:  111  111  112  111  112  111  
+var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior
+r 2	0	1	r 1	4	5
+a 6	0	3.141592653589793	a 6	0	3.141592653589793
+b 12	0	6.283185307179586	b 12	0	6.283185307179586
+r_ 2	0	1	r_ 1	4	5
+a_ 6	0	3.141592653589793	a_ 6	0	3.141592653589793
+b_ 12	0	6.283185307179586	b_ 12	0	6.283185307179586
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	
++	-	*	/	^	(	)	=	<	>	.	
+x	y	z	a	b	c		_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	π
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(						
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+50	1056	562
+305	1052	504
+270	1048	303
+317	770	299
+88	1048	191
+154	844	183
+287	315	295
+287	445	295
+204	268	299
+100	952	187
+2	264	202
+676	682	179
+0	159
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info:
+dues esferes de radi 1
+densitat  = 1
+M1 i  M2 = masa de les esferas de volum V1 i V2
+D: distancia entre el centre de les esferes en la direccio del eix y
+la força de atracció F = (M1*M2)/d^2=V1*V2/d^2=((4/3*pi)^2/d2
+per D=10;	 F=(4/3*rad(180))^2/100 = 0.17545963379714410,175459633
+per D=2; 	F=(4/3*rad(180))^2/4 = 4.386490844928603
+
+sumatori:
+D: distancia entre els centres de les esferes
+R, r: radis de V1 i V2;
+A, B, , angles de V1;  a, b, angles de V2
+si d: distancia entre el centre de dos volums parcials de les esferes (cel.les)
+dx, dy, dz, components x,y,z de d
+
+es compleix:
+d2=dx^2+dy^2+dz^2=abs((D^2+R^2+r^2+2*D*(r*sin(a)*sin(b)+-R*sin(A)*sin(B))+-2*R*r*(sin(A)*sin(a)*(cos(B)*cos(b)+sin(B)*sin(b))+cos(A)*cos(a))))^1,5
+dy=D+-R*sin(A)*sin(B)+r*sin(a)*sin(b)
+el volum de les cel.les associades
+v1=R^2*sinA*ΔA*ΔB*ΔR;  v2=r^2*sina*Δa*Δb*Δr;  on el simbol: Δ, representa increment 
+el producte de les dues masses de densitat 1, sera =R^2*r^2*sinA*sina*ΔA*ΔB*ΔR*Δa*Δb*Δr
+la forza F=∑vi*v2*dy/(d^2*d)=R^2*sin(A)*r^2*sin(a)*(D+-R*sin(A)*sin(B)+r*sin(a)*sin(b))/abs((D^2+R^2+r^2+2*D*(r*sin(a)*sin(b)+-R*sin(A)*sin(B))+-2*R*r*(sin(A)*sin(a)*(cos(B)*cos(b)+sin(B)*sin(b))+cos(A)*cos(a))))^1,5*ΔA*ΔB*ΔR*Δa*Δb*Δr;  
+
+es tracta de un sumatori d'ordre 6 (un nombre important de calculs) per tant es selecionen intervals grans
+ 3 intervals pels radis R i r, 5 pels angles A i a de 180 graus i 10 pels angles B i b de 360 graus
+
+per evitar que el denominador de la funcio sumatori (distancie entre punts)  sigui cero o molt petit
+s'introdueix l'operador  0,1>denominador (com a minim sera 0,1);
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco1  <===<<
+
+(round) variables: x = 5,5
+min. funció: 1.7976931348623157E308
+
+(round) variables: x = 5,5
+min. funció: 1.7976931348623157E308
+
+(round) variables: x = 5
+min. funció: 1.7976931348623157E308
+
+(round) variables: x = 0
+min. funció: 0.0
+
+punt: 0,   pos.: 1 de (2)
+abcisa principal: x
+funció: NaN;   (min.: 0.0; abs.: 0.0)
+variables:  x: 0.0, 
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

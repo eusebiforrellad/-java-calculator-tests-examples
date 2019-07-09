@@ -1,0 +1,269 @@
+
+>>===>  funcio  <===<<
+rand(-1)                                                                                                               
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  264  214  144  262  94  17  75  51  57  117  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+0	i		(1 5 30 0,4 -0,4)(t dcontacte dmin vmax vmin)						
+rand(1)*100	posx		(idx)(contadorParticules)			60 10	x	rand(0)	mat[idx=12]
+rand(1)*100	posy					60 10	y		arr[idx]
+rand(1)*100	posz					60 10	z		arr[idx]
+(rand(1)+-0,5)/1E3	velx								arr[idx]
+(rand(1)+-0,5)/1E3	vely								arr[idx]
+(rand(1)+-0,5)/1E3	velz								arr[idx]
+rand(1)*0.1+0,5	GxM								arr[idx]
+i+1	i	i<idx	1						
+GxM	gmT		80()()()						
+	bol								arr[idx]
+t*idx	t		73()()()						
+posx	px								arr[idx]
+posy	py								arr[idx]
+posz	pz								arr[idx]
+	dx								mat[idx0=132]
+	dy								arr[idx0]
+	dz								arr[idx0]
+	d								arr[idx0]
+0	i		(0)(cont)						
+0	j								
+		i=j	51						
+		bol[i]=0	24						
+cont+idx+-1	cont		52						
+		bol[j]=-1	50						
+posx[j]+-posx[i]	dx[cont]								
+posy[j]+-posy[i]	dy[cont]								
+posz[j]+-posz[i]	dz[cont]								
+(dx[cont]^2+dy[cont]^2+dz[cont]^2)^0,5	d[cont]								
+		d[cont]>dcontacte	46						
+contadorParticules+-1	contadorParticules								
+i	contacte, particula:			;					
+j	particula:			n					
+GxM[i]+GxM[j]	GM								
+(posx[i]*GxM[i]+posx[j]*GxM[j])/GM	posx[i]		(-1 NaN)(bol[j] posx[j])						
+(posy[i]*GxM[i]+posy[j]*GxM[j])/GM	posy[i]		(NaN)(posy[j])						
+(posz[i]*GxM[i]+posz[j]*GxM[j])/GM	posz[i]		(NaN)(posz[j])						
+(px[i]*GxM[i]+px[j]*GxM[j])/GM	px[i]								
+(py[i]*GxM[i]+py[j]*GxM[j])/GM	py[i]								
+(pz[i]*GxM[i]+pz[j]*GxM[j])/GM	pz[i]								
+(velx[i]*GxM[i]+velx[j]*GxM[j])/GM	velx[i]		(NaN)(velx[j])						
+(vely[i]*GxM[i]+vely[j]*GxM[j])/GM	vely[i]		(NaN)(vely[j])						
+(velz[i]*GxM[i]+velz[j]*GxM[j])/GM	velz[i]		(NaN)(velz[j])						
+GM	GxM[i]		(0)(GxM[j])						
+			73()()()						
+	pos i vel actuals:		80()()()19	n					
+		d[cont]<dmin	50						
+posx[i]+GxM[j]*dx[cont]*t^2/(2*d[cont]^3)	posx[i]								
+posy[i]+GxM[j]*dy[cont]*t^2/(2*d[cont]^3)	posy[i]								
+posz[i]+GxM[j]*dz[cont]*t^2/(2*d[cont]^3)	posz[i]								
+cont+1	cont								
+j+1	j	j<idx	21						
+i+1	i	i<idx	20						
+0	i								
+		bol[i]=-1	58						
+posx[i]+velx[i]*t	posx[i]								
+posy[i]+vely[i]*t	posy[i]								
+posz[i]+velz[i]*t	posz[i]								
+i+1	i	i<idx	54						
+0	i								
+		bol[i]<0	69						
+0	Vbol								
+(posx[i]+-px[i])/t	velx[i]	velx[i]>vmax	(vmax 1)(velx[i] Vbol)64						
+		velx[i]<vmin	(vmin 1)(velx[i] Vbol)						
+(posy[i]+-py[i])/t	vely[i]	vely[i]>vmax	(vmax 1)(vely[i] Vbol)66						
+		vely[i]<vmin	(vmin 1)(vely[i] Vbol)						
+(posz[i]+-pz[i])/t	velz[i]	velz[i]>vmax	(vmax 1)(velz[i] Vbol)69						
+		velx[i]<vmin	(vmin 1)(velx[i] Vbol)	graff					
+i	supera max de vel particula:	!Vbol=0	80()()()	n					
+i+1	i	i<idx	60						
+posx	px		(posy posz)(py pz)						
+		contadorParticules>1	19	pausa(5)					
+				pausa(5000)fi					
+	posx			n					
+	posy			n					
+	posz			n					
+	velx			n					
+	vely			n					
+	velz			n					
+	GxM		()	nn					
+0	i		(0 0 0)(vxT vyT vzT)						
+		!bol[i]=0	85						
+vxT+velx[i]*GxM[i]/gmT	vxT								
+vyT+vely[i]*GxM[i]/gmT	vyT								
+vzT+velz[i]*GxM[i]/gmT	vzT								
+i+1	i	i<idx	81						
+0	i								
+		!bol[i]=0	91						
+velx[i]+-vxT	velx[i]								
+vely[i]+-vyT	vely[i]								
+velz[i]+-vzT	velz[i]								
+i+1	i	i<idx	87						
+			()						
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  15  15  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  15  15  15  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mb0b1b2b3b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	«
++	-	*	/	^	(	)	=	<	>	.	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+529	1207	951
+406	1203	414
+662	1199	404
+463	619	349
+54	939	125
+306	0	0
+615	389	345
+394	220	345
+257	660	400
+1119	1199	0
+2	656	255
+461	0	0
+750	219
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+en aquest ca les particules tenent una massa diferent 
+quant la distancia entre particules es inferior a 'dcontacte' una de les particules passa a tenir la massa de les dues i l'altre es fa=0;
+en aquest cas
+les matrius associades a les  possicions que son les associades al grafic('posx pos y i posz) es modifiquen:
+el element de la matriu associada a la particula que desapareix es fa =Nan  i no es presenta al grafic
+
+la subrutina de la fila 73 mostra les possicions i velocitats; s'executa qunt hi ha contacte entre particules
+la subrutina de la fila 80 fa que el centre de gravetat del conjunt de particules = 0
+
+quant la variableVbol!=0 hi ha alguna particula que supera la velocitat maxima  ho indica i executa la subrutina 80
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

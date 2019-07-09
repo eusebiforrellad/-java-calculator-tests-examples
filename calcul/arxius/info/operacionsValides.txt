@@ -1,0 +1,138 @@
+
+>>===>  funcio  <===<<
+  
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	valor inicial		freq. pres. Num.	recorregut
+							
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  15  15  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  15  15  15  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  15  15  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mghb0a2(((arial 0 10)
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	rand(	∫	δ	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+37	465	947
+894	461	902
+449	457	892
+2	0	888
+274	457	0
+25	0	0
+225	0	0
+876	0	0
+880	447	888
+96	0	0
+2	443	878
+1000	0	0
+171	215
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info: si d1, d2  son dos valors numèrics, operacions:
+d1+d2;	 d1/d2; 	d1*d2;
+(d1)^d2=Math.pow(d1,d2);
+d1<d2=Math.min(d1,d2);
+d1>d2=Math.max(d1,d2);
+d1=d2; resultat = 1 si(d1=d2), o resultat=0  si(d1!=d2)
+log(d2)=Math.log10(d2);
+ln(d2)=Math.log(d2);
+sin(d2);	asin(d2);	sinh(d2)	
+cos(d2);	acos(d2);	cosh(d2)
+tan(d2);	atan(d2);	tanh(d2)
+abs(d2);
+rad(d2)=Math.toRadians(d2);
+graus(d2)Math.toDegrees(d2);
+rod(d2)=(double) Math.round(d2);
+int(d2)= { long lo = (long)d2; return (double) lo; }
+fra(d2)={ long lo = (long)d2; return d2 - lo;}
+!(d2)=factorial de d2
+rand(d2)=new Random(Math.abs((int)(double)d))
+els simbols de operadors i funcions es poden modificar en el programa: 
+Func>public static String[] funcions; 
+splitPan>calculFun; round: 
+splitPan>modificacionsInicials.
+Func>public static String operadors;
+Cal>public static double caseOpFun(
+SuportID>static String simbOpFun(
+
+el signe - no es considera un operador (canvia el signe del valor)
+despres de funcio escriure parentesi (
+
+prioritats de les operacions de mes a menys:
+funcions  ex: log(); sin(); int(); etc
+= igualtat
+^ potencia 
+* i  / producte i divisio tenen la mateixa prioritat
++ suma
+<  minim  
+> màxim
+« minim del valor absolut manté el signe
+» maxim valor absolut manté el signe
+
+els parentesi modifiquen les prioritats
+primer s'executen els interns començant per la esquerra
+ex:
+2+log(-d1)^2 primer log segon potencia tercer suma
+log(-d1^(2+2)) primer suma segon potencia tercer log
+comparadors func1<func2 selecciona el menor valor (>: el contrari)
+ex: (2*3)<(4+5^2);  es igual 2    6<29; selecciona 6
+(2*3)>(4+5^2) es igual a 6>29 selecciona 29
+log(-1>1E-10) = -10.0
+
+si els calculs inclouent condicions  el millor es utilitzar la taula de funcions
+n'obstant en el calcul de funcio unica alguns exemples de condicions elementals: 
+tractament de errors
+limitar un valor fora d'un interxal: var=(var>-lim)<limit 
+limitar un valor dins d'un interxal: var=(var<limit)>-limit 
+
+ejemple de seleccio
+n=0*sin(x)+n=1*cos(x)+(n=0+n=1)=0*tan(x)
+si el parametre n=0 es calcula sin(x) 
+si n=1 calcula cos(x)
+si n es diferent de 0 i 1 calcula tan(x)
+1=0*10+1=(0,5+0,5)*10+(1=0+1=1)=0*30 = 10.0;  round(ƒ) = 10
+2=0*10+2=1*10+(2=0+2=1)=0*30 = 30.0;  round(ƒ) = 30
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

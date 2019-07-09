@@ -1,0 +1,97 @@
+
+>>===>  funcio  <===<<
+∑2   
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+									
+-------------------------------------------------------------------------
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  47  47  
+Paràmetres	1
+símbols:	π
+1 valor:	3.141592653589793
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  15  15  15  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  70  69  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	imgha2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0	funció: ∑1	funció: ∑2	funció: ∑3
+r^2*sin(φ)*0,75	0,75	0,75*r^2*sin(φ)	3/4
+-------------------------------------------------------------------------
+ampladaColumnes:  56  56  56  56  56  56  57  56  57  56  57  56  
+var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior
+r 12	0	1	r 60	0	1	r 100	0	1	x 60	-1	1
+φ	0	rad(180)	φ	0	π	φ	0	π	y	-(abs(1+-(x^2))^0,5)	abs(1+-(x^2))^0,5
+θ	0	rad(360)	θ	0	r^2*sin(φ)*2*π	θ	0	2*π	z	-(abs(1+-(x^2)+-(y^2))^0,5)	abs(1+-(x^2)+-(y^2))^0,5
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	
++	-	*	/	^	(	)	=	<	>	.	
+x	y	z	a	b	c		_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	π
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(						
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+37	1029	683
+481	1025	638
+555	1021	479
+16	458	475
+160	1021	149
+25	745	141
+463	14	471
+463	434	471
+301	553	475
+100	853	145
+2	549	299
+681	712	137
+4253	916
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+precisio en funcio del nombre d'intervals i del tipus de cordenades
+s'ha seleccionad ampliar informes per veure el temps destinat als calculs (click boto dreta al textField superior click a ampliar informes)
+s'ha inclos un parametre: el simbol  de pi
+
+coordenades polars
+1._calcula el volum de una esfera de radi 1
+limits  radi: 0, 1,
+angle φ: 0, π
+angle θ: 0, 2*π
+2._ multiplica per 3/4
+12, 60, 300, intervals per coordenada.
+
+coordendes cartesianes:
+1._calcula el volum de una esfera de radi 1
+limits x 	-1		    1  
+limits y 	-(abs(1+-(x^2))^0,5) 	    abs(1+-(x^2))^0,5
+limits z	-(abs(1+-(x^2)+-(y^2))^0,5)   abs(1+-(x^2)+-(y^2))^0,5
+2._multiplicar per 3/4 per determinar pi
+60, intervals per coordenda.
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

@@ -1,0 +1,143 @@
+
+>>===>  funcio  <===<<
+(DretsInicials*importTitol*titolAss/dretsAss)/(CotitzacioDret+importTitol*titolAss/dretsAss)     
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+(DretsInicials*importTitol*titolAss/dretsAss)/(CotitzacioDret+importTitol*titolAss/dretsAss)	import								
+int(import)	vendre_drets:			n					
+vendre_drets:*CotitzacioDret	import_dels_drets:			n					
+(DretsInicials+-vendre_drets:)*titolAss/dretsAss	dretsrestants>titolspercomprar:			n					
+import_dels_drets:*importTitol	comprar_titols:			n					
+vendre_drets:+-import	resten euros:			nfi					dv(2)
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  190  191  101  101  101  100  
+Paràmetres	1	2	3	4	5
+símbols:	DretsInicials	CotitzacioDret	titolAss	dretsAss	importTitol
+1 valor:	100	0,5	1	5	1
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  15  15  15  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  15  15  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	ghb0a2((arial 0 10)
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	E
++	-	*	/	^	(	)	=	<	>	.	 
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+121	816	693
+460	812	564
+800	808	458
+63	0	454
+2	808	96
+25	0	88
+442	61	450
+334	0	450
+359	798	454
+790	798	92
+2	794	357
+44	0	0
+273	647
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info:
+la taula de parametres pot contenir simbols que representen valors constants i variables
+en l'exemple nomes hi ha una filera de parametres amb valors constants
+a la filera simbols escriure cadenes que identifiquin un valor numeric
+a la filera valors, introduir els valors numerics
+
+una operacio blanca es una operacio de borsa
+si es disposa de 100 titols de una entitat  i hi ha una ampliacio alliberada, en general la entitat et donara 
+100 drets ames et dira els drets que calen per comprar un titol i el import que hi has d'afegir
+per exemple si et calen 5 drets per titol i el cost es un euro
+els drets tene un valor en borsa per exemple 0,5 euros
+aleshores si vas a la ampliacio pots comprar 20 titols i gastarte 20 euros
+vendre tots els drets y cobrar 50 euros
+la operacio blanca cosnsisteix amb ni invertir ni cobrar, el cost dels drets que vens es aproximadament igual 
+al import de la compra
+
+D: 	drest inicials				(100)
+ID:	import de un dret			(0,5)
+DV: 	nombre de drets que es venen
+IT: 	import de un titol			(1)
+RT/RD:	es necesiten RD drets per comprar RT titols     	(1/5)
+es compleix que
+DV*ID=IT*RT/RD*(D-DV)
+DV*(ID+IT*RT/RD)=IT*RT/RD*D
+DV=D*IT*RT/RD/(ID+IT*RT/RD)
+Drets actuals: 	el nombre de drets adjudicats en general es el mateix que el nombre de accion
+CotitzacioDret: 	el import del dret a borsa quan s'executa la operacio
+titolAss_drets ass:	son els drets necesaris per comprar un titol
+importCompraTitol	es el import ha invertir per titol que es compri
+
+(100.0*1.0*1.0/5.0)/(0.5+1.0*1.0/5.0) = 28.571428571428573(DretsActuals*importTitol*titolAss/dretsAss)/(CotitzacioDret+importTitol*titolAss/dretsAss) = 28.571428571428573;  round(ƒ) = 28,5714
+
+es venen 28 drets que son 14 euros i es compren 14 titols 'int((100-28)/5)'; i resten 0,57 euros
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco1  <===<<
+
+(round) variables: x = 5,5
+min. funció: 1.7976931348623157E308
+
+(round) variables: x = 5,5
+min. funció: 1.7976931348623157E308
+
+(round) variables: x = 5
+min. funció: 1.7976931348623157E308
+
+(round) variables: x = 0
+min. funció: 0.0
+
+punt: 0,   pos.: 1 de (2)
+abcisa principal: x
+funció: NaN;   (min.: 0.0; abs.: 0.0)
+variables:  x: 0.0, 
+
+
+
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

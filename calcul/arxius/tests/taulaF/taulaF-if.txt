@@ -1,0 +1,131 @@
+
+>>===>  funció  <===<<
+     
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  58  72  324  159  36  15  15  15  15  15  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+1	u		(1)(unu)	n					
+unu	unu			n					
+2	dos	dos=2	(3 4 par)(tres quatre cinc)	n					
+dos	dosFalse	tres>tres		n					
+tres	tresFalse	4<=tres		n					
+3	tres	(tres>=dos)		n					
+quatre	quatreFalse	quatre>par		n					
+4	quatre	quatre<=par		n					
+cinc	cincFalse	cinc>4&cinc<3&(cinc>=4|cinc>=6)		n					
+cinc	cinc	(cinc>4&cinc>3&cinc>2&cinc<6)		n					
+6	sisFalse	(6<dos)|(6<3)|(6<4)|(6<par)		n					
+6	sis	(6<dos)|(6<3)|(6<4)|(6<=sis)		n					
+7	set	(set>=tres&cinc<set)&((dos>1&dos<=tres)|(tres=3))		n					
+set	set	(set>=tres&cinc>set)&((dos>1&dos<=tres)|(tres=3))							
+8	vuitFalse	(cinc<8cinc>=6)|(cinc=6)|(dos<dos)		n					
+dos+sis	vuit	(cinc<vuit&cinc>=4)|(cinc=6)|(dos<dos)		n					
+9	nouFalse	(cinc<<<vuit&&&cinc>>>>===6)|||||(cinc>5)		n					
+2+3+4	nou	(cinc<<<vuit&&&cinc>>>>=====6)|||||(cinc===5)		n					
+10	deuFalse	!(cinc<vuit&cinc>=4)		n					
+11	once	(cinc<vuit&cinc>=4)		n					
+12	dotze	!(cinc>vuit&cinc>=4)							
+0	cero			nfi					
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  75  75  
+Paràmetres	1
+símbols:	par
+1 valor:	5
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  15  15  15  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mghb1b4b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  15  15  15  15  15  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+397	630	946
+439	626	541
+614	622	437
+12	0	433
+614	622	94
+219	0	90
+171	389	345
+422	0	0
+262	612	433
+766	622	94
+2	608	260
+42	0	0
+0	212
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info columna if:
+simbols valids: 
+&: 	equivalent a && de java =and
+|: 	equivalent a ||  de java =or
+!: 	fa true=false i false=true
+<;<=;>;<=: 	menor, menor o igual; major; major o igual
+() parentesi:	 prioritcen les comparacions
+
+les cadenes de variables io parametres no pden contenir cap d'aquests simbols
+
+quan es compleix la condicio if (true) o la columna es buida s'executa la opcio then
+
+fer click a enter
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

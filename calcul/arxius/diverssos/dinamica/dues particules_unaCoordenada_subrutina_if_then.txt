@@ -1,0 +1,122 @@
+
+>>===>  funcio  <===<<
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  177  55  259  230  51  18  36  31  56  53  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+x1+-x2	_d12		(1E-5 1E-5)(m1 m2)						
+x1+-x2	d12	d12>=0&_d12<=0|d12<=0&_d12>=0	(_x1 _x2 _ex1 _ex2)(x2 x1 ex1 ex2)						
+1	cero	d12>=0&_d12<=0|d12<=0&_d12>=0	(0)(cero)						
+d12	_d12								
+x1+-cero*m2/d12+ex1	x1_								
+x2+cero*m1/d12+ex2	x2_		(x1 x2 ex1 ex2)(_x1 _x2 _ex1 _ex2)						
+x1_+-x1	ex1								0
+x2_+-x2	ex2								0
+x1_	x1					30	y1	Color: █	-1E2
+x2_	x2		1	graf		30	y2	Color: █	1E2
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+255	0	51
+0	0	204
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  75  75  
+Paràmetres	1
+símbols:	
+1 valor:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  75  75  75  
+Variables (símbol)	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mvghb0b1b2b3b4a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  75  75  75  75  75  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,	«
++	-	*	/	^	(	)	=	<	>	.	»
+x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
+∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
+log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
+int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+212	974	805
+577	970	585
+623	966	575
+316	324	578
+2	955	119
+2	21	92
+147	0	0
+566	0	574
+407	621	571
+937	966	0
+397	617	405
+3	11	88
+250	208
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info:
+dues particulas separade inicialment un interval d12 sota l'efecte de una atraccio entre masses  m1 i m2; directament proporcional a les masses de les particules
+i inversament proporcional a la distancia que les separa
+
+info if :
+comparadors valids >, >=, <, <=, =,
+Simbols: els de la columna 1 (Simbols var.); valors numerics; simbols de parametres de un sol valor
+
+columna then:
+si la columna if es buida o si el resultat es true s'executa la opcio then
+si a la columna then hi ha nomes un Sencer positiu menor que el nombre de fileres:
+al finalitzar el calcul de la funcio columna 0, el programa salta a la filera del sencer
+
+
+copia de valors:
+(simbol1 simbol2 ...)(s1,s2 ...) els valors de simbol1,simbol 2 etc  pasan als simbols s1, s2 etc
+
+executar call a una subrutina:
+Sencer(simbol0,simbol1,...)(s0,s1,...)
+en aquest cas cal que hi hagi definida una subrutina a la filera 'Sencer'
+amb el mateix nombre de parametres ex: (cadena1, cadena2;...)
+i posteriorment un return (cad1 cad2 ...)
+el inici de la subrutina es pot definir la filera del call
+en aquest cas el call seria:
+Sencer(simbol0,simbol1,...)(cadena1 cqdena2 ...)(s0,s1,...)
+els simbols del primer grup de simbolsdel call o els de return  poden esser valors numerics o simbols de capçalera
+en tos els grups es poden utilitzar els simbols de la columna 1 'Simbol var.'
+tos els simbols s'han de separar amb un espai o simbol ';'
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

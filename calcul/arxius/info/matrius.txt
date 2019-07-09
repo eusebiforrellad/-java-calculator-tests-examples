@@ -1,0 +1,175 @@
+
+>>===>  funcio  <===<<
+                       
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaF  <===<<
+>=actiu=<
+ampladaColumnes:  470  379  111  334  65  15  15  15  15  80  
+Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
+par	dimensio_definida_a_taulaP_pel_nombre_de_parametres_de_la_columna			n					arr
+par	dimensio_definida_a_taulaP_columna_amb_un_sol_valor_numeric			n					arr[dimensio]
+100	dimensio_definida_a_columna9			n					arr[index=3]
+x^2+y^0,5+parv	minim_de_funcio			n					arr
+minim_de_funcio	res_array_i_suma			n					arr
+minim_de_funcio	res_unic			n					
+x+y+parv1+parv2	resultatminim			n					def
+1	contador_inicial_cero		(2 3)(contador_inicial_cero contador_inicial_cero)	n					arr[index]
+index*10	contador_inicial_cero[2]		(10)(contador_inicial_cero)	n					
+contador_inicial_cero[0]*2	contador_inicial_cero			n					
+100	contador_inicial_cero[[0]]			n					
+200	contador_inicial_cero		(300)(contador_inicial_cero)	n					
+1	Then		(2 3 4)(Then[1] Then[2] Then[3])	n					arr[4]
+	Then		(Then[0] Then[1])(Then[2] Then[3])	n					
+	Then_copia		(Then Then 100)(Then_copia Then_copia Then_copia[2])	n					arr[10]
+100	Then_copia			n					
+2*dimensio_definida_a_taulaP_pel_nombre_de_parametres_de_la_columna	matriu		(2)(sencer)	n					arr
+matriu+par*2+matriu[sencer]	matriu			n					
+	arr5		21(par3 par2)(arr5 arr5)(arr10)	n					arr[5]
+	arr10		21(par2 par3)(arr5 arr5)(arr10)	n					arr[10]
+	arr10		22	n					
+-arr5*2+20	arr5		(arr5)	n					
+	bucle		(0)(i)	n					arr[index]
+Then[i]	bucle	matriu[i]>matriu[1]	25						
+i+1	i		23						
+	bucle			n					
+	arrCopia			n					arr[10]
+	arrCopia[[3]]		(par3)(arrCopia)	n					
+	bucle[[1]]		(1 2 3)(bucle[0] bucle[1] bucle[2])	n					
+bucle	arrCopia			n					
+10	bucle			nfi					
+-------------------------------------------------------------------------
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaP  <===<<
+ampladaColumnes:  118  118  118  118  118  117  
+Paràmetres	1	2	3	4	5
+símbols:	par	dimensio	par2	par3	parv
+1 valor:	1	8	5	7	parv1
+2	2		6	8	parv2
+3	3			9	
+4	4				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaV  <===<<
+ampladaColumnes:  217  216  216  
+Variables (símbol)	límit Inferior	límit Superior
+x	-2	2
+y	1	3
+parv1	0	2
+parv2	3	5
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaC  <===<<
+ampladaColumnes:  75  75  
+Descripció	paràmetre
+precissió round:	5
+cero(log):	mghb0b1b2b3b4b5a2
+param. graf.:	
+gràfic func.abs.:	
+regressió abs.:	
+regressió ord.exp.:	
+regressió ord.calc.:	
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaI  <===<<
+funció: ∑0
+
+-------------------------------------------------------------------------
+ampladaColumnes:  15  15  15  
+var.  interv.	límit Inferior	límit Superior
+		
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  taulaD  <===<<
+ampladaColumnes:  98  99  98  99  98  
+Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
+Δ0				
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  simbolsTeclat  <===<<
+longText: 5
+0	1	2	3	4	5	6	7	8	9	,
++	-	*	/	^	(	)	=	<	>	log(
+BiT	AgT	CT	Cl	BI	Bi	X	Y	Z	V	W
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  splitPan  <===<<
+184	1507	811
+502	1503	619
+1381	1499	500
+364	0	349
+527	939	125
+592	763	105
+182	0	0
+376	0	0
+401	1379	496
+728	1499	109
+2	1375	399
+41	163	101
+0	219
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+>>===>  info_TextDeco  <===<<
+info matriu (arrays)
+
+quant a "then press." columna 4 hi ha opcio de presentar resultats i a columna 'Simbol var' un array es presenta entre parentesi els resultat de tots els elements i ha continuacio el resultat de la suma de elements
+
+els simbols var. de la columna 1 poden  esser definides com a matrius posan la cadena 'mat o arr' a la columna 9:
+la dimensio de la matriu es pot posar a continuacio entre els simbols'[ ]'
+en el cas que la funcio contingui simbols de capçalera de la taulaP, si la dimensio coincideix amb el nombre de parametres del simbol, no cal introduir la dimensio
+el valor del parametre de capçalera amb una sola filera de parametres es pot utilitzar com dimensio de la matriu; exemple fila 1;
+tambe es pot definir la dimensio i assignar-la a un simbol: a fila 2 es dimensiona la matriu =3 i es conseva en el simbol 'index'; aquest simbol es similar a el de simbols parametres de capçalera de una fila com la cadena 'dimensio' de la taulaP
+si hi ha cerca de minim la  dimensio de la matriu es genera en el mateix calcul (files 3-4)
+Quant ha la funcio hi ha matrius i a columna 9 no s'ha definit com array el resultat es la suma fila 5
+en la cerca de minim 'fila 3' els valors de les variables io parametres variables en el minim de la funcio es poden utilitzar per calculs posterior introduint  a la columna 9 la cadena 'def' ( fila 6)
+
+Cada Simbol de variable de la columna1 (Simbol var.) (independentment que es trobi a diferents files de la taula) utilitza una sola matriu de resultats.
+quant a Simbol var(columna1) hi ha una matriu sense index els resultats s'introdueixen en funcio de un contador; cada array porte associat un contador)
+aquest contador val nicialment cero y s'incrementa cada cop que introduim un valor a la matriu (fila 7), i quant supera el limit el contador es fa igual a cero
+per seleccionar un valor de la matriu utilitzar els simbols'[ ]'  (fila 9); el resultat es guarda en la possicio [2] de la matriu; en aquest cas el contador no es modifica, i els seguent valor que es guarda en la matriu (no indexada)  ho fa en funcio del contador
+el index actual de la matriu es pot modificar incluint l'index de la matriu entre els caracters '[[ ]]' l'index d'una matriu a columna 1 (fila10); en la execucio es modifiquen les cadenes  '[[ ]]' per'[ ]' i el tractament del simbol es el de un element de matriu indexada
+en aquest cas si la columna 0 (funcio) es buida elc contador de la matriu es fixa en la possicio on s'incorporara el seguent valor; si la columna 0 te contingut s incorpora el valor en la possicio del index i el contadoraugmenta en una unitat; el resultat es mostra a (fila11)
+les matrius amb index, tambe es poden emplenar mitjançant la columna then (files 12--13)
+en aquest cas tambe els simbols indexats no modifiquen el contador de  la matriu (files 14-15)
+
+les operacions amb matrius sense index executen la operacio per tots els index (fila 16)
+totes les matrius sense index presents a la funcio  han de tenir la mateixa dimensio (fila17) 
+l'index pot esser un sencer previament definit a columna 1 o columna Then
+l'exemple de la fila17 el calcul  es per 4 elements on les matrius 'matriu i par*2' tenent el mateixos valors de 2, 4, 6, i 8 i el valor del indexmatriu [sencer=2]  es 6; resultat:  2+2+6=10.0; 4+4+6=14.0; 6+6+6=18.0; 8+8+6=22.0;
+
+les files 18-19 son dos calls a la subrutina de la fila 21 on s'executen operacions amb la matriu arr5 (dimensio=5, copia de les matrius definides a la taulaP  'par2 i par3 dimensions 2 i 3'); el resutat  'arr5' retorna a la matriu arr10 (dimensio=10)
+la fila 20 presenta la matriu arr10 i salta a la fila 22 (fila a continuacio de la subrutina)
+
+els valors dels elements de matrius es poden utilitzar a la columna If
+les files 22-25 representen un bucle en que la matriu bucle s'emplena de elements de la matriu 'Then' fins que un valor de la matriu 'matriu' supera el valor de la matriu en la possicio 1 (matriu[1]) que es el segon valor d'aquesta matriu
+la fila 25 presenta la matriu bucle i finalitza cadena'fi' a columna  4 'then pres.'
+
+en el prroces de copiar matrius la matriu origen de la copia comença la copia en ll'index 0; la matriu desti comença la copia en la possicio del contador de la matriu
+les files 26-30  defineixen dues matrius i es fixen el contadors en laes possicions 3 i 1 el resulta mostra que la copia de la matriu 1 començzaen la possici0 en comtes  de 1 que es possio del contador
+
+
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
