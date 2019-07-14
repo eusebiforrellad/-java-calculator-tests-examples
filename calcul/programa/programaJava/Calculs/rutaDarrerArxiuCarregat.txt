@@ -1,1 +1,1 @@
-/Volumes/LLAPIS1X/calcul/arxius/tests/potenciometria_compatibilitat_taules_desviacio.txt
+/Volumes/LLAPIS1X/calcul/arxius/tests/sumatoris/test_sumatoris_funcionsParcials_vartaulaF.txt

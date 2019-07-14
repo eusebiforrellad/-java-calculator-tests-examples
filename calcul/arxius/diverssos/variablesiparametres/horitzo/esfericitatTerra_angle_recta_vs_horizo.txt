@@ -1,6 +1,6 @@
 
 >>===>  funcio  <===<<
-(gra(atan((Δ0*Δ1^2+Δ0+-Δ2)^0,5/Δ2^0,5))+-gra(atan(((Δ0+-Δ2)^0,5)/Δ2^0,5)))*100/α 
+(gra(atan((Δ0*Δ1^2+Δ0+-Δ2)^0,5/Δ2^0,5))+-gra(atan(((Δ0+-Δ2)^0,5)/Δ2^0,5)))*100/α  
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaF  <===<<
 ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
@@ -68,7 +68,7 @@ int(	fra(	sinh(	cosh(	tanh(	!(		m		i
 286	928	105
 2	502	380
 2	408	97
-3429	576
+482	590
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  info_TextDeco  <===<<
 obrir arxiu adjunt 
@@ -100,12 +100,13 @@ fer enter
 
 el grafic mostra  per diferents altures (abcissa) els graus de desviacio vertical entre recte i horitzo de un punt separat 60 graus del punt tangent(recta horitzo).
 amb l'ajut de una linea linia recta  preparala amb un fil un regle o un laser mantenint la vista fixa i considerant que una des viacio de la recta de 0,6 graus es perceptible
-el grafic ens indica que una haltura aproximada de 500  metres es suficient (tibidabo)
+el grafic ens indica que una haltura aproximada de 0,5 Km es suficient (tibidabo)
 
 a 20Km d'altura en un globus la desviacio seria de 3,78 graus
 
 
 cOlOr: n
+
 
 
 

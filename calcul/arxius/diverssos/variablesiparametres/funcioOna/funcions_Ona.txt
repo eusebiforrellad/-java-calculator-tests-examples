@@ -1,6 +1,6 @@
 
 >>===>  funcio  <===<<
-2/(3*3^0,5)*(Z/A)^1,5*(1+-2*Z*r/(3*A)+(2*Z^2*r^2/(27*A^2)))*e^-Z*r/(3*A)*(1/(4*π))^0,5*(5/(4*π))^0,5*sin(a)^2*sin(2*b) 
+2/(3*3^0,5)*(Z/A)^1,5*(1+-2*Z*r/(3*A)+(2*Z^2*r^2/(27*A^2)))*e^-Z*r/(3*A)*(1/(4*π))^0,5*(5/(4*π))^0,5*sin(a)^2*sin(2*b)  
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaF  <===<<
 ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
@@ -26,7 +26,7 @@ r	0	3
 ampladaColumnes:  110  109  
 Descripció	paràmetre
 precissió round:	5
-cero(log):	pgha5
+cero(log):	sgha5
 param. graf.:	p
 gràfic func.abs.:	
 regressió abs.:	
@@ -67,8 +67,8 @@ int(	fra(	sinh(	cosh(	tanh(	!(		m		i
 338	754	433
 286	1014	96
 2	750	336
-1000	441	88
-0	212
+433	441	88
+0	219
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  info_TextDeco  <===<<
 e=2.718281828459045 (variable e_)
@@ -114,7 +114,8 @@ simbol 'p' a taula esquerra gràfic
 copiar i ajuntar a la funcio principal una de les funcions anteriors
 fer click a enter
 augmentar el nombre de punts 
-fer click a vars
+fer click a 'vars' i a continuacio a 'p'
+
 
 
 

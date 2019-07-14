@@ -1,6 +1,6 @@
 
 >>===>  funcio  <===<<
-(A+-C0*a0*e^-((n+-b0)^2/(2*c0^2))+-C1*a1*e^-((n+-b1)^2/(2*c1^2))+-C2*a2*e^-((n+-b2)^2/(2*c2^2))+-C3*a3*e^-((n+-b3)^2/(2*c3^2)))^2  
+(A+-C0*a0*e^-((n+-b0)^2/(2*c0^2))+-C1*a1*e^-((n+-b1)^2/(2*c1^2))+-C2*a2*e^-((n+-b2)^2/(2*c2^2))+-C3*a3*e^-((n+-b3)^2/(2*c3^2)))^2   
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaF  <===<<
 ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
@@ -167,19 +167,21 @@ int(	fra(	sinh(	cosh(	tanh(	!(		m		i
 476	1192	154
 135	143	146
 119	442	393
-216	304	393
+226	304	393
 202	426	397
 557	708	150
 2	422	200
 42	0	142
-93	277
+89	276
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  info_TextDeco  <===<<
 1._adjuntar arxiu (popup sobre funcio principal) mostra origen de les dades
 es seleccionen longituds d'ona del espectre en que en principi cada especia clorobismutada s'ajusti a una campana
 tambe s'ignoren les solucions en que la variacio de la absorbancia es poc significativa i els  punt en que la concentracio de Clor lliure es mes baixa per minimitzar l'efecte de presencia d'aigua que amb BiCl3 pot formar Cl lliure i oxiclorur de bismut
-fer enter a minim:
+fer click a minim:
 cOlOr: n
+
+
 
 
 

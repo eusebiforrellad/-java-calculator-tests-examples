@@ -965,10 +965,20 @@ public class Func extends JFrame implements ActionListener{
         StringWriter s = new StringWriter();
         e.printStackTrace(new PrintWriter(s));
         String s1="s'ha produit un error en l'an"+rB.getString("a")+"lisi previ o calcul posterior"+splitPan.FIL+"Informaci"+rB.getString("o_")+" del error"+splitPan.FIL+splitPan.FIL+s.toString();
-        if(!para()) {
-            append(1,"ordre de parada"+splitPan.FIL+"Informaci"+rB.getString("o_")+" del error"+splitPan.FIL);
-            append(0,s1);
-        }
+        
+        if(!para()){
+          append(1,"ordre de parada"+splitPan.FIL+"Informaci"+rB.getString("o_")+" del error"+splitPan.FIL);
+          append(0,s1);
+          try{
+            funcImpl.CAL.interrupt();
+            Cal.cercaThread.interrupt();
+            Cal.tempsThread.interrupt();
+          }
+          catch(Exception e1){}
+      }
+      else append(1,"ordre de parada;  ");
+      append(0,"threads inactius"+splitPan.FIL);
+      falseTrue();
     }
   private static boolean analisiPrevi(){
     splitPan.temp0();splitPan.temp1();

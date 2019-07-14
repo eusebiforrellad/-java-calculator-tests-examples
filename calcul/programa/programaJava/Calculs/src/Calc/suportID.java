@@ -499,7 +499,8 @@ public class suportID{
                 */
                 for(int k=0;k<longi[idxCol];k++){varAct[k]=posic(k,incrAbc[k]*idxDim[k]+incrAbc_mitat[k]);}
                 double res=resultatF();
-                for(int k=0;k<longi[idxCol];k++)res*=Math.abs(varActLI_incr[k]);//els increments son positius
+                for(int k=0;k<longi[idxCol];k++)res*=varActLI_incr[k];
+                //for(int k=0;k<longi[idxCol];k++)res*=Math.abs(varActLI_incr[k]);//els increments son positius
                 integral[idxCol]+=res;
             }
         }

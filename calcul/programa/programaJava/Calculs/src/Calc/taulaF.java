@@ -587,6 +587,7 @@ public class taulaF extends JPanel implements ActionListener{
                 Func.append(0,"a taula de funcions superior 'taulaF', s'han eliminat files buides"+ splitPan.FIL);
                 cc=tl.getColumnCount();
                 cf=tl.getRowCount()+1;
+                return false;
             }
         }
         for(int i=1;i<cf;i++){for(int j=0;j<cc;j++){if(!matriu[i][j].equals(""))hihaVar=true;}}
@@ -3116,21 +3117,32 @@ public class taulaF extends JPanel implements ActionListener{
                     Cal.indexs=arr_indexs.get(fila);
                     Cal.dvo=new double[limdVO[fila][1]];System.arraycopy(dVO, limdVO[fila][0], Cal.dvo, 0,Cal.dvo.length);
                     if(varNgenDerBol[fila]){//si ha la funcio derivada present a la filera de taulaF i no hi ha variables general cal calcular la funcio derivable i situar el resultat en la possicio de la funcio de la taulaF
-                        bo=true;
                         indexsDerafuncioF=arr_indexsDerafuncioF.get(fila);
-                        for(int j=0;j<taulaD.simbol.length;j++)if(!taulaD.simbolsDconstants[j]&&!varGenDerBol[fila][j+1]){//hiha derivada sense variableGeneral
+                        for(int j=0;j<taulaD.simbol.length;j++)for(int m=0;m<svo.length;m++)if(taulaD.simbol[j].equals(svo[m])||("-"+taulaD.simbol[j]).equals(svo[m])){
+                            if(!taulaD.simbolsDconstants[j]&&!varGenDerBol[fila][j+1]){//hiha derivada sense variableGeneral
                             Cal.supID.resultatFil[j]=Cal.supID.calculF(j);//les possicions a 
                             for(int k=0;k<indexsDerafuncioF.length;k++)if(indexsDerafuncioF[k][1]==j){
                                 if(svo[indexsDerafuncioF[k][0]].startsWith("-"))Cal.dvo[indexsDerafuncioF[k][0]]=- Cal.supID.resultatFil[j];
                                 else Cal.dvo[indexsDerafuncioF[k][0]]= Cal.supID.resultatFil[j];
                             }
                         }
+                        }
+                        bo=true;
+                       /* for(int j=0;j<taulaD.simbol.length;j++)System.out.print(j+" "+taulaD.simbolsDconstants[j]+" "+varGenDerBol[fila][j+1]+" "+(!taulaD.simbolsDconstants[j]&&!varGenDerBol[fila][j+1])+" _ ");System.out.println();
+                        for(int j=0;j<taulaD.simbol.length;j++)if(!taulaD.simbolsDconstants[j]&&!varGenDerBol[fila][j+1]){//hiha derivada sense variableGeneral
+                            System.out.println("siD: "+fila+" "+j+" "+taulaD.simbolsDconstants[j]);
+                            Cal.supID.resultatFil[j]=Cal.supID.calculF(j);//les possicions a 
+                            for(int k=0;k<indexsDerafuncioF.length;k++)if(indexsDerafuncioF[k][1]==j){
+                                if(svo[indexsDerafuncioF[k][0]].startsWith("-"))Cal.dvo[indexsDerafuncioF[k][0]]=- Cal.supID.resultatFil[j];
+                                else Cal.dvo[indexsDerafuncioF[k][0]]= Cal.supID.resultatFil[j];
+                            }
+                        }*/
                     }
                     if(varNgenSumBol[fila]){
                         bo=true;
                         indexsSumafuncioF=arr_indexsSumafuncioF.get(fila);
                         for(int j=0;j<taulaI.sumat.length;j++)if(sumafilataulaF[fila][1+j]&&!varGenSumBol[fila][j+1]){//substitueix a la funcio principal el valor de tors els sumatoris que no contenent variable generals i que es troben presents a la funcio
-                                if(!taulaI.sumatConstants[j]){
+                            if(!taulaI.sumatConstants[j]){//sumatoris que no contenent variables generals pero si variables de la taulaF
                                     for(int l=0;l<taulaD.simbol.length;l++)if(!varGenDerBol[fila][l+1]&&Cal.hihaFPIntegrBol[j+1][l+1])Cal.supID.FPaIntegral(l); 
                                     Cal.supID.bucle(j);
                                     for(int k=0;k<indexsSumafuncioF.length;k++)if(indexsSumafuncioF[k][1]==j){

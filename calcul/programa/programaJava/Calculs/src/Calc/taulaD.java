@@ -33,7 +33,7 @@ import javax.swing.table.TableColumnModel;
 public class taulaD extends JPanel implements ActionListener {
     private static final long serialVersionUID = 1L;
     static JTable tl;
-    public static String[][] matriu;
+   public static String[][] matriu;
     public static String [][] matriuSup;
     public static String[] simbol;//simbols de la funcio derivada primera columna
     public static String[] varDer;//simbols de la variable de les derivades columna 1
@@ -391,7 +391,7 @@ public class taulaD extends JPanel implements ActionListener {
                     }
                 }
             }
-        for(int i=0;i<taulaD.simbol.length;i++)if(isFinite(taulaD.resultatFil[i])) {Func.append(1,Func.avis);Func.append(0,"a taula func. parcials a la funci"+Func.rB.getString("o_")+": "+taulaD.simbol[i]+" no hi ha variables es pren com una constant = "+taulaD.resultatFil[i]+splitPan.FIL);}
+        for(int i=0;i<taulaD.simbol.length;i++)if(isFinite(taulaD.resultatFil[i])) {simbolsDconstants[i]=true;Func.append(1,Func.avis);Func.append(0,"a taula func. parcials a la funci"+Func.rB.getString("o_")+": "+taulaD.simbol[i]+" no hi ha variables es pren com una constant = "+taulaD.resultatFil[i]+splitPan.FIL);}
         for(int l=1;l<simbol.length;l++)if(hihaDependencia[l]&&ordreDer[l]>0){
             for(int i=0;i<l;i++)if(dependencia[l][i]&&ordreDer[i]>0){Func.append(1,Func.error);Func.append(0,"a taula func. parcials funci"+Func.rB.getString("o_")+":  "+simbol[l]+", les funcions parcials amb ordre derivada > 0 dependents d'altres amb ordre derivada >0 no es deriven."+splitPan.FIL);return false;}
         }

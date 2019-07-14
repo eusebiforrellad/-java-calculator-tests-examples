@@ -1,9 +1,10 @@
 
 >>===>  funcio  <===<<
-(DretsInicials*importTitol*titolAss/dretsAss)/(CotitzacioDret+importTitol*titolAss/dretsAss)     
+(DretsInicials*importTitol*titolAss/dretsAss)/(CotitzacioDret+importTitol*titolAss/dretsAss)      
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaF  <===<<
-ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
+>=actiu=<
+ampladaColumnes:  81  81  81  81  81  81  81  80  81  80  
 Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
 (DretsInicials*importTitol*titolAss/dretsAss)/(CotitzacioDret+importTitol*titolAss/dretsAss)	import								
 int(import)	vendre_drets:			n					
@@ -31,10 +32,10 @@ Variables (símbol)	límit Inferior	límit Superior
 		
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaC  <===<<
-ampladaColumnes:  15  15  
+ampladaColumnes:  75  75  
 Descripció	paràmetre
 precissió round:	5
-cero(log):	ghb0a2((arial 0 10)
+cero(log):	ghb0a2(((arial 0 10)
 param. graf.:	
 gràfic func.abs.:	
 regressió abs.:	
@@ -69,14 +70,14 @@ int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
 800	808	458
 63	0	454
 2	808	96
-25	0	88
-442	61	450
-334	0	450
+2	10	92
+442	0	0
+334	0	0
 359	798	454
-790	798	92
+790	808	96
 2	794	357
-44	0	0
-273	647
+44	0	88
+267	638
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  info_TextDeco  <===<<
 info:
@@ -134,6 +135,7 @@ punt: 0,   pos.: 1 de (2)
 abcisa principal: x
 funció: NaN;   (min.: 0.0; abs.: 0.0)
 variables:  x: 0.0, 
+
 
 
 

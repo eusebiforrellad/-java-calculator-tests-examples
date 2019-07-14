@@ -1,6 +1,6 @@
 
 >>===>  funcio  <===<<
-(x^2+y^2+z^2+-21)^2+(x^3+y+z+-7)^2+(x+y^3+z^0,5+-11)^2  
+(x^2+y^2+z^2+-21)^2+(x^3+y+z+-7)^2+(x+y^3+z^0,5+-11)^2   
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaF  <===<<
 ampladaColumnes:  75  75  75  75  75  75  75  75  75  75  
@@ -16,7 +16,7 @@ símbols:
 1 valor:	
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaV  <===<<
-ampladaColumnes:  199  199  198  
+ampladaColumnes:  196  196  195  
 Variables (símbol)	límit Inferior	límit Superior
 x	-10	10
 y	-10	10
@@ -56,19 +56,19 @@ log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
 int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  splitPan  <===<<
-37	910	463
-313	906	418
-432	902	311
-150	462	307
-274	902	97
-604	610	89
-295	148	303
-295	304	303
-212	430	307
-2	620	93
-2	426	210
-1000	0	85
-161	212
+78	924	573
+379	920	487
+432	916	377
+150	476	373
+274	916	100
+593	601	92
+295	148	369
+361	318	369
+246	430	373
+25	634	96
+2	426	244
+227	0	88
+160	219
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  info_TextDeco  <===<<
 equacions no lineals hi pot haver diverssos minims
@@ -93,96 +93,6 @@ cOlOr: b
 (x^2+y^2+z^2+-21)^2+(x^3+y+z+-7)^2+(x+y^3+z^0,5+-11)^2
 
 
-
-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
->>===>  info_TextDeco1  <===<<
-(round) variables:
-x: -3.4339;   y: -5.233E-16;   
-min. graf. funció: 1.232595164407831E-30
-(round) variables:
-x: 3.4339;   y: 2.7041E-10;   
-min. graf. funció: 0.0
-(round) variables:
-x: 3.4339;   y: 1.4003E-9;   
-min. graf. funció: 0.0
-(round) variables:
-x: 2.3925E15;   y: 2.8147E14;   
-min. graf. funció: 48.47954507376413
-
-punt: 8, de (17)
-abcisa principal: x
-funció: 48.47954507376413;   (min.graf.: 48.47954507376413; min.abs.: 48.47954507376413)
-variables:  x: 1.0000000000002577E-16, y: 1.0000000000000164E-16, 
-(round) variables:
-x: -0.079023;   y: 2.0868;   z: 4.0913;   
-min. graf. funció: 0.6872432319947724
-
-abscissa principal: x
-cursors: 
-x: 0;  y: 108;  z: 208;  
-increments ponderats:
-x: 1.0;   y: 1.0;   z: 1.0;   
-variables:
-x: 1.0;   y: 1.0;   z: 1.0;   variables:
-(round) variables:
-x: 1.0;   y: 1.0;   z: 1.0;   
-min. graf. funció: 404.0
-
-abscissa principal: x
-cursors: 
-x: 550;  y: 600;  z: 700;  
-increments ponderats:
-x: 1.0;   y: 1.0;   z: 1.0;   
-variables:
-x: 1.0;   y: 2.0;   z: 4.0;   variables:
-(round) variables:
-x: 1.0;   y: 2.0;   z: 4.0;   
-min. graf. funció: 0.0
-
-abscissa principal: x
-cursors: 
-x: 550;  y: 600;  z: 700;  
-increments ponderats:
-x: 1.0;   y: 1.0;   z: 1.0;   
-variables:
-x: 1.0;   y: 2.0;   z: 4.0;   variables:
-(round) variables:
-x: 1.0;   y: 2.0;   z: 4.0;   
-min. graf. funció: 0.0
-
-
-abscissa principal: x
-cursors: 
-x: 496;  y: 604;  z: 704;  
-increments ponderats:
-x: 1.0;   y: 1.0;   z: 1.0;   
-variables:
-x: -0.07902278049069622;   y: 2.0868011271396263;   z: 4.091281382670704;   variables:
-(round) variables:
-x: -0.079023;   y: 2.0868;   z: 4.0913;   
-min. graf. funció: 0.6872432319947724
-
-abscissa principal: x
-cursors: 
-x: 550;  y: 600;  z: 700;  
-increments ponderats:
-x: 1.0;   y: 1.0;   z: 1.0;   
-variables:
-x: 1.0;   y: 2.0;   z: 4.0;   variables:
-(round) variables:
-x: 1.0;   y: 2.0;   z: 4.0;   
-min. graf. funció: 0.0
-
-abscissa principal: x
-cursors: 
-x: 550;  y: 600;  z: 700;  
-increments ponderats:
-x: 1.0;   y: 1.0;   z: 1.0;   
-variables:
-x: 1.0;   y: 2.0;   z: 4.0;   variables:
-(round) variables:
-x: 1.0;   y: 2.0;   z: 4.0;   
-min. graf. funció: 0.0
 
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

@@ -1,6 +1,6 @@
 
 >>===>  funcio  <===<<
-rand(-1)                                                                                  
+rand(-1)                                                                                   
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaF  <===<<
 >=actiu=<
@@ -163,7 +163,7 @@ int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
 394	304	381
 340	1005	507
 1119	1361	0
-2	1001	338
+0	1001	338
 461	0	0
 0	219
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
@@ -174,7 +174,7 @@ introduir els valors a columna 9
 exemples: 		
 		idx=3; idx0=3*2=6;
 		idx=6; idx0=36*5=30;
-	           	idx=12; idx0=112*11=132
+	           	idx=12; idx0=12*11=132
 
 info: funcio 'rand(double)'
 quat es troba en la funcio de la columna 1; genera un primer valor (double) compres entre 0 i 1; en funcio del valor de la llevor (long)
@@ -224,7 +224,8 @@ dv=m2/d^2*dt;	Δv=m2d^2*Δt; 	de=m2/d^2*Δt*dt; 	Δe=(m2/d^2)*(Δt^2)/2
 l'espai recorregut en un interval de temps 'Δt'  per la coordenada x = dx/d*(m2/d^2)*(t^2)/2 (el mateix per les coordenades y i z)
 files 33-35: es sumen distancies recorregudes degut a  les velocitats al nici de l'interval.
 files 38-40 es calculen les velocitats al final del'interval
-files 42-46 es limiten les velocitats a uns valors maxims
+files 42-46 es limiten les velocitats a uns valors maxims i minims
+
 
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

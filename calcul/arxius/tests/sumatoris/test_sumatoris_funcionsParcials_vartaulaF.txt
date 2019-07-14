@@ -1,55 +1,59 @@
 
 >>===>  funcio  <===<<
-     
+         
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaF  <===<<
 >=actiu=<
-ampladaColumnes:  113  86  85  86  82  86  81  83  80  80  
+ampladaColumnes:  88  88  88  88  88  88  87  87  87  87  
 Funció	Símbol var.	if	then	then pres.	recorregut	tamany punt	eix x,y,z	color	Condicions
-0	limix					30	xi	Color: █	
-0	limiy						yi		
-0	limix1					30	xs	Color: █	
-0,1	limiy1						ys		
-0,5	α								
--1	ord								
-ord+2	ord	ord>1	(-1)(ord)						
-0,05+sin(rad(α))/2	superiory						yps		
-ord	superiorx				1		xps	Color: █	
-0,05+-sin(rad(α))/2	Inferiory1						ypi		
-ord	Inferiorx1			graf	1		xpi	Color: █	
-			6	pausa(200)					
-				fi					
+3	var								
+Δ0	d0			n					
+Δ1	d1			n					
+∑0	s0			n					
+∑1	s1			n					
+∑2	s2			n					
+∑3	s3			n					
+-var	var								
+-Δ0	d0			n					
+Δ1	d1			n					
+∑0	s0			n					
+∑1	s1			n					
+∑2	s2			n					
+∑3	s3			n					
+				nfi					
 -------------------------------------------------------------------------
-0	204	204
-0	0	0
-0	204	204
 0	0	0
 0	0	0
 0	0	0
 0	0	0
 0	0	0
-204	0	0
 0	0	0
-0	0	204
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
+0	0	0
 0	0	0
 0	0	0
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaP  <===<<
-ampladaColumnes:  15  15  
+ampladaColumnes:  67  66  
 Paràmetres	1
-símbols:	
-1 valor:	
+símbols:	p1
+1 valor:	-1
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaV  <===<<
-ampladaColumnes:  15  15  15  
+ampladaColumnes:  33  34  33  
 Variables (símbol)	límit Inferior	límit Superior
-		
+v	1	2
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaC  <===<<
 ampladaColumnes:  75  75  
 Descripció	paràmetre
 precissió round:	5
-cero(log):	mcgha3
+cero(log):	mb0b1b2b3b5a2
 param. graf.:	
 gràfic func.abs.:	
 regressió abs.:	
@@ -57,48 +61,46 @@ regressió ord.exp.:
 regressió ord.calc.:	
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaI  <===<<
-funció: ∑0
-
+funció: ∑0	funció: ∑1	funció: ∑2	funció: ∑3
+Δ0	Δ1	d1	d1+3+Δ1
 -------------------------------------------------------------------------
-ampladaColumnes:  15  15  15  
-var.  interv.	límit Inferior	límit Superior
-		
+ampladaColumnes:  43  43  43  42  42  42  42  42  42  42  42  42  
+var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior	var.  interv.	límit Inferior	límit Superior
+i 10000	-3	-6		Δ1	2*Δ1		d0	2*d1		d1	d1+Δ1
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  taulaD  <===<<
-ampladaColumnes:  15  15  15  15  15  
+ampladaColumnes:  42  15  15  15  45  
 Δⁿƒ/Δxⁿ	x	Δx	n	ƒ
-Δ0				
+Δ0				p1*3
+Δ1				p1*var
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  simbolsTeclat  <===<<
 longText: 5
-0	1	2	3	4	5	6	7	8	9	,	«
-+	-	*	/	^	(	)	=	<	>	.	»
+0	1	2	3	4	5	6	7	8	9	,	.
++	-	*	/	^	(	)	=	<	>	«	»
 x	y	z	a	b	c	d	_	π	3.141592653589793	e	2.718281828459045
 ∑	ƒ	Δ	Π	≠	φ	Φ	θ	Θ	α 	β	Ψ
 log(	ln(	sin(	asin(	cos(	acos(	tan(	atan(	abs(	rad(	gra(	rod(
 int(	fra(	sinh(	cosh(	tanh(	!(	∫	δ	'	ƒ'	≈	~
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  splitPan  <===<<
-242	885	615
-357	881	365
-570	877	355
-463	545	436
-54	1213	121
-96	0	0
-615	231	432
-394	304	432
-154	568	351
-762	877	0
-2	564	152
-461	0	0
-0	219
+202	884	878
+517	880	668
+858	876	515
+307	619	349
+120	939	125
+106	765	139
+171	389	345
+598	220	345
+334	856	511
+103	876	143
+2	852	332
+516	651	135
+250	219
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 >>===>  info_TextDeco  <===<<
-info:
-apreciar dues  linies separades un petit angle α (fila 4)
-ajustar el grafic de manera que els dos punts blaus estiguin separats aproximadament 10 cm
-i situar la imatge a un metre de distancia
+el resultat de tots els sumatoris menys el darrer a d'esser=9 el darrer=3*9=27
+quant el symbol inferior es mes gran que els superior l'interval es negatiu i el resultat de la integral canvia de signe
 
-per modificar l'angle α  > Columna  'Funcio' > fila  '4'
 
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=

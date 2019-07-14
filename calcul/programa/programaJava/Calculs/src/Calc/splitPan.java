@@ -1018,7 +1018,10 @@ public class splitPan extends JPanel{
        Cal.supID.longiMesLLarg();
        Cur.supID.longiMesLLarg();
        for(int j=0;j<taulaI.sumat.length;j++){
-            boolean b=false;if(Func.tipusFuncioBol)b=suportID.hihaVtaulaF_aI[j];//si true hi ha simbol taulaF a integral i no cal realitzar el calcul
+            boolean b=false;if(Func.tipusFuncioBol){
+                b=suportID.hihaVtaulaF_aI[j];
+                if(!b)b=taulaI.sumatConstants(j);//si hi ha funcions parcials amb variables de la taulaF a sumatoris, el sumatori no es una constant
+            }//si true hi ha simbol taulaF a integral i no cal realitzar el calcul per que el sumatori no es una constant
             if(!suportID.hihaVGioFPaI[j]&&!b)if(!taulaI.sumatConstants[j]){ //els sumatoris que no contenen directa o indirectament variables generals ni simbols de taulaF son constant i per tant es poden calcular no cal calcularlos per cada filera
                 taulaI.sumatConstants[j]=true;
                 Cal.stopBucle=false;
@@ -1988,6 +1991,7 @@ public class splitPan extends JPanel{
         System.out.println(s+":  ");for(int i=0;i<sVO.length;i++)System.out.print(sVO[i]+" "+dVO[i]+" _ ");System.out.println();
     }
     public boolean cadenes_sVO_deFuncions(){
+        iniciaValors();
         boolean b=true;
         String[] c=new String[0];double[] d=new double[0];
         String s;
@@ -2504,25 +2508,30 @@ public class splitPan extends JPanel{
         }
         return "";
     }
-    public boolean indexsOperacionsiSimbols(boolean parametresBol,boolean variablesBol,boolean SumatorisBol,boolean funcParBol,boolean taulaFBol){
-        int con=sVO.length;
+    private void iniciaValors(){
         Cal.indexs=new int[0][0];
         Cal.indexsVar=new int[0][0];
         Cal.indexsVarG=new int[0][0];
         Cal.limitindexsVarGen=new int[0][0];
         taulaF.indexsSumafuncioF=new int[0][0];
         taulaF.indexsDerafuncioF=new int[0][0];
-        int[] idxVG=new int[0];
+        
         Cal.indexsVGD=new int[0][0];
         Cal.integralBol=false;
         Cal.derivadaBol=false;
+    }
+    public boolean indexsOperacionsiSimbols(boolean parametresBol,boolean variablesBol,boolean SumatorisBol,boolean funcParBol,boolean taulaFBol){
+        iniciaValors();
+        int[] idxVG=new int[0];
+        int con=sVO.length;
         if(!taulaV.hihaVar&&!Func.tipusFuncioBol)return true;
         int contador=nombrefilesmatriuIndexs(sVO);
         if(SumatorisBol&&taulaI.hihaDades){//els sumatoris constants ja s'han incorporat com a valors numerics la resta per un motiu o altre s'han de calcular i previament s'hauran de introduir en les funcions dels sumatori els valors de les variables generals directes o idirectes i els valors de les variables de la taulaF
             int co=0,coT=0;//co=ontador de sumatoris dins de sVO per ficarles a indexsVar //coT=contador de sumatoris dins de sVO que contenent simbolsT encara que no variables generals directes o indirectes
             for(int i=0;i<con;i++)for(int j=0;j<taulaI.sumat.length;j++){
                 if(sVO[i].equals(taulaI.sumat[j])||sVO[i].equals("-"+taulaI.sumat[j])){
-                    if(suportID.hihaVGioFPaI[j]){co++;Cal.derivadaBol=true;}//si el sumatori present a la funcioanalitzada  conte variables generals 
+                    if(taulaD.hihaDades&&suportID.hihaFPambVGaI[j]){Cal.derivadaBol=true;}
+                    if(suportID.hihaVGioFPaI[j]){co++;}//si el sumatori present a la funcioanalitzada  conte variables generals 
                     else if(Func.tipusFuncioBol)coT++;//si el sumatori present a la funcioanalitzada no conte variables generals pero si variables de la taulaF
                 }
             }

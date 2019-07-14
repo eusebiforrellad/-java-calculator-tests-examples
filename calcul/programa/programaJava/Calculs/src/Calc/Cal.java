@@ -127,7 +127,6 @@ public class Cal extends JPanel {
             Random ran = new Random(System.currentTimeMillis());
             int cont=2;
             varPocSignif=new boolean[longi];
-            
             while(!stop){
                 escalaLinial=!escalaLinial;
                 if(cont==-2)for(int i=0;i<longi;i++)cursorMinim[i]=segment;
@@ -218,7 +217,6 @@ public class Cal extends JPanel {
         while(!stopBucle){
             con++;
             boolean digitsBol=false;
-            //if(cur.length!=longi)return;
             System.arraycopy(cursorMinim,0,cur,0,longi);
             for(int i=0;i<longi;i++)var[i]=posic(i, cur[i]);
             boolean b=true;
@@ -247,8 +245,6 @@ public class Cal extends JPanel {
                 }
             }
             if(b)antRes=resultat;
-            //else {Func.append(0,"stop (resultat parcial indefinit)"+splitPan.FIL);condicioDeParada=true;}
-        
             try{Thread.sleep(100L);} catch( InterruptedException e) {}
         }
         if(taulaI.hihaDades){
@@ -330,7 +326,6 @@ public class Cal extends JPanel {
            }
        }
     }
-
     public static double calcul(double[] dvo){
         if(indexs.length==0)return dvo[0];
         for(int i=0;i<indexs.length;i++)dvo[indexs[i][1]]=caseOpFun(indexs[i][0],dvo[indexs[i][1]],dvo[indexs[i][2]]);
@@ -362,8 +357,6 @@ public class Cal extends JPanel {
         }
         if(b1&&Func.ampliarInfo)Func.append(0,"funcio constant en un ampli interval de valors de les variables, centrades en el valor: "+s+splitPan.FIL);
         limSCalc=0;for(int i=0;i<longi;i++) if(limSCalc<limSupCalc[i])limSCalc=limSupCalc[i];
-        //System.out.println(min);for(int i=0;i<longi;i++)System.out.print(limSupCalc[i]+" ");System.out.println();
-        
     }
     //void calcMinPendentPar(double[] dvo,double[] dVO,String[] sVO,double[] varAct,long[] cursor,long[] cursorMinim,double[] resultatP,int[] limSupCalc,double[] resultatM,double[] resultatMcop,long[] minIncrSignif,double resultat){
     void calcMinPendentPar(){
@@ -446,7 +439,6 @@ public class Cal extends JPanel {
     static double resultatMatrP(boolean actualdVO,double[] dvo,double[] dVO,String[] sVO,double[] varAct,double[] resultatP,double[] resultatM,long[] cursor,long[] cursorMinim){
         if (actualdVO){actualitzadVO(dvo, dVO,sVO,varAct,cursor,cursorMinim);}//si true totes les variables a dVO s'actualitzen incloses les variables integrals i derivades
         double suma=0;//utilitzar ho si cal que cur i cal continguin el prcediment independent//resultatP=new double[idxParVar.length];//matriu associada als parametres variables; resultatM va associat a les fileres de parametres
-        //System.arraycopy(dVO, 0, dvo, 0, dvo.length);//fa copia a dvo que es modificara amb el calcul
         if (!actualdVO)for (int[] i : indexsParv) {
             if (sVO[i[0]].startsWith("-")) dvo[i[0]] = -varAct[i[1]];else dvo[i[0]] = varAct[i[1]];
         }   
@@ -475,7 +467,7 @@ public class Cal extends JPanel {
             else if(cursor[idxP]<0) {l=1;}
             for(int k=0;k<l;k++){
                 for(int j=0;j<longi;j++){
-                    cursor[j]=cursorMinim[j]+(long)(per[k]*am*pondIncrVar[j]);//no utilitzat if(b){1+2+3+4+5+6=21=6*7/2 en el meu cas double d=Math.abs(per[k]*am-1);if(d>0)d=d*per[k]*am/2;cursor[j]+=cursorMinim[j]+(long)(d*pondIncrVar[1][j]);}//if(cursor[j]<0||cursor[j]>segment){cursor[j]=cursorMinim[j];}//b=false;j=longi;i=-999999999;}
+                    cursor[j]=cursorMinim[j]+(long)(per[k]*am*pondIncrVar[j]);
                     if(cursor[j]<0){cursor[j]=0;}else if(cursor[j]>segment){cursor[j]=segment;}
                     varAct[j]=posic(j,cursor[j]);
                 }
@@ -489,13 +481,13 @@ public class Cal extends JPanel {
                 }
             }
         }
+       //for(int j=0;j<longi;j++){varAct[j]=posic(j,cursorMinim[j]);}
        return resultat;
     }
-    //atencio si les seguents fileres mo hi son va mes rapid encara que no sembla tenir sentit
-        //for(int j=0;j<longi;j++){varAct[j]=posic(j,cursorMinim[j]);}actualitzadVO();
-        //nomes s'actualitzen les variables genrals les variables parametres tene el mateix valor que el anterior ajust de parametres
-        //s'actualitzaran despres del primer calcul (calcMinPendentVar)
-        //aixi per exemple les seguents fileres actualitzen nomes variables generals i el resultat es similar a si no i son
+    //atencio en l'exemple utilitzatsi la seguent filerea mo hi es i va mes rapid encara que no sembla tenir sentit
+    //for(int j=0;j<longi;j++){varAct[j]=posic(j,cursorMinim[j]);}actualitzadVO();
+    //nomes s'actualitzen les variables generals que calculen varAct a partir de cursorMinim, no obstant les variables parametres a calcMinPenVar al inici > calcul resultatmatriuP incorpora els valors de varAct previs
+    //s'actualitzaran despres del primer calcul (calcMinPendentVar)
     static double resultat1P(int ix,double[] dvo,double[] dVO,String[] sVO,double[] varAct,double[] resultatMcop){
         double tot=0;
         for (int[] k : indexsParV)if (k[0] == ix) {

@@ -518,7 +518,9 @@ public class taulaI extends JPanel implements ActionListener{
         boolean bvi=false,bint=false;
         for(int i=0;i<integralLimitsBuitBol[0].length;i++)for(int j=0;j<integralLimitsBuitBol.length;j++){
            if(!integralLimitsBuitBol[j][i]){//la primera columna de cada fila que te els limits amb informacio integralLimitsBuitBol[i][j]=true; ha de contenir el simbol de la variable interna
-               if(!bol[i][j][0]){Func.append(1,"error: ");Func.append(0," a taula: "+ Func.sumat+": al menys la cel.la del extrem esquerra amb contingut a limits; ha de tenir definida una variable interna; per la resta es copiar"+Func.rB.getString("a")+" la de la seva esquerra"+splitPan.FIL);return false;}
+               //if(!bol[i][j][0]){Func.append(1,"error: ");Func.append(0," a taula: "+ Func.sumat+": al menys la cel.la del extrem esquerra amb contingut a limits; ha de tenir definida una variable interna; per la resta es copiar"+Func.rB.getString("a")+" la de la seva esquerra"+splitPan.FIL);return false;}
+               if(!bol[0][0][0]){Func.append(1,"error: ");Func.append(0," a taula: "+ Func.sumat+": al menys la cel.la del extrem esquerra amb contingut a limits; ha de tenir definida una variable interna; per la resta es copiar"+Func.rB.getString("a")+" la de la seva esquerra"+splitPan.FIL);return false;}
+           
            }
         }
         for(int i=0;i<bol.length;i++)for(int j=0;j<bol[0].length;j++){
@@ -732,7 +734,7 @@ public class taulaI extends JPanel implements ActionListener{
         suportID.hihaVG_aTOTI=false;
         boolean correcte=true;
         suportID.longi=new int[matriuFunc[0].length];
-        if(!funcionsiVariables())return false;
+        funcionsiVariables();//)return false;
         for(int i=0;i<suportID.longi.length;i++){suportID.longi[i]=integralLimitsBuitBol[0].length;}
         for(int i=0;i<suportID.longi.length;i++){
             for(int j=0;j<integralLimitsBuitBol[0].length;j++){
@@ -744,7 +746,7 @@ public class taulaI extends JPanel implements ActionListener{
         }
         return correcte;
     }
-    public  boolean funcionsiVariables(){
+    public void funcionsiVariables(){
         String s0="",s3="",s1="",s2="",s4="";
         Cal.supID.dMatriuFunc=new double[matriuFunc[0].length];
         Cur.supID.dMatriuFunc=new double[matriuFunc[0].length];
@@ -946,7 +948,19 @@ public class taulaI extends JPanel implements ActionListener{
                 }
             }
         }
-        return true;
+    }
+    public static boolean sumatConstants(int l){
+        if(taulaD.hihaDades){// si hi ha funcions parcials cal corretgir si cal les funcions  Cal.indexsInteg_VG i suportID.hihaFPaI
+            for(int j=0;j<taulaD.simbol.length;j++){
+                for(int k=suportID.integralLimitsFun[l][6];k<suportID.integralLimitsFun[l][7];k++){
+                    if(taulaD.simbol[j].equals(suportID.sVOI[k])&&!taulaD.simbolsDconstants[j]){
+                        sumatConstants[l]=false;
+                        return true;
+                    }
+                }
+            }
+        }
+        return false;
     }
     //calcul de les funcions dvo i svo, indexsVar i indexs operacions de les funcions limit i funcio integral
     // aqui no s'inclouen els parametres de les variables comples de integrals i funcions parcials
